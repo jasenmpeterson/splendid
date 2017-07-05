@@ -1,0 +1,30 @@
+// page portals :
+
+.pageportal {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.pageportal > .row > .column > .box {
+  padding: 0 3rem;
+}
+
+.pageportal p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.pageportal.appointments {
+  margin-top: 6rem;
+
+  .column:first-of-type {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+
+  .column:last-of-type {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+}

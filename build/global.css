@@ -155,12 +155,7 @@ table {
   -webkit-box-orient: vertical;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden; }
-  .FlexContainer .FlexContainer {
-    flex-direction: row; }
-  .FlexContainer.NoPadding {
-    padding: 0; }
+  flex-direction: row; }
   .FlexContainer .column {
     -webkit-box-flex: 0;
     -moz-flex: 0 0 auto;
@@ -192,8 +187,7 @@ table {
     flex-direction: row;
     width: 100%;
     max-width: 100%;
-    min-height: 100%;
-    position: relative; }
+    min-height: 100%; }
   .FlexContainer .row-reverse {
     flex-direction: row-reverse; }
   .FlexContainer .FullColumn {
@@ -202,26 +196,13 @@ table {
 
 html {
   font-size: 10px;
-  font-family: 'Prompt', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   color: #ccc; }
 
 body {
   font-size: 1rem;
   -webkit-font-smoothing: subpixel-antialiased; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500; }
-  h1.regular,
-  h2.regular,
-  h3.regular,
-  h4.regular,
-  h5.regular {
-    font-weight: 400; }
 
 h1 {
   font-size: 3.8rem; }
@@ -238,20 +219,21 @@ h4 {
 h5 {
   font-size: 1.8rem; }
 
-h4.label {
-  font-size: 2.4rem; }
-
-h5.label {
-  font-size: 1.8rem; }
-
 ul {
   list-style-type: disc;
   font-size: 1.8rem; }
-  ul.dental-services {
-    font-size: 2.4rem; }
 
 p {
   font-size: 1.8rem; }
+
+a.btn {
+  display: inline-block;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  background-color: #ccc;
+  font-size: 1.2rem; }
+  a.btn:last-child {
+    margin-top: 3rem; }
 
 img {
   display: block;
@@ -556,13 +538,44 @@ span.wpcf7-not-valid-tip {
 a {
   transition: all 300ms ease-out; }
 
+html {
+  font-family: 'Prompt', sans-serif; }
+
+body {
+  color: #040F5D; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700; }
+  h1.regular,
+  h2.regular,
+  h3.regular,
+  h4.regular,
+  h5.regular {
+    font-weight: 400; }
+
 .label {
   background-color: #F37045;
-  color: #FFFFFF; }
-  .label h4 {
-    font-size: 2.4rem; }
-  .label h5 {
-    font-size: 1.5rem; }
+  color: #FFFFFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 3rem; }
+  .label:before {
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 8rem;
+    background-color: #fff;
+    margin-bottom: 1rem; }
+
+h4.label {
+  font-size: 2.4rem; }
+
+h5.label {
+  font-size: 1.5rem; }
 
 ul.dental-services {
   font-size: 2.4rem; }
@@ -582,6 +595,9 @@ ul.dental-services {
 a {
   text-decoration: none; }
 
+header {
+  padding: 0 5rem; }
+
 .column.navigationcontainer {
   align-self: flex-end;
   margin-right: auto;
@@ -599,6 +615,63 @@ a {
     font-weight: 500; }
     .navigationcontainer nav a:hover {
       color: #F37045; }
+
+.pageportal {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; }
+
+.pageportal > .row > .column > .box {
+  padding: 0 3rem; }
+
+.pageportal p {
+  font-size: 1.4rem;
+  line-height: 2rem; }
+
+.pageportal.appointments {
+  margin-top: 6rem; }
+  .pageportal.appointments .column:first-of-type {
+    flex-basis: 40%;
+    max-width: 40%; }
+  .pageportal.appointments .column:last-of-type {
+    flex-basis: 60%;
+    max-width: 60%; }
+
+.textmodule.image .column {
+  flex-basis: 50%;
+  max-width: 50%; }
+
+.textmodule.image .column.image {
+  background-size: cover !important;
+  background-position: center center !important; }
+
+.textmodule .content .box {
+  padding: 4rem;
+  background-color: #040F5D;
+  color: #FFFFFF; }
+
+.textmodule .content h2:before {
+  content: '';
+  display: block;
+  height: 0.2rem;
+  width: 8rem;
+  background-color: #fff;
+  margin-bottom: 4rem; }
+
+.textmodule .btn:last-child {
+  margin-top: 6rem; }
+
+.textmodule .label {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(90deg); }
+
+a.btn {
+  font-weight: 700; }
+
+a.btn.white {
+  background-color: #fff;
+  color: #040F5D; }
 
 body {
   background-color: #DFF2EF; }

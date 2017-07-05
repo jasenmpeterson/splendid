@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  font-family: 'Prompt', sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   color: #ccc;
 }
@@ -8,18 +8,6 @@ html {
 body {
   font-size: 1rem;
   -webkit-font-smoothing: subpixel-antialiased;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-
-  &.regular {
-    font-weight: 400;
-  }
 }
 
 h1 {
@@ -42,21 +30,9 @@ h5 {
   font-size: 1.8rem;
 }
 
-h4.label {
-  font-size: 2.4rem;
-}
-
-h5.label {
-  font-size: 1.8rem;
-}
-
 ul {
   list-style-type: disc;
   font-size: 1.8rem;
-
-  &.dental-services {
-    font-size: 2.4rem;
-  }
 }
 
 p {

@@ -13,16 +13,7 @@
   -webkit-box-orient: vertical;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
-
-  .FlexContainer {
-    flex-direction: row;
-  }
-
-  &.NoPadding {
-    padding: 0;
-  }
+  flex-direction: row;
 
   .column {
     -webkit-box-flex: 0;
@@ -58,7 +49,6 @@
     width: 100%;
     max-width: 100%;
     min-height: 100%;
-    position: relative;
   }
 
   .row-reverse {

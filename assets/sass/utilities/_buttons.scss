@@ -1,1 +1,13 @@
 // buttons :
+
+a.btn {
+  display: inline-block;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  background-color: #ccc;
+  font-size: 1.2rem;
+
+  &:last-child {
+    margin-top: 3rem;
+  }
+}

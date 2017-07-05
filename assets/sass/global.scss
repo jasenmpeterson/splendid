@@ -14,7 +14,6 @@
 @import 'components/global/pageBanner';
 @import 'components/global/socialMediaIcons';
 @import 'components/global/animations';
-@import 'components/global/pagePortal';
 @import 'components/global/form';
 @import 'components/global/links';
 @import 'components/pages/home';
@@ -25,6 +24,9 @@
 @import 'theme/links';
 @import 'theme/header';
 @import 'theme/navigation';
+@import 'theme/pagePortal';
+@import 'theme/textmodule';
+@import 'theme/buttons';
 
 body {
   background-color: $azuerieshwhite;

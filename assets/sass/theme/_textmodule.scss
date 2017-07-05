@@ -1,0 +1,38 @@
+.textmodule.image {
+  .column {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .column.image {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
+.textmodule .content .box {
+  padding: 4rem;
+  background-color: $royalblue;
+  color: $white;
+}
+
+.textmodule .content h2 {
+  &:before {
+    content: '';
+    display: block;
+    height: 0.2rem;
+    width: 8rem;
+    background-color: #fff;
+    margin-bottom: 4rem;
+  }
+}
+
+.textmodule .btn:last-child {
+  margin-top: 6rem;
+}
+
+.textmodule .label {
+  position: absolute;
+  bottom: 0;
+  transform: rotate(90deg);
+}

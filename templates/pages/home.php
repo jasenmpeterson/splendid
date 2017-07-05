@@ -1,29 +1,18 @@
 <?php
 include(locate_template('/templates/global/vars.php'));
 
-// home :
-
-use HomePage\HomePage;
-
-$homePage = new HomePage(6, 1, 'page');
-$homePage->displayPage();
-
 // page portal :
 
 use PagePortal\PagePortal;
 
 $pagePortal = new PagePortal();
-$pagePortal->displayPagePortal(array(30,32,34)); // page IDs
+$pagePortal->displayPagePortal(array(8)); // page IDs
 
 // smarty :
 
-// page banner :
-
-$smarty->assign('PageBanner', $homePage->PageBanner);
-
 // page portal(s) :
 
-$smarty->assign('PagePortals', $pagePortal->PagePortals);
+$smarty->assign('PagePortal', $pagePortal->PagePortals);
 
 // if template exists :
 
