@@ -1,0 +1,75 @@
+// hamburger menu :
+
+.Hamburger {
+  .line {
+    background-color: #CCC;
+    width: 30px;
+    height: 1px;
+    display: block;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.is-active {
+    .line {
+      background-color: #ccc;
+    }
+
+    .line:nth-child(1) {
+      transform: translateY(7px);
+    }
+
+    .line:nth-child(3) {
+      transform: translateY(-7px);
+    }
+  }
+}
+
+.HamburgerContainer {
+  padding-right: 2rem;
+
+  span.MenuLabel {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: #ccc;
+  }
+  padding-right: 2rem;
+
+  &.box {
+    background: #fff;
+    padding: 0.5rem 1.25rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 0 15px rgba(44,62,80,0.1);
+    margin-top: 2rem;
+  }
+
+  .HamburgerMenuTitle {
+    padding-right: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+.navigationcontainer nav {
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    font-size: 1.8rem;
+    color: #ccc;
+    display: block;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}

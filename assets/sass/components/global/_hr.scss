@@ -1,0 +1,25 @@
+@mixin horizontal-rule-bottom($bgColor: '#FFF') {
+  &:after {
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: unquote($bgColor);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0.3rem auto;
+  }
+}
+@mixin horizontal-rule-top($bgColor: $GoldColor) {
+  &:before {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 0.3rem;
+    background-color: unquote($bgColor);
+    position: absolute;
+    left: 0;
+    top: -2rem;
+  }
+}

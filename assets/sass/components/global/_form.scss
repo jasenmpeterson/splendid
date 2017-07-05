@@ -1,0 +1,84 @@
+label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+.wpcf7-form-control-wrap {
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+  background-color: #EFEFEF;
+  border: none;
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  color: #ccc;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border-color: #EFEFEF;
+  width: 80%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 15rem;
+  background-color: #ccc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ccc;
+  }
+}
+
+div.wpcf7-response-output {
+  margin: 1.5rem 0 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-color: #ccc;
+  width: 80%;
+  text-align: center;
+}
+
+span.wpcf7-not-valid-tip {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  div.wpcf7-response-output {
+    margin: 2rem auto;
+  }
+}

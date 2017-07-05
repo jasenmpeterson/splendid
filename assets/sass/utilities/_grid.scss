@@ -1,0 +1,102 @@
+// gridle setup section :
+
+// flex :
+
+@import '../gridle/gridle/gridle-flex';
+
+// default settings :
+
+$settings: (
+    context : 12,           // number of columns in your grid
+    column-width : null,    // by default it's percentage based depending on the context but you can specify a column width yourself
+    gutter-width : 20px,    // size of the gutters
+    gutter-height : 0,      // size of top and bottom gutters
+    gutter-top    : 45px,      // size of top gutter
+    gutter-bottom : 45px,      // size of bottom gutter
+    gutter-left   : 20px,   // size of left gutter
+    gutter-right  : 20px,   // size of right gutter
+    direction : ltr,        // direction
+    dir-attribute : false,  // if need to generate support for dir="rtl" in order to set part of layout direction
+    states-classes : true, // if we need to generate the states classes
+    name-multiplicator : 1, // if 5, generate gr-5, gr-10, etc...
+    classes-prefix : ''     // the prefix used for all classes
+);
+
+@include gridle_setup($settings);
+
+// responsive state - xs :
+
+@include gridle_register_state( xs , (
+    min-width : 320px,
+    max-width : 599px,
+) );
+
+// responsive state - sm :
+
+@include gridle_register_state( sm , (
+    min-width : 600px,
+    max-width : 767px,
+) );
+
+// responsive state - md :
+
+@include gridle_register_state( md , (
+    min-width : 768px,
+    max-width : 1024px,
+) );
+
+// responsive state - lg :
+
+@include gridle_register_state( lg , (
+    min-width : 1025px,
+    max-width : 1240px,
+) );
+
+// responsive state - xl :
+
+@include gridle_register_state( xl , (
+    min-width : 1241px,
+    max-width : 1599px,
+) );
+
+
+// responsive state - xxl :
+
+@include gridle_register_state( xxl , (
+    min-width : 1600px
+) );
+
+// generate classes :
+
+@include gridle_generate_classes();
+
+// init grid :
+
+@include gridle_init();
+
+// grid :
+
+.grid
+{
+    @include gridle( adapt );
+}
+
+.container
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.grid,
+.row,
+.container,
+{
+  position: relative;
+}
+
+*[class^="gr-"]
+{
+    position: relative;
+}

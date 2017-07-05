@@ -1,0 +1,19 @@
+// site logo :
+
+.sitelogo {
+  width: 100%;
+  height: auto;
+
+  circle {
+    fill: #81cdbf;
+  }
+
+  path {
+    fill: #FFFFFF;
+  }
+}
+
+.logocontainer a {
+  position: relative;
+  margin-top: -10rem;
+}

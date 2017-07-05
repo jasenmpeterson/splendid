@@ -1,0 +1,31 @@
+@import 'utilities/reset';
+@import 'theme/colors';
+@import 'utilities/flex';
+@import 'utilities/typography';
+@import 'utilities/animations';
+@import 'utilities/box-shadow';
+@import 'utilities/buttons';
+@import 'utilities/images';
+@import 'utilities/logo';
+@import 'components/global/hr';
+@import 'components/global/navigation';
+@import 'components/global/header';
+@import 'components/global/footer';
+@import 'components/global/pageBanner';
+@import 'components/global/socialMediaIcons';
+@import 'components/global/animations';
+@import 'components/global/pagePortal';
+@import 'components/global/form';
+@import 'components/global/links';
+@import 'components/pages/home';
+@import 'components/pages/about';
+@import 'components/pages/contact';
+@import 'theme/typography';
+@import 'theme/logo';
+@import 'theme/links';
+@import 'theme/header';
+@import 'theme/navigation';
+
+body {
+  background-color: $azuerieshwhite;
+}

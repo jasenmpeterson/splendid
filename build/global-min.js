@@ -1,0 +1,1 @@
+"use strict";var mobileMenuButton=document.querySelector(".Hamburger"),mobileMenu=document.querySelector(".Navigation.Mobile"),closeText=document.querySelector(".Navigation.Mobile .close");mobileMenuButton.addEventListener("click",function(){mobileMenu.classList.toggle("MobileOpen")},!1),closeText.addEventListener("click",function(){mobileMenu.classList.toggle("MobileOpen")},!1);

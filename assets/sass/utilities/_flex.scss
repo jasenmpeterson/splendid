@@ -1,0 +1,72 @@
+.FlexContainer {
+  max-width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -moz-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+
+  .FlexContainer {
+    flex-direction: row;
+  }
+
+  &.NoPadding {
+    padding: 0;
+  }
+
+  .column {
+    -webkit-box-flex: 0;
+    -moz-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: block;
+    max-width: 100%;
+  }
+
+  .row,
+  .row-reverse {
+    display: -webkit-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-flex: 0;
+    -moz-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .FullColumn {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.navigationcontainer nav {
+  position: relative;
+  margin-top: -6rem;
+
+  li {
+    margin-right: 3rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: $royalblue;
+    font-weight: 500;
+
+    &:hover {
+      color: $mandarin;
+    }
+  }
+}
