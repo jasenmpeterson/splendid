@@ -79,7 +79,6 @@ class Smarty_Wordpress extends Smarty_Base
 
 function theme_assets()
 {
-    wp_enqueue_script('javascript-plugins', THEME_URI . '/build/plugins-min.js', array(), null, true);
     wp_enqueue_script('javascript', THEME_URI . '/build/global-min.js', array(), null, true);
     wp_enqueue_style('css', THEME_URI . '/build/global.css', array(), null);
     wp_enqueue_style('typography', 'https://fonts.googleapis.com/css?family=Prompt:400,500,700', array(), null);

@@ -9,6 +9,21 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/.eslintrc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.eslintrc",
+		"oF": 0
+		},
+	"\/assets\/javascript\/functions.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/functions-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/assets\/javascript\/global.js": {
 		"ft": 64,
 		"mi": 1,
@@ -18,13 +33,85 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/assets\/javascript\/plugins.js": {
+	"\/assets\/javascript\/PagePortalTween.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/plugins-min.js",
+		"oAP": "\/build\/PagePortalTween-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/plugins\/animation.gsap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/build\/animation.gsap-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/plugins\/animation.velocity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/build\/animation.velocity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/plugins\/debug.addIndicators.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/build\/debug.addIndicators-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/plugins\/jquery.ScrollMagic.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/build\/jquery.ScrollMagic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/require.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/require-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/requirejs.config.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/requirejs.config-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/ScrollMagic.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/ScrollMagic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/TweenMax.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/TweenMax-min.js",
+		"oF": 0,
+		"sC": 3,
 		"tS": 0
 		},
 	"\/assets\/sass\/components\/global\/_animations.scss": {
@@ -792,13 +879,22 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/build\/functions-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/functions-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/global-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/global-min-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 3,
 		"tS": 0
 		},
 	"\/build\/global.css": {
@@ -811,13 +907,40 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/build\/plugins-min.js": {
+	"\/build\/PagePortalTween-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/build\/plugins-min-min.js",
+		"oAP": "\/build\/PagePortalTween-min-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/require-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/require-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/ScrollMagic-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/ScrollMagic-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/TweenMax-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/TweenMax-min-min.js",
+		"oF": 0,
+		"sC": 3,
 		"tS": 0
 		},
 	"\/classes\/global\/footer.php": {
@@ -2731,7 +2854,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 17,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -2746,15 +2869,15 @@
 			"optionString": ""
 			},
 		"arrow-body-style": {
-			"active": 0,
+			"active": 1,
 			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
 			},
 		"arrow-parens": {
-			"active": 0,
+			"active": 1,
 			"optionString": "'always'"
 			},
 		"arrow-spacing": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'before': true, 'after': true}"
 			},
 		"block-scoped-var": {
@@ -3014,11 +3137,11 @@
 			"optionString": "'except-parens'"
 			},
 		"no-confusing-arrow": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -3062,7 +3185,7 @@
 			"optionString": ""
 			},
 		"no-duplicate-imports": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'includeExports': false}"
 			},
 		"no-else-return": {
@@ -3602,7 +3725,7 @@
 			"optionString": "{'before': false, 'after': true}"
 			},
 		"sort-imports": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
 			},
 		"sort-keys": {
@@ -3690,11 +3813,11 @@
 			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
 			}
 		},
-	"esLintSourceType": 0,
+	"esLintSourceType": 1,
 	"externalServerAddress": "http:\/\/localhost.ell.splendid:9999\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "require,define",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -4108,7 +4231,7 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 3,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

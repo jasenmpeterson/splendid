@@ -18,3 +18,7 @@ if (typeof (mobileMenuButton) != 'undefined' && mobileMenuButton != null) {
   }, false)
 
 }
+
+require(['pagePortalTween'], function () {
+  console.log('wtf')
+});

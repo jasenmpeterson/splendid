@@ -619,7 +619,8 @@ header {
 .pageportal {
   margin: 0 auto;
   max-width: 1200px;
-  position: relative; }
+  position: relative;
+  opacity: 0; }
 
 .pageportal > .row > .column > .box {
   padding: 0 3rem; }
