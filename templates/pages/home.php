@@ -6,7 +6,7 @@ include(locate_template('/templates/global/vars.php'));
 use PagePortal\PagePortal;
 
 $pagePortal = new PagePortal();
-$pagePortal->displayPagePortal(array(8,12)); // page IDs
+$pagePortal->displayPagePortal(array(8,12,10)); // page IDs
 
 // smarty :
 

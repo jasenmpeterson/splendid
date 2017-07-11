@@ -9,17 +9,10 @@
   max-width: 1200px;
   position: relative;
   opacity: 0;
-  top: -5rem;
-  left: -10rem;
+  margin-bottom: 3rem;
 
   .label {
     opacity: 0;
-  }
-
-  &.active {
-    z-index: 2;
-    top: 0;
-    left: 0;
   }
 
   &.active .textmodule {

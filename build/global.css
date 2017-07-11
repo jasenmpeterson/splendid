@@ -624,14 +624,9 @@ header {
   max-width: 1200px;
   position: relative;
   opacity: 0;
-  top: -5rem;
-  left: -10rem; }
+  margin-bottom: 3rem; }
   .pageportal .label {
     opacity: 0; }
-  .pageportal.active {
-    z-index: 2;
-    top: 0;
-    left: 0; }
   .pageportal.active .textmodule {
     box-shadow: 0 15px 15px -15px rgba(44,62,80,.5); }
   .pageportal .column:first-of-type {
