@@ -17,7 +17,7 @@
     </title>
 
     <?php wp_head(); ?>
-    <script async data-main="<?php echo THEME_URI ?>/assets/javascript/requirejs.config.js" src="<?php echo THEME_URI ?>/build/require-min.js"></script>
+    
 </head>
 
 <body <?php body_class(); ?>>

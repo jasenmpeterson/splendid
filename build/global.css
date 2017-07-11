@@ -616,27 +616,36 @@ header {
     .navigationcontainer nav a:hover {
       color: #F37045; }
 
+.PageWrap .pageportal:first-of-type {
+  margin-top: 6rem; }
+
 .pageportal {
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
-  opacity: 0; }
+  opacity: 0;
+  top: -5rem;
+  left: -10rem; }
+  .pageportal .label {
+    opacity: 0; }
+  .pageportal.active {
+    z-index: 2;
+    top: 0;
+    left: 0; }
+  .pageportal.active .textmodule {
+    box-shadow: 0 15px 15px -15px rgba(44,62,80,.5); }
+  .pageportal .column:first-of-type {
+    flex-basis: 40%;
+    max-width: 40%; }
+  .pageportal .column:last-of-type {
+    flex-basis: 60%;
+    max-width: 60%; }
+  .pageportal p {
+    font-size: 1.4rem;
+    line-height: 2rem; }
 
 .pageportal > .row > .column > .box {
   padding: 0 3rem; }
-
-.pageportal p {
-  font-size: 1.4rem;
-  line-height: 2rem; }
-
-.pageportal.appointments {
-  margin-top: 6rem; }
-  .pageportal.appointments .column:first-of-type {
-    flex-basis: 40%;
-    max-width: 40%; }
-  .pageportal.appointments .column:last-of-type {
-    flex-basis: 60%;
-    max-width: 60%; }
 
 .textmodule.image .column {
   flex-basis: 50%;

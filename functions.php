@@ -79,24 +79,23 @@ class Smarty_Wordpress extends Smarty_Base
 
 function theme_assets()
 {
-    wp_enqueue_script('javascript', THEME_URI . '/build/global-min.js', array(), null, true);
+    wp_enqueue_script('jquery');
+    wp_register_script('javascript', THEME_URI . '/build/global-min.js', array(), null, true);
     wp_enqueue_style('css', THEME_URI . '/build/global.css', array(), null);
     wp_enqueue_style('typography', 'https://fonts.googleapis.com/css?family=Prompt:400,500,700', array(), null);
 
     $ajaxurl = admin_url('admin-ajax.php');
 
     $pageParams = array(
-
-        'siteURL' => THEME_URI,
-        'root'    => get_home_url(),
-        'ajaxurl'  => $ajaxurl,
-        'noposts'  => esc_html__('No older posts found'),
-        'loadmore' => esc_html__('Load more'),
+      'siteURL' => THEME_URI,
+      'root'    => get_home_url(),
+      'ajaxurl'  => $ajaxurl,
+      'javascriptDirectory' => get_stylesheet_directory_uri() . '/assets/javascript'
     );
 
-    wp_localize_script('theme-js', 'pageParams', $pageParams);
+    wp_localize_script('javascript', 'pageParams', $pageParams);
 
-    // wp_enqueue_script( 'theme-js' );
+    wp_enqueue_script('javascript');
 }
 
 add_action('wp_enqueue_scripts', 'theme_assets');

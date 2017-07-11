@@ -1,23 +1,30 @@
 // page portals :
 
+.PageWrap .pageportal:first-of-type {
+  margin-top: 6rem;
+}
+
 .pageportal {
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
   opacity: 0;
-}
+  top: -5rem;
+  left: -10rem;
 
-.pageportal > .row > .column > .box {
-  padding: 0 3rem;
-}
+  .label {
+    opacity: 0;
+  }
 
-.pageportal p {
-  font-size: 1.4rem;
-  line-height: 2rem;
-}
+  &.active {
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
 
-.pageportal.appointments {
-  margin-top: 6rem;
+  &.active .textmodule {
+    @include box-shadow-bottom();
+  }
 
   .column:first-of-type {
     flex-basis: 40%;
@@ -28,4 +35,13 @@
     flex-basis: 60%;
     max-width: 60%;
   }
+
+  p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+.pageportal > .row > .column > .box {
+  padding: 0 3rem;
 }

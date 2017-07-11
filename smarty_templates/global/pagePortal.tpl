@@ -1,4 +1,4 @@
-{foreach $pageportal as $data}
+{foreach $pageportal as $data name=pageportal}
 
   {* page portal content *}
   {assign "label" {$data[0][0]['label']}}
@@ -7,14 +7,16 @@
   {assign "pagelink" {$data[0][0]['page_link']}}
   {assign "image" {$data[0][0]['image']['url']}}
 
-  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''}">
+  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''} {if $smarty.foreach.pageportal.iteration == 1}active{else}inactive{/if}">
 
     <section class="row">
 
       <section class="column">
 
         <section class="box">
-          {$content}
+          {if !empty($content)}
+            {$content}
+          {/if}
         </section>
 
       </section>

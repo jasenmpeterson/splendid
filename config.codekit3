@@ -15,6 +15,33 @@
 		"oAP": "\/.eslintrc",
 		"oF": 0
 		},
+	"\/assets\/javascript\/animation.gsap.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/animation.gsap-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/animation.velocity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/animation.velocity-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/debug.addIndicators.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/debug.addIndicators-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/functions.js": {
 		"ft": 64,
 		"mi": 1,
@@ -33,6 +60,24 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/assets\/javascript\/inactivePagePortalTween.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/inactivePagePortalTween-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/jquery.ScrollMagic.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/jquery.ScrollMagic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/PagePortalTween.js": {
 		"ft": 64,
 		"mi": 1,
@@ -42,56 +87,11 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/javascript\/plugins\/animation.gsap.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/animation.gsap-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/javascript\/plugins\/animation.velocity.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/animation.velocity-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/javascript\/plugins\/debug.addIndicators.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/debug.addIndicators-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/javascript\/plugins\/jquery.ScrollMagic.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/jquery.ScrollMagic-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/assets\/javascript\/require.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/require-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/assets\/javascript\/requirejs.config.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/requirejs.config-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -921,6 +921,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/require-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/requirejs.config-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/requirejs.config-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -3513,7 +3522,7 @@
 			"optionString": "{'skipBlankLines': false}"
 			},
 		"no-undef": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'typeof': false}"
 			},
 		"no-undef-init": {
@@ -3561,7 +3570,7 @@
 			"optionString": ""
 			},
 		"no-unused-vars": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
@@ -3817,7 +3826,7 @@
 	"externalServerAddress": "http:\/\/localhost.ell.splendid:9999\/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
-	"jsCheckerReservedNamesString": "require,define",
+	"jsCheckerReservedNamesString": "require,define,pageParams,ScrollMagic,jQuery,TimelineLite, TimelineMax,Power2,TweenMax",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,

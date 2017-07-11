@@ -14,8 +14,9 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
-
 </script>
+
+<script src="<?php echo THEME_URI ?>/build/require-min.js"></script>
 
 <?php wp_footer(); ?>
 
