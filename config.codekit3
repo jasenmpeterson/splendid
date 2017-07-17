@@ -42,15 +42,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/javascript\/functions.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/functions-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"\/assets\/javascript\/global.js": {
 		"ft": 64,
 		"mi": 1,
@@ -907,6 +898,15 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/build\/gsap-player-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/gsap-player-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/PagePortalTween-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1040,6 +1040,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/loops\/post-loop.php",
+		"oF": 0
+		},
+	"\/page-home.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-home.php",
 		"oF": 0
 		},
 	"\/page.php": {

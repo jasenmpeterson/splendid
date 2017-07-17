@@ -627,7 +627,7 @@ header {
   margin-bottom: 3rem; }
   .pageportal .label {
     opacity: 0; }
-  .pageportal.active .textmodule {
+  .pageportal .textmodule {
     box-shadow: 0 15px 15px -15px rgba(44,62,80,.5); }
   .pageportal .column:first-of-type {
     flex-basis: 40%;

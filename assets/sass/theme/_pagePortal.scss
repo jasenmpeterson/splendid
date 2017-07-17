@@ -15,7 +15,7 @@
     opacity: 0;
   }
 
-  &.active .textmodule {
+  .textmodule {
     @include box-shadow-bottom();
   }
 

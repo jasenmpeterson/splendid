@@ -15,7 +15,9 @@ require.config({
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
     ScrollMagicAnimation: 'animation.gsap',
+    ScrollMagicIndicators: 'debug.addindicators',
     pagePortalTween: 'pagePortalTween',
+    gsapPlayer: 'gsap-player',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
 });
