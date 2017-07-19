@@ -8,14 +8,29 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     const duration = '0.8'
     const delay = '0.2'
     const render = false
+    var currentLabel = null
+
+    // global inactive tween properties :
+    const inactiveEasing = 'Power2.easeIn'
+
+    // global reverse timeline tween properties :
+    const reversedelay = '0.5'
 
     // global vars :
     var prevPagePortal = null
-    var currentPagePortalContent = document.querySelector('.pageportal.active .textmodule')
+    var currentPagePortalTextModule = document.querySelector('.pageportal.active .textmodule')
 
     // declare timelines :
-    const pageportaltimeline = new TimelineMax()
-    const pageportaltimelinereverse = new TimelineMax()
+    const pageportaltimeline = new TimelineMax({
+      data: {
+        label: 'pageportaltimeline'
+      }
+    })
+    const pageportaltimelinereverse = new TimelineMax({
+      data: {
+        label: 'pageportaltimelinereverse'
+      }
+    })
 
     // add reversee timeline to primary timeline :
     pageportaltimeline.add(pageportaltimelinereverse, 'reverseTimeline')
@@ -33,10 +48,10 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     }
 
     // active textmodule tween :
-    pageportaltimeline.fromTo(currentPagePortalContent, duration, {
-      y: '10rem'
+    pageportaltimeline.fromTo(currentPagePortalTextModule, duration, {
+      y: '-20rem'
     }, {
-      y: '0',
+      y: 0,
       opacity: 1,
       zIndex: 2,
       delay: delay,
@@ -47,9 +62,9 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     const activelabel = document.querySelector('.pageportal.active .label')
 
     pageportaltimeline.fromTo(activelabel, duration, {
-      bottom: '-8rem'
+      x: '100rem'
     }, {
-      bottom: 0,
+      x: 0,
       opacity: 1,
       delay: delay,
       ease: easing
@@ -63,14 +78,12 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     // loop through each inactive page portal and set initial tween :
     for (var i = 0; i < elements[1].length; i++) {
       pageportaltimeline.fromTo(elements[1][i], duration, {
-        left: 0,
+        y: '20rem',
         top: '-5rem',
-        color: 'red',
         zIndex: 2
       }, {
-        left: '-20rem',
+        y: 0,
         opacity: 1,
-        color: 'blue',
         ease: easing
       }, 'scene' + sceneCount++)
     }
@@ -101,31 +114,79 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     // get next page portal :
     function getPortal(portal) {
 
-      console.log(portal)
+      // display info about overwritten tweens :
+      TweenLite.onOverwrite = function (overwritten, overwriting, target, props) {
+        console.log("tween that was overwritten");
+        console.log(overwritten.timeline.data.label);
+        console.log(overwritten);
 
-      // 'disable' current active portal and add it to 'pageportaltimelinereverse' :
+        console.log("tween that did the overwriting")
+        console.log(overwriting.timeline.data.label);
+        console.log(overwriting);
 
-      // inactive textmodule tween :
+        console.log("the target of the overwritten tween");
+        console.log(target.innerHTML);
 
-      const currentActiveTextModule = currentActivePortal.querySelector('.textmodule')
+        console.log("properties that were overwritten");
+        console.log(props);
+      }
 
-      pageportaltimelinereverse.to(currentActiveTextModule, duration, {
+      // active -> inactive textmodule tween :
+
+      const activeTextModule = currentActivePortal.querySelector('.textmodule')
+
+      pageportaltimelinereverse.fromTo(activeTextModule, duration, {
+        zIndex: 2,
+        opacity: 1
+      }, {
         opacity: 0.5,
+        x: '0',
         zIndex: 1,
-        ease: easing
+        delay: delay,
+        ease: inactiveEasing
       })
-      currentActiveTextModule.classList.remove('active')
-      currentActiveTextModule.classList.add('inactive')
 
-      // set prevPagePortal to inactive :
+      // active -> inactive label tween :
+
+      const activeLabel = currentActivePortal.querySelector('.label')
+
+      pageportaltimelinereverse.fromTo(activeLabel, duration, {
+        x: 0,
+        opacity: 1
+      }, {
+        x: '100rem',
+        opacity: 0,
+        delay: delay,
+        ease: inactiveEasing
+      })
+
+      // active -> inactive elements :
       prevPagePortal = currentActivePortal
-      prevPagePortal.classList.remove('active')
-      prevPagePortal.classList.add('inactive')
 
-      // assign new active portal :
+      var inactiveelements = [
+        activeTextModule,
+        prevPagePortal,
+        activeLabel
+      ]
+
+      for (var inactiveCount = 0; inactiveCount < inactiveelements.length; inactiveCount++) {
+        inactiveelements[inactiveCount].classList.remove('active')
+        inactiveelements[inactiveCount].classList.add('inactive')
+      }
+
+      // inactive -> active elements :
       currentActivePortal = portal
-      currentActivePortal.classList.remove('inactive')
-      currentActivePortal.classList.add('active')
+      currentActiveTextModule = portal.querySelector('.textmodule')
+
+      var activeelements = [
+        currentActivePortal,
+        currentActiveTextModule
+      ]
+
+      for (var activeCount = 0; activeCount < activeelements.length; activeCount++) {
+        activeelements[activeCount].classList.remove('inactive')
+        activeelements[activeCount].classList.add('active')
+      }
 
       // set new scroll magic trigger :
       PagePortalScene.triggerElement(currentActivePortal)
@@ -135,16 +196,16 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     // on update :
     PagePortalScene.on('update', function (e) {
 
-      // get play head status :
-      var playHeadStatus = pageportaltimeline.isActive() ? 'isPlaying' : 'isNotPlaying'
+      // get status of timeline :
+      var pageportaltimelineStatus = pageportaltimeline.isActive() ? 'isPlaying' : 'isNotPlaying'
 
       // get current label :
-      var currentLabel = pageportaltimeline.currentLabel()
+      currentLabel = pageportaltimeline.currentLabel()
 
       // store scroll direction :
       var scrollDirection = PagePortalController.info('scrollDirection')
 
-      if (scrollDirection == 'FORWARD' && currentLabel !== 'scene1' && playHeadStatus == 'isNotPlaying') {
+      if (scrollDirection == 'FORWARD' && pageportaltimelineStatus == 'isNotPlaying') {
 
         pageportaltimeline.play(currentLabel)
           .addPause(pageportaltimeline.getLabelAfter())
