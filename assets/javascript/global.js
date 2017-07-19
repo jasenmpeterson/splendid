@@ -46,8 +46,8 @@ if (typeof (mobileMenuButton) != 'undefined' && mobileMenuButton != null) {
 require(['pagePortalTween'], function (pagePortalTween) {
 
   // package elements :
-  const activeportal = document.querySelector('.pageportal.active')
-  const inactiveportal = document.querySelectorAll('.pageportal.inactive')
+  const activeportal = document.querySelector('.pageportal.active .textmodule.active')
+  const inactiveportal = document.querySelectorAll('.pageportal.inactive .textmodule.inactive')
   const elements = [
     activeportal,
     inactiveportal

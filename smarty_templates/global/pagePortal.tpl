@@ -11,7 +11,7 @@
 
     <section class="row">
 
-      <section class="column">
+      <section class="column pageportalcontent {$label|lower|replace: ' ' : ''}">
 
         <section class="box">
           {if !empty($content)}
@@ -24,7 +24,7 @@
 
       <section class="column">
 
-        <section class="FlexContainer textmodule image">
+        <section class="FlexContainer textmodule image {$label|lower|replace: ' ' : ''} {if $smarty.foreach.pageportal.iteration == 1}active{else}inactive{/if}">
 
           <section class="row">
 

@@ -2444,12 +2444,6 @@
 		"oAP": "\/templates\/global\/vars.php",
 		"oF": 0
 		},
-	"\/templates\/pages\/about.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/templates\/pages\/about.php",
-		"oF": 0
-		},
 	"\/templates\/pages\/contact.php": {
 		"ft": 8192,
 		"oA": 2,

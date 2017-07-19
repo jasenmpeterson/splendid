@@ -8,10 +8,11 @@
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
-  opacity: 0;
   margin-bottom: 3rem;
 
-  .label {
+  .label,
+  .pageportalcontent,
+  .textmodule {
     opacity: 0;
   }
 

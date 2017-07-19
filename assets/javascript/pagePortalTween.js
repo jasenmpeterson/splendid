@@ -5,26 +5,45 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
 
     // global tween properties :
     const easing = 'Power2.easeOut'
-    const duration = '0.5'
-    const delay = '0.05'
+    const duration = '0.8'
+    const delay = '0.2'
+    const render = false
 
-    // set initial active page portal:
-    var activePagePortal = elements[0]
+    // global vars :
+    var prevPagePortal = null
+    var currentPagePortalContent = document.querySelector('.pageportal.active .textmodule')
 
-    // declare timeline :
+    // declare timelines :
     const pageportaltimeline = new TimelineMax()
+    const pageportaltimelinereverse = new TimelineMax()
+
+    // add reversee timeline to primary timeline :
+    pageportaltimeline.add(pageportaltimelinereverse, 'reverseTimeline')
+
+    // active pageportal content tween :
+    if (document.querySelector('.pageportal.active .pageportalcontent')) {
+      const activepageportalcontent = document.querySelector('.pageportal.active .pageportalcontent')
+      pageportaltimeline.fromTo(activepageportalcontent, duration, {
+        y: '-20rem'
+      }, {
+        y: 0,
+        opacity: 1,
+        ease: easing
+      }, 'scene1')
+    }
 
     // active textmodule tween :
-    pageportaltimeline.fromTo(elements[0], duration, {
-      marginTop: '-3rem'
+    pageportaltimeline.fromTo(currentPagePortalContent, duration, {
+      y: '10rem'
     }, {
-      marginTop: '10rem',
+      y: '0',
       opacity: 1,
       zIndex: 2,
+      delay: delay,
       ease: easing
-    })
+    }, 'scene1')
 
-    // active label :
+    // active label tween :
     const activelabel = document.querySelector('.pageportal.active .label')
 
     pageportaltimeline.fromTo(activelabel, duration, {
@@ -32,27 +51,44 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     }, {
       bottom: 0,
       opacity: 1,
+      delay: delay,
       ease: easing
-    })
+    }, 'scene1')
 
     // inactive textmodule tweens :
 
+    // count scenes :
+    var sceneCount = 2
+
+    // loop through each inactive page portal and set initial tween :
     for (var i = 0; i < elements[1].length; i++) {
-      // inactive textmodule tween :
-      pageportaltimeline.to(elements[1][i], duration, {
+      pageportaltimeline.fromTo(elements[1][i], duration, {
         left: 0,
-        opacity: 0,
         top: '-5rem',
+        color: 'red',
         zIndex: 2
-      })
+      }, {
+        left: '-20rem',
+        opacity: 1,
+        color: 'blue',
+        ease: easing
+      }, 'scene' + sceneCount++)
     }
+
+    // pause immediately after scene1 completes :
+    pageportaltimeline.addPause(pageportaltimeline.getLabelAfter())
 
     // set active page portal controller :
     const PagePortalController = new ScrollMagic.Controller();
 
+    // current active textmodule :
+    var currentActivePortal = document.querySelector('.pageportal.active')
+
     // set active page portal scene :
     const PagePortalScene = new ScrollMagic.Scene({
-        triggerElement: document.querySelector('body')
+        triggerElement: currentActivePortal,
+        triggerHook: 'onEnter',
+        reverse: false
       })
       .addIndicators()
 
@@ -63,57 +99,61 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     PagePortalScene.addTo(PagePortalController)
 
     // get next page portal :
-    function getPortal(nextPortal) {
+    function getPortal(portal) {
 
-      pageportaltimeline.to(activePagePortal, duration, {
+      console.log(portal)
+
+      // 'disable' current active portal and add it to 'pageportaltimelinereverse' :
+
+      // inactive textmodule tween :
+
+      const currentActiveTextModule = currentActivePortal.querySelector('.textmodule')
+
+      pageportaltimelinereverse.to(currentActiveTextModule, duration, {
         opacity: 0.5,
         zIndex: 1,
-        delay: delay,
-        ease: easing,
-        onComplete: function () {
-          // remove active class from previous active portal :
-          activePagePortal.classList.remove('active')
-          activePagePortal.classList.remove('inactive')
-
-          // remove inactive class from current active portal :
-          nextPortal.classList.remove('inactive')
-          nextPortal.classList.add('active')
-
-          // set current active portal :
-          activePagePortal = nextPortal
-          PagePortalScene.triggerElement(activePagePortal)
-
-          console.log(PagePortalScene.triggerElement())
-
-          pageportaltimeline.pause()
-
-        }
+        ease: easing
       })
+      currentActiveTextModule.classList.remove('active')
+      currentActiveTextModule.classList.add('inactive')
+
+      // set prevPagePortal to inactive :
+      prevPagePortal = currentActivePortal
+      prevPagePortal.classList.remove('active')
+      prevPagePortal.classList.add('inactive')
+
+      // assign new active portal :
+      currentActivePortal = portal
+      currentActivePortal.classList.remove('inactive')
+      currentActivePortal.classList.add('active')
+
+      // set new scroll magic trigger :
+      PagePortalScene.triggerElement(currentActivePortal)
 
     }
 
-    // on progress
+    // on update :
     PagePortalScene.on('update', function (e) {
+
+      // get play head status :
+      var playHeadStatus = pageportaltimeline.isActive() ? 'isPlaying' : 'isNotPlaying'
+
+      // get current label :
+      var currentLabel = pageportaltimeline.currentLabel()
 
       // store scroll direction :
       var scrollDirection = PagePortalController.info('scrollDirection')
 
-      const nextPortal = activePagePortal.nextElementSibling
+      if (scrollDirection == 'FORWARD' && currentLabel !== 'scene1' && playHeadStatus == 'isNotPlaying') {
 
-      console.log(scrollDirection)
+        pageportaltimeline.play(currentLabel)
+          .addPause(pageportaltimeline.getLabelAfter())
 
-      if (scrollDirection == 'FORWARD') {
-
-        // display (next) active page portal :
-        pageportaltimeline.to(nextPortal, duration, {
-          left: '-20rem',
-          opacity: 1,
-          ease: easing
-        })
-
-        // get next portal :
-        getPortal(nextPortal)
-
+        // get next active portal :
+        const nextPortal = currentActivePortal.nextElementSibling
+        if (nextPortal.classList.contains('pageportal')) {
+          getPortal(nextPortal)
+        }
       }
 
     })

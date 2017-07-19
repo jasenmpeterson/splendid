@@ -623,9 +623,10 @@ header {
   margin: 0 auto;
   max-width: 1200px;
   position: relative;
-  opacity: 0;
   margin-bottom: 3rem; }
-  .pageportal .label {
+  .pageportal .label,
+  .pageportal .pageportalcontent,
+  .pageportal .textmodule {
     opacity: 0; }
   .pageportal .textmodule {
     box-shadow: 0 15px 15px -15px rgba(44,62,80,.5); }
