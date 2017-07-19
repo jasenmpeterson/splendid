@@ -9,10 +9,10 @@
   max-width: 1200px;
   position: relative;
   margin-bottom: 3rem;
+  opacity: 0.5;
 
   .label,
-  .pageportalcontent,
-  .textmodule {
+  .pageportalcontent {
     opacity: 0;
   }
 

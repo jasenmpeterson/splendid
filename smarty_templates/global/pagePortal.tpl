@@ -7,7 +7,7 @@
   {assign "pagelink" {$data[0][0]['page_link']}}
   {assign "image" {$data[0][0]['image']['url']}}
 
-  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''} {if $smarty.foreach.pageportal.iteration == 1}active{else}inactive{/if}">
+  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''}">
 
     <section class="row">
 
@@ -24,7 +24,7 @@
 
       <section class="column">
 
-        <section class="FlexContainer textmodule image {$label|lower|replace: ' ' : ''} {if $smarty.foreach.pageportal.iteration == 1}active{else}inactive{/if}">
+        <section class="FlexContainer textmodule image {$label|lower|replace: ' ' : ''}">
 
           <section class="row">
 

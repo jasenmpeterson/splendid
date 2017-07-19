@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-19 16:52:57
+/* Smarty version 3.1.30, created on 2017-07-19 22:15:58
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596f8e69adb9e6_54727688',
+  'unifunc' => 'content_596fda1e2ab841_76599221',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cd3a0250aa0ee9d789fe4c428649f3c7a70e0d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl',
-      1 => 1500483175,
+      1 => 1500502554,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596f8e69adb9e6_54727688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596fda1e2ab841_76599221 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_replace')) require_once '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty/libs/plugins/modifier.replace.php';
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['pageportal']->value, 'data', false, NULL, 'pageportal', array (
-  'iteration' => true,
 ));
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['data']->value) {
-$_smarty_tpl->tpl_vars['__smarty_foreach_pageportal']->value['iteration']++;
 ?>
 
   
@@ -58,7 +56,7 @@ $_smarty_tpl->_assignInScope('image', $_prefixVariable5);
 ?>
 
   <section class="FlexContainer pageportal <?php echo smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['label']->value, 'UTF-8'),' ','');?>
- <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_pageportal']->value['iteration']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_pageportal']->value['iteration'] : null) == 1) {?>active<?php } else { ?>inactive<?php }?>">
+">
 
     <section class="row">
 
@@ -78,7 +76,7 @@ $_smarty_tpl->_assignInScope('image', $_prefixVariable5);
       <section class="column">
 
         <section class="FlexContainer textmodule image <?php echo smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['label']->value, 'UTF-8'),' ','');?>
- <?php if ((isset($_smarty_tpl->tpl_vars['__smarty_foreach_pageportal']->value['iteration']) ? $_smarty_tpl->tpl_vars['__smarty_foreach_pageportal']->value['iteration'] : null) == 1) {?>active<?php } else { ?>inactive<?php }?>">
+">
 
           <section class="row">
 
