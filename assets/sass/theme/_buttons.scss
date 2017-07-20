@@ -1,8 +1,16 @@
 a.btn {
   font-weight: 700;
+  background-color: #fff;
 }
 
 a.btn.white {
-  background-color: #fff;
   color: $royalblue;
+}
+
+a.btn.pearlaqua {
+  color: $pearlaqua;
+}
+
+a.btn.mandarin {
+  color: $mandarin;
 }

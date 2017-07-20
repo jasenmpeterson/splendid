@@ -1,9 +1,5 @@
 <?php
 
-include(locate_template('/templates/global/vars.php'));
-include(locate_template('/templates/global/navigation.php'));
-
-
 // smarty :
 
 // logo :

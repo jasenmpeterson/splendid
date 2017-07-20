@@ -8,20 +8,9 @@
   {assign "class" {$data[0][0]['html_class']}}
   {assign "image" {$data[0][0]['image']['url']}}
 
-  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''} {$class|lower}">
+  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''} {$class|lower} {if $smarty.foreach.pageportal.iteration == 1}active{/if}">
 
     <section class="row">
-
-      <section class="column pageportalcontent">
-
-        <section class="box">
-          {if !empty($content)}
-            {$content}
-          {/if}
-        </section>
-
-      </section>
-      <!--/.column-->
 
       <section class="column">
 
@@ -36,7 +25,7 @@
                   <span class="hr"></span>
                 {$header}
                 </h2>
-                <a class="btn white" href="{$pagelink}">{$label}</a>
+                <a class="btn {if !empty($class)} {$class|lower} {else} white {/if}" href="{$pagelink}">{$label}</a>
               </section>
 
             </section>

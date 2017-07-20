@@ -18,6 +18,10 @@ $transitionDelay: 0.5s;
   transform: translateX(-15rem);
   opacity: 0.5;
 
+  .row {
+    justify-content: flex-end;
+  }
+
   * {
     transition: $transitionOut;
   }

@@ -2,25 +2,21 @@
 
 $smarty = new Smarty_Base();
 
-if (!is_home()) :
+// get the queried object and sanitize it :
 
-    // get the queried object and sanitize it :
+$current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
 
-    $current_page = sanitize_post($GLOBALS['wp_the_query']->get_queried_object());
+// get the page slug :
 
-    // get the page slug :
+$pageSlug = $current_page->post_name;
 
-    $pageSlug = $current_page->post_name;
+$smarty->assign('pageSlug', $pageSlug);
 
-    $smarty->assign('pageSlug', $pageSlug);
+// get page ID :
 
-    // get page ID :
+$pageID = $current_page->ID;
 
-    $pageID = $current_page->ID;
-
-    $smarty->assign('pageID', $pageID);
-
-endif;
+$smarty->assign('pageID', $pageID);
 
 // theme uri - functions.php :
 
@@ -41,6 +37,11 @@ $smarty->assign('SiteLogo', get_field('logo_svg_code', 'option'));
 // address :
 
 $smarty->assign('address', get_field('address', 'option'));
+
+// phone :
+
+$smarty->assign('officePhone', get_field('office_phone', 'option'));
+$contactPhone = get_field('office_phone', 'option');
 
 // curr year :
 

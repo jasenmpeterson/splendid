@@ -7,6 +7,9 @@ include(locate_template('/templates/global/vars.php'));
 get_header();
 include(locate_template('/templates/global/header.php'));
 
+// site intro :
+$smarty->assign('siteIntro', get_field('site_intro', $pageID));
+
 // page portal :
 
 use PagePortal\PagePortal;

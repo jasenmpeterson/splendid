@@ -11,12 +11,16 @@ require.config({
   paths: {
     TweenMax: 'TweenMax',
     TimelineLite: 'TweenMax',
+    TweenLite: 'TweenMax',
     TimelineMax: 'TweenMax',
+    DrawSVGPlugin: 'DrawSVGPlugin',
+    CustomEase: 'CustomEase',
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
     ScrollMagicAnimation: 'animation.gsap',
     ScrollMagicIndicators: 'debug.addindicators',
     pagePortalTween: 'pagePortalTween',
+    shapeTweens: 'shapeTweens',
     gsapPlayer: 'gsap-player',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
@@ -48,5 +52,24 @@ require(['pagePortalTween'], function (pagePortalTween) {
   // package elements :
   const pageportals = document.querySelectorAll('.pageportal')
   pagePortalTween(pageportals)
+
+});
+
+
+// shape tweens :
+
+require(['shapeTweens'], function (shapeTweens) {
+
+  // wavyline :
+  const path = document.querySelectorAll('.wavyline svg path')
+  const ellipse = document.querySelectorAll('.wavyline svg ellipse')
+
+  const elements = [
+    path[0],
+    path[1],
+    ellipse[0],
+    ellipse[1]
+  ]
+  shapeTweens(elements)
 
 });
