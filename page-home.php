@@ -12,7 +12,7 @@ include(locate_template('/templates/global/header.php'));
 use PagePortal\PagePortal;
 
 $pagePortal = new PagePortal();
-$pagePortal->displayPagePortal(array(8,12,10,16)); // page IDs
+$pagePortal->displayPagePortal(array(8,10,12,16)); // page IDs
 
 // smarty :
 

@@ -105,19 +105,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/sass\/components\/global\/_animations.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_animations.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/assets\/sass\/components\/global\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -153,19 +140,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/build\/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/components\/global\/_hr.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_hr.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -636,6 +610,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_animations.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_animations.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -658,6 +645,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/build\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/theme\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_footer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -727,6 +727,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_pagewrap.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_pagewrap.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_textmodule.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -749,19 +762,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/build\/_typography.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/utilities\/_animations.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/build\/_animations.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

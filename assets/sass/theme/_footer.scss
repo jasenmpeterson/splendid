@@ -1,0 +1,43 @@
+footer {
+  background: #fff;
+  color: $pearlaqua;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  &:first-of-type {
+    text-align: right;
+  }
+}
+
+footer .FlexContainer .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .FlexContainer .column:first-of-type {
+  padding-left: 5rem;
+}
+
+footer .FlexContainer .column:last-of-type {
+  padding-right: 5rem;
+}
+
+footer .logocontainer a {
+  margin: 0;
+}
+
+footer .sitelogo {
+  width: 50%;
+
+  circle {
+    display: none;
+  }
+
+  path {
+    fill: $pearlaqua;
+  }
+}

@@ -5,13 +5,14 @@
   {assign "header" {$data[0][0]['header']}}
   {assign "content" {$data[0][0]['content']}}
   {assign "pagelink" {$data[0][0]['page_link']}}
+  {assign "class" {$data[0][0]['html_class']}}
   {assign "image" {$data[0][0]['image']['url']}}
 
-  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''}">
+  <section class="FlexContainer pageportal {$label|lower|replace: ' ' : ''} {$class|lower}">
 
     <section class="row">
 
-      <section class="column pageportalcontent {$label|lower|replace: ' ' : ''}">
+      <section class="column pageportalcontent">
 
         <section class="box">
           {if !empty($content)}
@@ -24,14 +25,17 @@
 
       <section class="column">
 
-        <section class="FlexContainer textmodule image {$label|lower|replace: ' ' : ''}">
+        <section class="FlexContainer textmodule image">
 
           <section class="row">
 
             <section class="column content">
 
               <section class="box">
-                <h2>{$header}</h2>
+                <h2 class="label transparent">
+                  <span class="hr"></span>
+                {$header}
+                </h2>
                 <a class="btn white" href="{$pagelink}">{$label}</a>
               </section>
 
@@ -39,7 +43,10 @@
             <!--/content-->
 
             <section class="column image" style="background: url({$image})">
-              <h4 class="label">{$label}</h4>
+              <h4 class="label transform">
+                <span class="hr"></span>
+                {$label}
+              </h4>
             </section>
             <!--/image-->
 

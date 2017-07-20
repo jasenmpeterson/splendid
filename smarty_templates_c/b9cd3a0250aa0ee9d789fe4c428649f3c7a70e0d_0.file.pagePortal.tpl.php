@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-19 22:15:58
+/* Smarty version 3.1.30, created on 2017-07-20 19:20:02
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596fda1e2ab841_76599221',
+  'unifunc' => 'content_59710262712aa7_35857755',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cd3a0250aa0ee9d789fe4c428649f3c7a70e0d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl',
-      1 => 1500502554,
+      1 => 1500578399,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596fda1e2ab841_76599221 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59710262712aa7_35857755 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_replace')) require_once '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty/libs/plugins/modifier.replace.php';
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['pageportal']->value, 'data', false, NULL, 'pageportal', array (
 ));
@@ -50,18 +50,23 @@ $_prefixVariable4=ob_get_clean();
 $_smarty_tpl->_assignInScope('pagelink', $_prefixVariable4);
 ?>
   <?php ob_start();
-echo $_smarty_tpl->tpl_vars['data']->value[0][0]['image']['url'];
+echo $_smarty_tpl->tpl_vars['data']->value[0][0]['html_class'];
 $_prefixVariable5=ob_get_clean();
-$_smarty_tpl->_assignInScope('image', $_prefixVariable5);
+$_smarty_tpl->_assignInScope('class', $_prefixVariable5);
+?>
+  <?php ob_start();
+echo $_smarty_tpl->tpl_vars['data']->value[0][0]['image']['url'];
+$_prefixVariable6=ob_get_clean();
+$_smarty_tpl->_assignInScope('image', $_prefixVariable6);
 ?>
 
   <section class="FlexContainer pageportal <?php echo smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['label']->value, 'UTF-8'),' ','');?>
+ <?php echo mb_strtolower($_smarty_tpl->tpl_vars['class']->value, 'UTF-8');?>
 ">
 
     <section class="row">
 
-      <section class="column pageportalcontent <?php echo smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['label']->value, 'UTF-8'),' ','');?>
-">
+      <section class="column pageportalcontent">
 
         <section class="box">
           <?php if (!empty($_smarty_tpl->tpl_vars['content']->value)) {?>
@@ -75,16 +80,18 @@ $_smarty_tpl->_assignInScope('image', $_prefixVariable5);
 
       <section class="column">
 
-        <section class="FlexContainer textmodule image <?php echo smarty_modifier_replace(mb_strtolower($_smarty_tpl->tpl_vars['label']->value, 'UTF-8'),' ','');?>
-">
+        <section class="FlexContainer textmodule image">
 
           <section class="row">
 
             <section class="column content">
 
               <section class="box">
-                <h2><?php echo $_smarty_tpl->tpl_vars['header']->value;?>
-</h2>
+                <h2 class="label transparent">
+                  <span class="hr"></span>
+                <?php echo $_smarty_tpl->tpl_vars['header']->value;?>
+
+                </h2>
                 <a class="btn white" href="<?php echo $_smarty_tpl->tpl_vars['pagelink']->value;?>
 "><?php echo $_smarty_tpl->tpl_vars['label']->value;?>
 </a>
@@ -95,8 +102,11 @@ $_smarty_tpl->_assignInScope('image', $_prefixVariable5);
 
             <section class="column image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['image']->value;?>
 )">
-              <h4 class="label"><?php echo $_smarty_tpl->tpl_vars['label']->value;?>
-</h4>
+              <h4 class="label transform">
+                <span class="hr"></span>
+                <?php echo $_smarty_tpl->tpl_vars['label']->value;?>
+
+              </h4>
             </section>
             <!--/image-->
 

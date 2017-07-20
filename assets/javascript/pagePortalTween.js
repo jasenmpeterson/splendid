@@ -13,53 +13,28 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
 
     // scrollmagic vars :
     var triggers = null
-    const sceneController = new ScrollMagic.Controller()
+    const sceneController = new ScrollMagic.Controller({
+      addIndicators: true,
+      globalSceneOptions: {
+        duration: 300
+      }
+    })
 
     // create tweens:
     function createTweens() {
       for (var i = 0; i < elements.length; i++) {
 
-        // tween name :
-        var tweenName = 'pagePortalTween' + i
-
         // current pageportal :
         var pageportal = elements[i]
-
-        // set current pageportal to active :
-        elements[i].classList.add('active')
-
-        // properties :
-        var zIndex = (pageportal.classList.contains('active')) ? 2 : 1
-        var opacity = (pageportal.classList.contains('active')) ? 1 : 0.5
-
-        // current timeline :
-        var tl = new TimelineMax()
-
-        // set page portal elements :
-        pagePortalLabel = pageportal.querySelector('h4.label')
-
-        // tweens:
-        tl.to(pageportal, duration, {
-            opacity: opacity,
-            zIndex: zIndex,
-            ease: ease
-          })
-          .fromTo(pagePortalLabel, duration, {
-            x: '100rem'
-          }, {
-            x: 0,
-            opacity: 1,
-            ease: ease
-          })
-
-        elements[i].classList.remove('active')
+        var pageportalClassName = elements[i].classList[2]
 
         // scenes :
-        new ScrollMagic.Scene({
+        var scene = new ScrollMagic.Scene({
             triggerElement: pageportal
           })
-          .setTween(tl)
           .addTo(sceneController)
+
+        scene.setClassToggle('.' + pageportalClassName, 'active')
 
       }
 
