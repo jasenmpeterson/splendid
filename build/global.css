@@ -390,7 +390,7 @@ a {
 
 @-webkit-keyframes slide-in-right {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(15rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -398,7 +398,7 @@ a {
 
 @-moz-keyframes slide-in-right {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(15rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -406,7 +406,7 @@ a {
 
 @-ms-keyframes slide-in-right {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(15rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -414,7 +414,7 @@ a {
 
 @-o-keyframes slide-in-right {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(15rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -422,7 +422,7 @@ a {
 
 @keyframes slide-in-right {
   0% {
-    transform: translateX(5rem);
+    transform: translateX(15rem);
     opacity: 0; }
   100% {
     transform: translateX(0);
@@ -518,6 +518,126 @@ a {
     transform-origin: left;
     opacity: 1; } }
 
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-moz-keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-ms-keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-o-keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+@-webkit-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-moz-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-ms-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@-o-keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1); }
+  30% {
+    transform: scale3d(1.25, 0.75, 1); }
+  40% {
+    transform: scale3d(0.75, 1.25, 1); }
+  50% {
+    transform: scale3d(1.15, 0.85, 1); }
+  65% {
+    transform: scale3d(0.95, 1.05, 1); }
+  75% {
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    transform: scale3d(1, 1, 1); } }
+
 html {
   font-family: 'Prompt', sans-serif; }
 
@@ -578,6 +698,8 @@ ul.dental-services {
 .logocontainer a {
   position: relative;
   margin-top: -10rem; }
+  .logocontainer a:hover {
+    animation: jello-horizontal 0.9s; }
 
 a {
   text-decoration: none; }
@@ -592,7 +714,9 @@ header {
 
 footer {
   background: #fff;
-  color: #81CDC0; }
+  color: #81CDC0;
+  position: relative;
+  z-index: 2; }
 
 footer p {
   font-size: 1.2rem;
@@ -630,9 +754,45 @@ footer .sitelogo {
       margin-right: 0; }
   .navigationcontainer nav a {
     color: #040F5D;
-    font-weight: 500; }
+    font-weight: 500;
+    position: relative;
+    padding: 0 1rem;
+    line-height: 3rem;
+    z-index: 2;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .navigationcontainer nav a:before {
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      opacity: 0;
+      height: 100%;
+      right: 0;
+      transition: inherit;
+      display: block;
+      content: ''; }
     .navigationcontainer nav a:hover {
       color: #F37045; }
+      .navigationcontainer nav a:hover:before {
+        outline: 0;
+        opacity: 1;
+        width: 100%;
+        background-color: #040F5D;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+      .navigationcontainer nav a:hover:focus:before {
+        outline: 0;
+        opacity: 1;
+        width: 100%;
+        background-color: #040F5D;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
 .pageportal > .row > .column > .box {
   padding: 0 3rem; }
@@ -733,20 +893,52 @@ footer .sitelogo {
 
 a.btn {
   font-weight: 700;
-  background-color: #fff; }
+  background-color: #fff;
+  position: relative;
+  color: #040F5D;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  text-align: center;
+  transition: 0.1s ease-in-out !important; }
+  a.btn:hover p {
+    color: #fff; }
 
-a.btn.white {
-  color: #040F5D; }
+a.btn p {
+  font-size: 1.2rem;
+  margin: 0;
+  position: relative;
+  z-index: 2; }
+
+a.btn span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #81CDC0;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out !important;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  left: 0; }
+
+a.btn:hover span {
+  width: 225%;
+  height: 562.5px; }
 
 a.btn.pearlaqua {
   color: #81CDC0; }
+  a.btn.pearlaqua span {
+    background-color: #F37045; }
 
 a.btn.mandarin {
   color: #F37045; }
 
 .pagewrap {
   margin: 10rem 0;
-  position: relative; }
+  position: relative;
+  flex: 1; }
 
 .siteintro {
   position: fixed;
@@ -757,13 +949,15 @@ a.btn.mandarin {
   line-height: 2rem;
   width: 40rem;
   max-width: 100%;
-  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.5s; }
 
 .wavyline {
   position: fixed;
   left: 0;
   top: 50rem;
-  width: 40rem; }
+  width: 40rem;
+  z-index: 2; }
 
 .wavyline svg ellipse,
 .wavyline svg path {
@@ -782,6 +976,23 @@ a.btn.mandarin {
   stroke-width: 4;
   stroke-miterlimit: 10; }
 
+.lines {
+  transform: rotate(315deg);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 5%;
+  opacity: 0.1; }
+  .lines svg {
+    height: 100%;
+    width: 100%; }
+  .lines svg path {
+    fill: none;
+    stroke: #81CDC0;
+    stroke-width: 10px;
+    transform: scale(1); }
+
 .specialoffers {
   position: fixed;
   left: 0;
@@ -792,14 +1003,22 @@ a.btn.mandarin {
   color: #F37045;
   letter-spacing: 0.2rem;
   animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.3s; }
+  animation-delay: 0.3s;
+  z-index: 2; }
 
 .specialoffers h4.label {
   padding: 1rem;
   font-size: 1.4rem;
   margin-top: 1rem; }
 
-body {
-  background-color: #DFF2EF; }
+body.FlexContainer {
+  background-color: #DFF2EF;
+  background-image: url("../img/bg/bkgrnd_photos.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
 
 /*# sourceMappingURL=global.css.map */

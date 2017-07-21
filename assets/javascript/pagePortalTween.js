@@ -3,10 +3,8 @@
 define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './TweenMax', './ScrollMagicIndicators'], function (ScrollMagic, ScrollMagicJQuery, ScrollMagicAnimation, ScrollMagicIndicators, TweenMax) {
   return function (elements) {
 
-    // timeline max properties :
-    const duration = 0.5
-    const delay = 0.5
-    const ease = 'Power2.easeOut'
+    // global vars
+    var scene = null;
 
     // page portal elements :
     var pagePortalLabel = null
@@ -16,12 +14,13 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
     const sceneController = new ScrollMagic.Controller({
       addIndicators: true,
       globalSceneOptions: {
-        duration: 300
+        duration: 355
       }
     })
 
     // create tweens:
     function createTweens() {
+
       for (var i = 0; i < elements.length; i++) {
 
         // current pageportal :
@@ -29,7 +28,7 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
         var pageportalClassName = elements[i].classList[2]
 
         // scenes :
-        var scene = new ScrollMagic.Scene({
+        scene = new ScrollMagic.Scene({
             triggerElement: pageportal
           })
           .addTo(sceneController)

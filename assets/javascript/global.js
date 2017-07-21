@@ -21,7 +21,6 @@ require.config({
     ScrollMagicIndicators: 'debug.addindicators',
     pagePortalTween: 'pagePortalTween',
     shapeTweens: 'shapeTweens',
-    gsapPlayer: 'gsap-player',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
 });

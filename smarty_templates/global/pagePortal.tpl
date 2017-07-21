@@ -25,7 +25,10 @@
                   <span class="hr"></span>
                 {$header}
                 </h2>
-                <a class="btn {if !empty($class)} {$class|lower} {else} white {/if}" href="{$pagelink}">{$label}</a>
+                <a class="btn {if !empty($class)} {$class|lower} {else} white {/if}" href="{$pagelink}">
+                  <p>{$label}</p>
+                  <span></span>
+                </a>
               </section>
 
             </section>

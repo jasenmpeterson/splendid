@@ -33,6 +33,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/javascript\/buttons.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/buttons-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/assets\/javascript\/CustomEase.js": {
 		"ft": 64,
 		"mi": 1,
@@ -936,6 +945,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/build\/buttons-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/buttons-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/functions-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1105,6 +1123,27 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/bg\/bkgrnd_photos.jpg": {
+		"ft": 16384,
+		"iS": 66850,
+		"oA": 0,
+		"oAP": "\/img\/bg\/bkgrnd_photos.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/img\/bg\/bkgrnd_photos.png": {
+		"ft": 32768,
+		"iS": 219743,
+		"oA": 0,
+		"oAP": "\/img\/bg\/bkgrnd_photos.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1121,6 +1160,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/loops\/post-loop.php",
+		"oF": 0
+		},
+	"\/page-appointments.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-appointments.php",
 		"oF": 0
 		},
 	"\/page-home.php": {
@@ -2341,6 +2386,12 @@
 		"oAP": "\/smarty_templates\/pages\/about.tpl",
 		"oF": 0
 		},
+	"\/smarty_templates\/pages\/appointments.tpl": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates\/pages\/appointments.tpl",
+		"oF": 0
+		},
 	"\/smarty_templates\/pages\/contact.tpl": {
 		"ft": 8192,
 		"oA": 2,
@@ -2387,6 +2438,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/smarty_templates_c\/5e8849164fc6736193125918bdc505dcde5ac785_0.file.pageBanner.tpl.php",
+		"oF": 0
+		},
+	"\/smarty_templates_c\/65508257574197cc42d1db0e619374146abb62aa_0.file.appointments.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates_c\/65508257574197cc42d1db0e619374146abb62aa_0.file.appointments.tpl.php",
 		"oF": 0
 		},
 	"\/smarty_templates_c\/681c05b3f905fc02060a1ddc37dec341f8a9666e_0.file.contact.tpl.php": {
@@ -2970,7 +3027,7 @@
 			},
 		"arrow-parens": {
 			"active": 1,
-			"optionString": "'always'"
+			"optionString": "'as-needed'"
 			},
 		"arrow-spacing": {
 			"active": 1,

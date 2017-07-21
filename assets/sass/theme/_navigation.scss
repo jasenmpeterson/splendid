@@ -13,9 +13,53 @@
   a {
     color: $royalblue;
     font-weight: 500;
+    position: relative;
+    padding: 0 1rem;
+    line-height: 3rem;
+    z-index: 2;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: color 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+    &:before {
+      position: absolute;
+      z-index: -1;
+      width: 0;
+      opacity: 0;
+      height: 100%;
+      right: 0;
+      transition: inherit;
+      display: block;
+      content: '';
+    }
 
     &:hover {
       color: $mandarin;
+
+      &:before {
+        outline: 0;
+        opacity: 1;
+        width: 100%;
+        background-color: $royalblue;
+        transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+      }
+
+      &:focus {
+        &:before {
+          outline: 0;
+          opacity: 1;
+          width: 100%;
+          background-color: $royalblue;
+          transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+        }
+      }
     }
   }
 }

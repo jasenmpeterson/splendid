@@ -31,6 +31,13 @@
 @import 'theme/shapes';
 @import 'theme/specialoffers';
 
-body {
+body.FlexContainer {
   background-color: $azuerieshwhite;
+  background-image: url("../img/bg/bkgrnd_photos.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }

@@ -9,6 +9,7 @@
   letter-spacing: 0.2rem;
   animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 0.3s;
+  z-index: 2;
 }
 
 .specialoffers h4.label {
