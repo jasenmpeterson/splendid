@@ -80,6 +80,7 @@ class Smarty_Wordpress extends Smarty_Base
 function theme_assets()
 {
     wp_enqueue_script('jquery');
+    wp_enqueue_script('gmaps-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA3Ibb_wNxXG5xwHIWvti3Ni_qYybQMNac', array(), null, true);
     wp_register_script('javascript', THEME_URI . '/build/global-min.js', array(), null, true);
     wp_enqueue_style('css', THEME_URI . '/build/global.css', array(), null);
     wp_enqueue_style('typography', 'https://fonts.googleapis.com/css?family=Prompt:400,500,700', array(), null);
@@ -182,13 +183,13 @@ endif;
 
 // remove content editor from pages :
 
-add_action('admin_init', 'hide_editor');
-
-function hide_editor()
-{
-    remove_post_type_support('page', 'editor');
-    remove_post_type_support('service_article', 'editor');
-}
+// add_action('admin_init', 'hide_editor');
+//
+// function hide_editor()
+// {
+//     remove_post_type_support('page', 'editor');
+//     remove_post_type_support('service_article', 'editor');
+// }
 
 // allow for Draft Pages to be set as parent pages -
 // in the evnet I want to organize the pages on a menu but do not want to display a parent page on the front end
@@ -285,32 +286,13 @@ register_nav_menus(array(
 
 ));
 
-// custom excerpt length :
+// custom text length :
 
-function excerpt($limit)
+function truncate($text, $length)
 {
-    $excerpt = explode(' ', get_the_excerpt(), $limit);
-    if (count($excerpt)>=$limit) {
-        array_pop($excerpt);
-        $excerpt = implode(" ", $excerpt).'...';
-    } else {
-        $excerpt = implode(" ", $excerpt);
+    $length = abs((int)$length);
+    if (strlen($text) > $length) {
+        $text = preg_replace("/^(.{1,$length})(\s.*|$)/s", '\\1...', $text);
     }
-    $excerpt = preg_replace('`[[^]]*]`', '', $excerpt);
-    return $excerpt;
-}
-
-function content($limit)
-{
-    $content = explode(' ', get_the_content(), $limit);
-    if (count($content)>=$limit) {
-        array_pop($content);
-        $content = implode(" ", $content).'...';
-    } else {
-        $content = implode(" ", $content);
-    }
-    $content = preg_replace('/[.+]/', '', $content);
-    $content = apply_filters('the_content', $content);
-    $content = str_replace(']]>', ']]&gt;', $content);
-    return $content;
+    return($text);
 }

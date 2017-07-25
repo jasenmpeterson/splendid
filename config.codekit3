@@ -60,6 +60,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/javascript\/dentistAJAX.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/dentistAJAX-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/assets\/javascript\/DrawSVGPlugin.js": {
 		"ft": 64,
 		"mi": 1,
@@ -78,6 +87,15 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/assets\/javascript\/gmaps.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/gmaps-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/inactivePagePortalTween.js": {
 		"ft": 64,
 		"mi": 1,
@@ -95,6 +113,12 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/assets\/javascript\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/assets\/javascript\/node_modules",
+		"oF": 0
 		},
 	"\/assets\/javascript\/PagePortalTween.js": {
 		"ft": 64,
@@ -119,6 +143,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/ScrollMagic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/servicesAJAX.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/servicesAJAX-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -241,58 +274,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/sass\/build\/_socialMediaIcons.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/components\/pages\/_about.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_about.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/components\/pages\/_contact.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_contact.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/components\/pages\/_home.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_home.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/components\/pages\/_interior.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_interior.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -646,6 +627,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_ajax.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_ajax.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_animations.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -685,6 +679,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_dentist.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_dentist.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/theme\/_featuredImage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_featuredImage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -698,6 +718,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_gmap.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_gmap.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_header.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -707,6 +740,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/build\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/theme\/_interiorPage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_interiorPage.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -750,6 +796,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_page-about.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_page-about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/theme\/_page-services.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_page-services.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_pagePortal.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -785,6 +857,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/build\/_shapes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/theme\/_sidebar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_sidebar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -954,6 +1039,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/build\/dentistAJAX-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/dentistAJAX-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/functions-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -987,6 +1081,15 @@
 		"oA": 2,
 		"oAP": "\/build\/global.css.map",
 		"oF": 0
+		},
+	"\/build\/gmaps-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/gmaps-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/build\/gsap-player-min.js": {
 		"ft": 64,
@@ -1029,6 +1132,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/ScrollMagic-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/servicesAJAX-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/servicesAJAX-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1162,6 +1274,12 @@
 		"oAP": "\/loops\/post-loop.php",
 		"oF": 0
 		},
+	"\/page-about.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-about.php",
+		"oF": 0
+		},
 	"\/page-appointments.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -1172,6 +1290,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-home.php",
+		"oF": 0
+		},
+	"\/page-services.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-services.php",
 		"oF": 0
 		},
 	"\/page.php": {
@@ -2404,6 +2528,18 @@
 		"oAP": "\/smarty_templates\/pages\/home.tpl",
 		"oF": 0
 		},
+	"\/smarty_templates\/pages\/services.tpl": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates\/pages\/services.tpl",
+		"oF": 0
+		},
+	"\/smarty_templates_c\/0dc5e3fbb4e7a3b8e8ad5949c013c17dda0d8baf_0.file.services.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates_c\/0dc5e3fbb4e7a3b8e8ad5949c013c17dda0d8baf_0.file.services.tpl.php",
+		"oF": 0
+		},
 	"\/smarty_templates_c\/2fcc6e9e4c181921741693e36b524aac1b089e45_0.file.header.tpl.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2548,6 +2684,12 @@
 		"oAP": "\/smarty_templates_c\/d1b93cc45d9a6acd709d2bf6b502fee521f754e4_0.file.about.tpl.php",
 		"oF": 0
 		},
+	"\/smarty_templates_c\/d5adbe65df4e0d1a95bd0045ad75a41ed93f41ba_0.file.about.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates_c\/d5adbe65df4e0d1a95bd0045ad75a41ed93f41ba_0.file.about.tpl.php",
+		"oF": 0
+		},
 	"\/smarty_templates_c\/e62a8b78410a24d5cd8700916ec1f0589e72e094_0.file.footer.tpl.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2586,18 +2728,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/templates\/global\/vars.php",
-		"oF": 0
-		},
-	"\/templates\/pages\/contact.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/templates\/pages\/contact.php",
-		"oF": 0
-		},
-	"\/templates\/pages\/home.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/templates\/pages\/home.php",
 		"oF": 0
 		}
 	},

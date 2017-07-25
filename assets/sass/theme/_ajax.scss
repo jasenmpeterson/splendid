@@ -1,0 +1,33 @@
+.ajaxcontent {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255,255,255,8);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  svg {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.ajaxloader svg {
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.ajaxloader svg circle {
+  display: none;
+}
+
+.ajaxloader svg path {
+  fill: #81CDC0;
+}

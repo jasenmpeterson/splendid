@@ -20,7 +20,13 @@
 
 </head>
 
-<body <?php body_class('FlexContainer'); ?>>
+<body
+<?php
+
+  (!is_front_page()) ? body_class('FlexContainer interiorPage')  : body_class('FlexContainer');
+
+?>
+>
 
 <?php
   include(locate_template('/templates/global/vars.php'));

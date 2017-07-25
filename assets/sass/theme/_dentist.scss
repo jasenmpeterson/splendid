@@ -1,0 +1,91 @@
+.dentists.FlexContainer {
+  max-width: 150.00rem;
+  margin: 0 auto 15rem;
+}
+
+.dentists.FlexContainer .column {
+  padding: 0 3rem;
+}
+
+.dentists.FlexContainer .row:last-of-type .column {
+  width: 33.3%;
+  flex-basis: 33.3%;
+}
+
+.dentists.FlexContainer .row:first-of-type .column {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.dentists h2 {
+  color: $pearlaqua;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10rem;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: $pearlaqua;
+    width: 55%;
+    margin: 2rem auto;
+  }
+}
+
+.dentistContent h5 {
+  margin: 3rem 0;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.dentists .inner {
+  background-color: #fff;
+  padding: 4rem;
+  position: relative;
+  max-width: 40rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.dentists .inner:before {
+  content: '';
+  background-color: $pearlaqua;
+  height: 15rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dentists .inner .dentistImage {
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+
+.dentists .inner .dentistImage span.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  background-position: center center !important;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.dentists .inner .dentistImage span.circle {
+  display: block;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: $pearlaqua;
+  opacity: 0.5;
+  position: absolute;
+  bottom: -1rem;
+}

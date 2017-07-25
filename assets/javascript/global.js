@@ -18,9 +18,13 @@ require.config({
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
     ScrollMagicAnimation: 'animation.gsap',
-    ScrollMagicIndicators: 'debug.addindicators',
+    ScrollMagicIndicators: 'debug.addIndicators',
     pagePortalTween: 'pagePortalTween',
     shapeTweens: 'shapeTweens',
+    dentistAJAX: 'dentistAJAX',
+    servicesAJAX: 'servicesAJAX',
+    gmaps: 'gmaps',
+    axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
 });
@@ -72,3 +76,31 @@ require(['shapeTweens'], function (shapeTweens) {
   shapeTweens(elements)
 
 });
+
+// AJAX URL :
+
+const siteURL = pageParams.root
+
+// dentist AJAX :
+
+require(['dentistAJAX'], function (dentistAJAX, ajaxURL) {
+
+  const elements = document.querySelectorAll('.dentists .ajaxbutton')
+
+  dentistAJAX(elements, siteURL)
+
+});
+
+// dentist AJAX :
+
+require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
+
+  const elements = document.querySelectorAll('.services .ajaxbutton')
+
+  servicesAJAX(elements, siteURL)
+
+});
+
+// gmaps :
+
+require(['gmaps']);

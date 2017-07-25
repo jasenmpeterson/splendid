@@ -1,3 +1,12 @@
 a {
   text-decoration: none;
+  color: $mandarin;
+
+  &:hover {
+    color: $royalblue;
+  }
+}
+
+p a:hover {
+  text-decoration: underline;
 }

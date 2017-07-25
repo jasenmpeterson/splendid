@@ -1,0 +1,107 @@
+.services .sidebar li {
+  cursor: pointer;
+}
+
+.services.FlexContainer {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.services .content {
+  max-width: 100%;
+  flex-basis: 65%;
+  position: relative;
+  z-index: 1;
+}
+
+.services .content .inner {
+  @include box-shadow-all( 'rgba(44,62,80,.3)');
+}
+
+.serviceTitle {
+  text-align: right;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $pearlaqua;
+  color: $azuerieshwhite;
+  padding: 4rem 2rem;
+}
+
+.services .service {
+  background-color: #fff;
+  padding: 6rem;
+}
+
+.services h1,
+.services h2,
+.services h3,
+.services h4,
+.services h5,
+.services h6 {
+  color: $mandarin;
+  text-transform: uppercase;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+}
+
+.services h4 {
+  font-size: 2rem;
+}
+
+.services .sidebar {
+  position: relative;
+  z-index: 2;
+}
+
+.services .sidebar ul {
+  background-color: $royalblue;
+  padding: 4rem;
+  margin-top: 4rem;
+  margin-right: -3rem;
+  position: relative;
+  z-index: 2;
+  @include box-shadow-all( 'rgba(44,62,80,.3)');
+}
+
+.services .sidebar li {
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.services .sidebar li:hover {
+  color: $mandarin;
+}
+
+.services li {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.services li.ajaxbutton {
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    height: 2rem;
+    background-color: $mandarin;
+    transition: inherit;
+  }
+}
+
+.services .sidebar li:hover,
+.services li.ajaxbutton.active {
+  color: $mandarin;
+
+  &:before {
+    opacity: 1;
+    width: 2rem;
+  }
+}

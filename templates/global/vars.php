@@ -30,6 +30,10 @@ $smarty->assign('homeURL', get_bloginfo('url'));
 
 $smarty->assign('siteTitle', get_bloginfo('name'));
 
+// page title :
+
+$smarty->assign('pageTitle', get_the_title($pageID));
+
 // logo :
 
 $smarty->assign('SiteLogo', get_field('logo_svg_code', 'option'));

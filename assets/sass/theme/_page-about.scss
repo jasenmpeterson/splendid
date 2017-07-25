@@ -1,0 +1,75 @@
+.map.FlexContainer .contentcolumn {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+.map.FlexContainer .backgroundImage {
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center center !important;
+  position: relative;
+  color: #fff;
+  padding: 15rem 0;
+}
+
+.map.FlexContainer .backgroundImage .tint {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(4, 15, 93, .7);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.map.FlexContainer .content {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.map.FlexContainer .content h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.map.FlexContainer .content p {
+  font-size: 1.4rem;
+}
+
+.map.FlexContainer .steps.FlexContainer {
+  margin: 3rem 0;
+}
+
+.map.FlexContainer .steps.FlexContainer .column {
+  width: 33.3%;
+  padding: 0 3rem;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.map.FlexContainer .steps.FlexContainer .icon {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.map.FlexContainer .steps.FlexContainer .stepCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 3rem;
+}
+
+.page-id-10 .pagewrap {
+  margin-bottom: 0;
+}

@@ -10,6 +10,11 @@
     }
   }
 
+  li.current-menu-item a {
+    color: $mandarin;
+    border-bottom: 0.2rem solid $mandarin;
+  }
+
   a {
     color: $royalblue;
     font-weight: 500;

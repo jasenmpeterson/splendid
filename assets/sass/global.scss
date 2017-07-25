@@ -13,9 +13,6 @@
 @import 'components/global/socialMediaIcons';
 @import 'components/global/form';
 @import 'components/global/links';
-@import 'components/pages/home';
-@import 'components/pages/about';
-@import 'components/pages/contact';
 @import 'theme/animations';
 @import 'theme/typography';
 @import 'theme/logo';
@@ -30,6 +27,14 @@
 @import 'theme/siteintro';
 @import 'theme/shapes';
 @import 'theme/specialoffers';
+@import 'theme/featuredImage';
+@import 'theme/interiorPage';
+@import 'theme/ajax';
+@import 'theme/dentist';
+@import 'theme/page-about';
+@import 'theme/page-services';
+@import 'theme/gmap';
+@import 'theme/sidebar';
 
 body.FlexContainer {
   background-color: $azuerieshwhite;
@@ -39,5 +44,6 @@ body.FlexContainer {
   background-size: cover;
   display: flex;
   min-height: 100vh;
+  background-attachment: fixed;
   flex-direction: column;
 }

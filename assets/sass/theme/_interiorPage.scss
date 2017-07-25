@@ -1,0 +1,39 @@
+.interiorPage header {
+  position: relative;
+  z-index: 2;
+}
+
+.interiorPage .pagewrap {
+  margin-top: -10rem;
+}
+
+.interiorPage .column.navigationcontainer {
+  align-self: center;
+}
+
+.interiorPage .pageTitle {
+  text-align: right;
+}
+
+.interiorPage .label.interior {
+  position: relative;
+  display: inline-block;
+}
+
+.interiorPageContent {
+  max-width: 100rem;
+  margin: 0 auto 15rem;
+}
+
+.interiorPageContent h1 {
+  font-size: 3rem;
+}
+
+.interiorPageContent h1,
+.interiorPageContent h2,
+.interiorPageContent h3,
+.interiorPageContent h4,
+.interiorPageContent h5,
+.interiorPageContent h6 {
+  color: $mandarin;
+}
