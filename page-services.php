@@ -29,8 +29,8 @@ $query = new WP_Query(array(
 while ($query->have_posts()) {
     $query->the_post();
     $services[get_the_ID()] = array(
-      'serviceTitle' => str_replace(' ', '<br/>', get_the_title(get_the_ID())),
-      'serviceListTitle' => get_the_title(get_the_ID()),
+      'serviceListTitle' => str_replace('<br/>', ' ', get_the_title(get_the_ID())),
+      'serviceTitle' => get_the_title(get_the_ID()),
       'serviceID' => get_the_ID(),
       'serviceContent' => wpautop(get_the_content(get_the_ID()))
     );

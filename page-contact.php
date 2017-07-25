@@ -2,7 +2,7 @@
 
 include(locate_template('/templates/global/vars.php'));
 
-/* Template Name: About */
+/* Template Name: Contact */
 
 get_header();
 include(locate_template('/templates/global/header.php'));
@@ -21,24 +21,24 @@ $smarty->assign('pageContent', wpautop(get_post_field('post_content', $pageID)))
 
 $googlemap = get_field('google_map', $pageID);
 
-foreach ($googlemap as $map):
+$smarty->assign('map', $googlemap);
 
-  $smarty->assign('mapBackground', $map['background_image']);
-  $smarty->assign('content', $map['content']);
-  $smarty->assign('steps', $map['steps']);
-  $smarty->assign('map', $map['map']);
+// office hours :
 
-endforeach;
+$smarty->assign('office_hours', get_field('office_hours', $pageID));
 
+// contact form :
+$ContactForm = do_shortcode('[contact-form-7 id="122" title="Contact Page Form"]');
 
+$smarty->assign('ContactForm', $ContactForm);
 
 // if template exists :
 
-if ($smarty->templateExists(THEME_DIR . '/smarty_templates/pages/about.tpl')) :
+if ($smarty->templateExists(THEME_DIR . '/smarty_templates/pages/contact.tpl')) :
 
     // display template :
 
-    $smarty->display(THEME_DIR . '/smarty_templates/pages/about.tpl');
+    $smarty->display(THEME_DIR . '/smarty_templates/pages/contact.tpl');
 
 endif;
 

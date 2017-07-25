@@ -33,8 +33,11 @@
 @import 'theme/dentist';
 @import 'theme/page-about';
 @import 'theme/page-services';
+@import 'theme/page-services';
+@import 'theme/page-contact';
 @import 'theme/gmap';
 @import 'theme/sidebar';
+@import 'theme/forms';
 
 body.FlexContainer {
   background-color: $azuerieshwhite;

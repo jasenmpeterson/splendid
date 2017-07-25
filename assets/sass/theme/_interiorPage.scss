@@ -18,6 +18,7 @@
 .interiorPage .label.interior {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 .interiorPageContent {

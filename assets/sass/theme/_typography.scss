@@ -72,8 +72,14 @@ p {
 
 ul {
   margin-bottom: 2rem;
+  padding-left: 2rem;
 }
 
 li {
-  list-style-position: inside;
+  list-style-position: outside;
+}
+
+ul li ul {
+  padding-left: 2rem;
+  margin-top: 1.5rem;
 }

@@ -70,6 +70,7 @@
   color: #fff;
   text-transform: uppercase;
   transition: all 800ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  list-style-type: none;
 }
 
 .services .sidebar li:hover {
@@ -77,8 +78,6 @@
 }
 
 .services li {
-  list-style-type: none;
-  text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 

@@ -10,40 +10,6 @@
 
 </section>
 
-
-
-<section class="dentists FlexContainer">
-
-  <section class="row">
-    <section class="column">
-      <h2>The Dentist of Splendid</h2>
-    </section>
-  </section>
-
-  <section class="row">
-    {foreach $dentists as $dentist}
-      <section class="column dentist ajaxbutton" data-id={$dentist['ID']}>
-
-        <section class="inner">
-
-          <section class="dentistImage">
-            <span class="image" style="background: url({$dentist['dentistImage']})"></span>
-            <span class="circle"></span>
-          </section>
-
-          <section class="dentistContent">
-            <h5>{$dentist['dentistTitle']}</h5>
-            {$dentist['dentistContent']}
-          </section>
-
-        </section>
-
-      </section>
-    {/foreach}
-  </section>
-
-</section>
-
 <section class="map FlexContainer">
 
   <section class="row">
@@ -87,10 +53,4 @@
 
   </section>
 
-</section>
-
-<section class="dentists ajaxcontent">
-  <section class="dentists ajaxloader">
-    {$SiteLogo}
-  </section>
 </section>

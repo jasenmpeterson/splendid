@@ -1,0 +1,81 @@
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+textarea {
+  color: $royalblue;
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid rgba(245, 112, 69, .4);
+  @include box-shadow-inset-top-and-bottom( 'rgba(44,62,80,.1)');
+}
+
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+  background-color: #fff;
+}
+
+.textare {
+  height: 40rem;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $mandarin;
+  text-transform: uppercase;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $mandarin;
+  text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $mandarin;
+  text-transform: uppercase;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $mandarin;
+  text-transform: uppercase;
+}
+
+input[type="submit"] {
+  margin-top: 3rem;
+  font-weight: 700;
+  background-color: $royalblue;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+  color: $royalblue;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 15rem;
+  text-align: center;
+  transition: all 300ms ease-in-out;
+  border-radius: 0;
+  font-size: 1.2rem;
+  color: #fff;
+
+  &:hover {
+    background-color: $mandarin;
+  }
+}
+
+div.wpcf7-response-output {
+  padding: 1.5rem;
+  font-size: 1.4em;
+  border-color: $mandarin;
+  width: 100%;
+  text-align: center;
+}
+
+span.wpcf7-not-valid-tip {
+  color: $mandarin;
+  font-weight: 700;
+}
