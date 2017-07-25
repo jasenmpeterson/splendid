@@ -78,6 +78,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/javascript\/fixedHeader.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/fixedHeader-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/global.js": {
 		"ft": 64,
 		"mi": 1,
@@ -96,20 +105,20 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/javascript\/inactivePagePortalTween.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/inactivePagePortalTween-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/assets\/javascript\/jquery.ScrollMagic.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/jquery.ScrollMagic-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/MorphSVGPlugin.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/MorphSVGPlugin-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -164,6 +173,15 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/assets\/javascript\/splashPage.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/splashPage-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/javascript\/TweenMax.js": {
 		"ft": 64,
@@ -835,6 +853,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_page-home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_page-home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_page-services.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1074,6 +1105,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/build\/fixedHeader-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/fixedHeader-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/functions-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1176,6 +1216,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/shapeTweens-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/splashPage-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/splashPage-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

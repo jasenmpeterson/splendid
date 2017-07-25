@@ -14,6 +14,7 @@ require.config({
     TweenLite: 'TweenMax',
     TimelineMax: 'TweenMax',
     DrawSVGPlugin: 'DrawSVGPlugin',
+    MorphSVGPlugin: 'MorphSVGPlugin',
     CustomEase: 'CustomEase',
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
@@ -23,7 +24,9 @@ require.config({
     shapeTweens: 'shapeTweens',
     dentistAJAX: 'dentistAJAX',
     servicesAJAX: 'servicesAJAX',
+    fixedHeader: 'fixedHeader',
     gmaps: 'gmaps',
+    splashPage: 'splashPage',
     axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
@@ -104,3 +107,21 @@ require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
 // gmaps :
 
 require(['gmaps']);
+
+// dentist AJAX :
+
+require(['fixedHeader'], function (fixedHeader) {
+
+  const element = document.querySelector('header.FlexContainer')
+
+  fixedHeader(element)
+
+});
+
+
+// splash page :
+
+require(['splashPage'], function (splashPage) {
+  const element = document.querySelector('header.FlexContainer .sitelogo')
+  splashPage(element)
+});

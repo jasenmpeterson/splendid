@@ -23,7 +23,7 @@
 <body
 <?php
 
-  (!is_front_page()) ? body_class('FlexContainer interiorPage')  : body_class('FlexContainer');
+  (!is_front_page()) ? body_class('FlexContainer interiorPage')  : body_class('homepage FlexContainer');
 
 ?>
 >
@@ -45,6 +45,7 @@
  <p><?php echo $contactPhone; ?></p>
  <h4 class="label">Special Offers</h4>
 </section>
+
 
 <!-- <section class="lines">
   <svg xmlns="http://www.w3.org/2000/svg" id="Group_1" data-name="Group 1" viewBox="-63.5 202.5 2067 106">

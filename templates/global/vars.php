@@ -37,6 +37,7 @@ $smarty->assign('pageTitle', get_the_title($pageID));
 // logo :
 
 $smarty->assign('SiteLogo', get_field('logo_svg_code', 'option'));
+$smarty->assign('FooterSiteLogo', get_field('footer_logo_svg_code', 'option'));
 
 // address :
 

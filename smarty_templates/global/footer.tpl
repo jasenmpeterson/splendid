@@ -3,7 +3,11 @@
   <section class="FlexContainer">
     <section class="row">
       <section class="column logocontainer">
-        <a href="{$homeURL}">{$SiteLogo}</a>
+        {if !empty($FooterSiteLogo)}
+          <a href="{$homeURL}">{$FooterSiteLogo}</a>
+        {else}
+          <a href="{$homeURL}">{$SiteLogo}</a>
+        {/if}
       </section>
       <section class="column address">
         {$address}

@@ -13,21 +13,19 @@
   z-index: -1;
   overflow-y: scroll;
   overflow-x: hidden;
-
-  svg {
-    width: 20rem;
-    height: 20rem;
-  }
 }
 
 .ajaxloader svg {
-  animation: heartbeat 1.5s ease-in-out infinite both;
-}
+  stroke: $mandarin;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 20rem;
 
-.ajaxloader svg circle {
-  display: none;
-}
-
-.ajaxloader svg path {
-  fill: #81CDC0;
+  g {
+    fill: none;
+    stroke-width: 2;
+    fill-rule: evenodd;
+    width: 20rem;
+    height: 20rem;
+  }
 }

@@ -3,6 +3,7 @@ footer {
   color: $pearlaqua;
   position: relative;
   z-index: 2;
+  padding: 3.5rem 0;
 }
 
 footer p {
@@ -30,6 +31,7 @@ footer .FlexContainer .column:last-of-type {
 
 footer .logocontainer a {
   margin: 0;
+  display: inline-block;
 }
 
 footer .sitelogo {
@@ -41,5 +43,11 @@ footer .sitelogo {
 
   path {
     fill: $pearlaqua;
+  }
+}
+
+footer .logocontainer a:hover {
+  path {
+    fill: $mandarin;
   }
 }

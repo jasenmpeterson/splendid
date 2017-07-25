@@ -58,16 +58,37 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
           console.log(response)
 
           const content = response.data.content.rendered
-          document.querySelector('.services.FlexContainer .content .service')
-            .innerHTML = ''
-          document.querySelector('.services.FlexContainer .content .service')
-            .innerHTML = content
+          const service = document.querySelector('.services.FlexContainer .content .service')
+
+          service.innerHTML = ''
+
+          service.innerHTML = content
 
           const title = response.data.title.rendered
-          document.querySelector('.services.FlexContainer .content .serviceTitle')
-            .innerHTML = ''
-          document.querySelector('.services.FlexContainer .content .serviceTitle')
-            .innerHTML = title.replace(' ', '<br/>')
+          const service_title = document.querySelector('.services.FlexContainer .content .serviceTitle h1')
+
+          service_title.innerHTML = ''
+
+          service_title.innerHTML = title.replace(' ', '<br/>')
+
+          TweenLite.fromTo(service_title, 0.5, {
+            opacity: 0,
+            x: '-20rem'
+          }, {
+            opacity: 1,
+            x: '0',
+            ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+          })
+
+          TweenLite.fromTo(service, 0.5, {
+            opacity: 0,
+            y: '20rem'
+          }, {
+            opacity: 1,
+            delay: 0.3,
+            y: '0',
+            ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+          })
 
         })
         .catch(function (error) {

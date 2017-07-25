@@ -293,7 +293,8 @@ img {
   margin: 0; }
 
 .navigationcontainer nav li {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 0; }
 
 .navigationcontainer nav a {
   font-size: 1.8rem;
@@ -827,15 +828,21 @@ ul li ul {
   width: 100%;
   height: auto; }
   .sitelogo circle {
-    fill: #81cdbf; }
+    fill: #81cdbf;
+    transition: all 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+  .sitelogo .square {
+    visibility: hidden; }
   .sitelogo path {
-    fill: #FFFFFF; }
+    fill: #FFFFFF;
+    transition: all 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
 .logocontainer a {
   position: relative;
   margin-top: -10rem; }
   .logocontainer a:hover {
     animation: jello-horizontal 0.9s; }
+    .logocontainer a:hover circle {
+      fill: #F37045; }
 
 a {
   text-decoration: none;
@@ -847,18 +854,33 @@ p a:hover {
   text-decoration: underline; }
 
 header {
-  padding: 0 5rem; }
+  padding: 0 5rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  height: 20.5rem;
+  transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
 .column.navigationcontainer {
-  align-self: flex-end;
+  align-self: center;
   margin-right: auto;
   margin-left: 10rem; }
+
+header.condense {
+  box-shadow: 0 0 15px rgba(44,62,80,.5);
+  height: 10.5rem;
+  background-color: #fff; }
+  header.condense .logocontainer a {
+    margin-top: 0; }
 
 footer {
   background: #fff;
   color: #81CDC0;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  padding: 3.5rem 0; }
 
 footer p {
   font-size: 1.2rem;
@@ -878,7 +900,8 @@ footer .FlexContainer .column:last-of-type {
   padding-right: 5rem; }
 
 footer .logocontainer a {
-  margin: 0; }
+  margin: 0;
+  display: inline-block; }
 
 footer .sitelogo {
   width: 50%; }
@@ -887,9 +910,11 @@ footer .sitelogo {
   footer .sitelogo path {
     fill: #81CDC0; }
 
+footer .logocontainer a:hover path {
+  fill: #F37045; }
+
 .navigationcontainer nav {
-  position: relative;
-  margin-top: -6rem; }
+  position: relative; }
   .navigationcontainer nav li {
     margin-right: 3rem; }
     .navigationcontainer nav li:last-of-type {
@@ -952,6 +977,9 @@ footer .sitelogo {
   transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transform: translateX(-15rem);
   opacity: 0.5; }
+  .pageportal .textmodule.content .column,
+  .pageportal .textmodule.image .column {
+    box-shadow: 0 0 15px rgba(44,62,80,.5); }
   .pageportal .row {
     justify-content: flex-end; }
   .pageportal * {
@@ -966,14 +994,16 @@ footer .sitelogo {
   .pageportal .label.transparent .hr {
     margin-bottom: 5rem; }
   .pageportal .textmodule {
-    position: relative;
-    box-shadow: 0 0 15px rgba(44,62,80,.5); }
+    position: relative; }
   .pageportal .column:first-of-type {
     flex-basis: 40%;
     max-width: 40%; }
   .pageportal .column:last-of-type {
     flex-basis: 60%;
     max-width: 60%; }
+  .pageportal .textmodule.image .column.image {
+    transition: all 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transform: translateY(0); }
   .pageportal p {
     font-size: 1.4rem;
     line-height: 2rem; }
@@ -990,14 +1020,10 @@ footer .sitelogo {
     flex-basis: 50%;
     max-width: 50%; }
   .pageportal.alternate .textmodule {
-    width: 80%;
-    box-shadow: none; }
+    width: 80%; }
   .pageportal.alternate .textmodule.image .column {
     position: relative; }
-  .pageportal.alternate .textmodule .column.image {
-    top: -20rem; }
   .pageportal.alternate .textmodule .content {
-    box-shadow: 0 0 15px rgba(44,62,80,.5);
     z-index: 2; }
 
 .pageportal.active {
@@ -1005,6 +1031,9 @@ footer .sitelogo {
   transform: translateX(0);
   z-index: 2;
   opacity: 1; }
+  .pageportal.active .textmodule.image .column.image {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(-20rem); }
   .pageportal.active * {
     transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   .pageportal.active .label.transform {
@@ -1081,7 +1110,7 @@ a.btn.mandarin {
   color: #F37045; }
 
 .pagewrap {
-  margin: 10rem 0;
+  margin: 18rem 0 10rem;
   position: relative;
   flex: 1; }
 
@@ -1161,16 +1190,6 @@ a.btn.mandarin {
   background-position: center center !important;
   height: 65.0rem; }
 
-.interiorPage header {
-  position: relative;
-  z-index: 2; }
-
-.interiorPage .pagewrap {
-  margin-top: -10rem; }
-
-.interiorPage .column.navigationcontainer {
-  align-self: center; }
-
 .interiorPage .pageTitle {
   text-align: right; }
 
@@ -1209,18 +1228,18 @@ a.btn.mandarin {
   z-index: -1;
   overflow-y: scroll;
   overflow-x: hidden; }
-  .ajaxcontent svg {
-    width: 20rem;
-    height: 20rem; }
 
 .ajaxloader svg {
-  animation: heartbeat 1.5s ease-in-out infinite both; }
-
-.ajaxloader svg circle {
-  display: none; }
-
-.ajaxloader svg path {
-  fill: #81CDC0; }
+  stroke: #F37045;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 20rem; }
+  .ajaxloader svg g {
+    fill: none;
+    stroke-width: 2;
+    fill-rule: evenodd;
+    width: 20rem;
+    height: 20rem; }
 
 .dentists.FlexContainer {
   max-width: 150.00rem;
@@ -1366,6 +1385,9 @@ a.btn.mandarin {
 .page-id-10 .pagewrap {
   margin-bottom: 0; }
 
+.homepage .pagewrap {
+  margin-top: 40rem; }
+
 .services .sidebar li {
   cursor: pointer; }
 
@@ -1380,19 +1402,22 @@ a.btn.mandarin {
   z-index: 1; }
 
 .services .content .inner {
-  box-shadow: 0 0 15px rgba(44,62,80,.3); }
+  box-shadow: 0 0 15px rgba(44,62,80,.3);
+  background-color: #fff; }
 
 .serviceTitle {
   text-align: right;
+  background-color: #81CDC0;
+  padding: 4rem 2rem; }
+
+.serviceTitle h1 {
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #81CDC0;
-  color: #DFF2EF;
-  padding: 4rem 2rem; }
+  margin: 0;
+  color: #DFF2EF !important; }
 
 .services .service {
-  background-color: #fff;
   padding: 6rem; }
 
 .services h1,
@@ -1454,6 +1479,10 @@ a.btn.mandarin {
     opacity: 1;
     width: 2rem; }
 
+.services.FlexContainer .ajaxcontent {
+  position: absolute;
+  align-items: flex-start; }
+
 .services .sidebar li {
   cursor: pointer; }
 
@@ -1468,19 +1497,22 @@ a.btn.mandarin {
   z-index: 1; }
 
 .services .content .inner {
-  box-shadow: 0 0 15px rgba(44,62,80,.3); }
+  box-shadow: 0 0 15px rgba(44,62,80,.3);
+  background-color: #fff; }
 
 .serviceTitle {
   text-align: right;
+  background-color: #81CDC0;
+  padding: 4rem 2rem; }
+
+.serviceTitle h1 {
   font-size: 5rem;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #81CDC0;
-  color: #DFF2EF;
-  padding: 4rem 2rem; }
+  margin: 0;
+  color: #DFF2EF !important; }
 
 .services .service {
-  background-color: #fff;
   padding: 6rem; }
 
 .services h1,
@@ -1541,6 +1573,10 @@ a.btn.mandarin {
   .services li.ajaxbutton.active:before {
     opacity: 1;
     width: 2rem; }
+
+.services.FlexContainer .ajaxcontent {
+  position: absolute;
+  align-items: flex-start; }
 
 .page-id-18 .gmap {
   margin-bottom: 5rem; }

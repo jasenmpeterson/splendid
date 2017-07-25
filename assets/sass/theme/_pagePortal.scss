@@ -18,6 +18,11 @@ $transitionDelay: 0.5s;
   transform: translateX(-15rem);
   opacity: 0.5;
 
+  .textmodule.content .column,
+  .textmodule.image .column {
+    @include box-shadow-all();
+  }
+
   .row {
     justify-content: flex-end;
   }
@@ -43,7 +48,6 @@ $transitionDelay: 0.5s;
 
   .textmodule {
     position: relative;
-    @include box-shadow-all();
   }
 
   .column:first-of-type {
@@ -54,6 +58,11 @@ $transitionDelay: 0.5s;
   .column:last-of-type {
     flex-basis: 60%;
     max-width: 60%;
+  }
+
+  .textmodule.image .column.image {
+    transition: $transitionOut;
+    transform: translateY(0);
   }
 
   p {
@@ -84,19 +93,13 @@ $transitionDelay: 0.5s;
 
   .textmodule {
     width: 80%;
-    box-shadow: none;
   }
 
   .textmodule.image .column {
     position: relative;
   }
 
-  .textmodule .column.image {
-    top: -20rem;
-  }
-
   .textmodule .content {
-    @include box-shadow-all();
     z-index: 2;
   }
 }
@@ -106,6 +109,11 @@ $transitionDelay: 0.5s;
   transform: translateX(0);
   z-index: 2;
   opacity: 1;
+
+  .textmodule.image .column.image {
+    transition: $transitionIn;
+    transform: translateY(-20rem);
+  }
 
   * {
     transition: $transitionIn;

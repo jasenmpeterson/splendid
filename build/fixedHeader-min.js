@@ -1,0 +1,1 @@
+define(function(){return function(n){function e(){function e(){return window.pageYOffset||document.documentElement.scrollTop}window.addEventListener("scroll",function(){const o=50;e()>=50?n.classList.add("condense"):n.classList.remove("condense")})}e()}});
