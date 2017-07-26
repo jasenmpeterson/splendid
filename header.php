@@ -46,12 +46,4 @@
  <h4 class="label">Special Offers</h4>
 </section>
 
-
-<!-- <section class="lines">
-  <svg xmlns="http://www.w3.org/2000/svg" id="Group_1" data-name="Group 1" viewBox="-63.5 202.5 2067 106">
-    <path id="Line_1" d="M-63.5 210.5h2067" data-name="Line 1" class="cls-1"/>
-    <path id="Line_2" d="M-63.5 240.5h2067" data-name="Line 2" class="cls-1"/>
-    <path id="Line_3" d="M-63.5 270.5h2067" data-name="Line 3" class="cls-1"/>
-    <path id="Line_4" d="M-63.5 300.5h2067" data-name="Line 4" class="cls-1"/>
-  </svg>
-</section> -->
+<?php include(locate_template('splashpage.php')); ?>

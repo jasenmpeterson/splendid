@@ -105,6 +105,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/javascript\/gsapPlayer.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/gsapPlayer-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/assets\/javascript\/jquery.ScrollMagic.js": {
 		"ft": 64,
 		"mi": 1,
@@ -134,6 +143,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/PagePortalTween-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/javascript\/Physics2DPlugin.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/Physics2DPlugin-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -957,6 +975,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/sass\/theme\/_splashpage.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_splashpage.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/assets\/sass\/theme\/_textmodule.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1031,6 +1062,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/assets\/build\/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/utilities\/_gsapPlayer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/assets\/build\/_gsapPlayer.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1162,6 +1206,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gsap-player-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/gsapPlayer-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/gsapPlayer-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2811,6 +2864,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/smarty_templates_c\/e62a8b78410a24d5cd8700916ec1f0589e72e094_0.file.footer.tpl.php",
+		"oF": 0
+		},
+	"\/splashpage.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/splashpage.php",
 		"oF": 0
 		},
 	"\/style.css": {

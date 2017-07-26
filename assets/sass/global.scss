@@ -6,6 +6,7 @@
 @import 'utilities/buttons';
 @import 'utilities/images';
 @import 'utilities/logo';
+@import 'utilities/gsapPlayer';
 @import 'components/global/navigation';
 @import 'components/global/header';
 @import 'components/global/footer';
@@ -39,6 +40,7 @@
 @import 'theme/gmap';
 @import 'theme/sidebar';
 @import 'theme/forms';
+@import 'theme/splashpage';
 
 body.FlexContainer {
   background-color: $azuerieshwhite;

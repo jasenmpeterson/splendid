@@ -15,6 +15,8 @@ require.config({
     TimelineMax: 'TweenMax',
     DrawSVGPlugin: 'DrawSVGPlugin',
     MorphSVGPlugin: 'MorphSVGPlugin',
+    Physics2DPlugin: 'Physics2DPlugin',
+    gsapPlayer: 'gsapPlayer',
     CustomEase: 'CustomEase',
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
@@ -31,7 +33,6 @@ require.config({
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
 });
-
 
 // Hamburger Menu :
 const mobileMenuButton = document.querySelector('.Hamburger');
@@ -122,6 +123,6 @@ require(['fixedHeader'], function (fixedHeader) {
 // splash page :
 
 require(['splashPage'], function (splashPage) {
-  const element = document.querySelector('header.FlexContainer .sitelogo')
+  const element = document.querySelector('.splashpage svg .background')
   splashPage(element)
 });
