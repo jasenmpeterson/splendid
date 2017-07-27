@@ -1,4 +1,8 @@
 .splashpage {
+  display: none;
+}
+
+.home .splashpage {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -27,7 +31,7 @@
   }
 }
 
-.splashpage .morphCircle {
+.home .splashpage .morphCircle {
   display: none;
 }
 

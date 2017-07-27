@@ -5,7 +5,6 @@ include(locate_template('/templates/global/vars.php'));
 /* Template Name: Home */
 
 get_header();
-include(locate_template('/templates/global/header.php'));
 
 // site intro :
 $smarty->assign('siteIntro', get_field('site_intro', $pageID));
@@ -34,4 +33,3 @@ if ($smarty->templateExists(THEME_DIR . '/smarty_templates/pages/home.tpl')) :
 endif;
 
 get_footer();
-include(locate_template('/templates/global/footer.php'));

@@ -4,13 +4,12 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
   return function (elements) {
 
     if (document.getElementsByTagName('body')[0]
-      .classList.contains('home')) {
-
-      createTweens()
+      .classList.contains('interiorPage')) {
+      labelTweens()
     }
 
-    // create tweens:
-    function createTweens() {
+    // label tweens:
+    function labelTweens() {
 
       // global vars
       var scene = null;
@@ -27,20 +26,27 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
       for (var i = 0; i < elements.length; i++) {
 
         // current pageportal :
-        var pageportal = elements[i]
-        var pageportalClassName = elements[i].classList[2]
+        var label = elements[i]
+        var labelClassName = elements[i].classList[0]
 
         // scenes :
         scene = new ScrollMagic.Scene({
-            triggerElement: pageportal
+            triggerElement: label
+          })
+          .offset('-150')
+          .on('start end', function (e) {
+            // destroy the scene once its reaches it's conclusion :
+            if (e.type == 'end') {
+              sceneController.destroy()
+              scene = null
+            }
           })
           .addTo(sceneController)
 
-        scene.setClassToggle('.' + pageportalClassName, 'active')
+        scene.setClassToggle('.' + labelClassName, 'active')
 
       }
 
     }
-
   }
 });

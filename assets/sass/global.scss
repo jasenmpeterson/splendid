@@ -1,3 +1,7 @@
+// global transitions :
+$transitionIn: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$transitionOut: all 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+$transitionDelay: 0.5s;
 @import 'utilities/reset';
 @import 'theme/colors';
 @import 'utilities/flex';

@@ -17,13 +17,10 @@
 
 .logocontainer a {
   position: relative;
-  margin-top: -10rem;
 
   &:hover {
-    animation: jello-horizontal 0.9s;
-
-    path.circle {
-      fill: $mandarin;
+    svg {
+      animation: jello-horizontal 700ms;
     }
   }
 }

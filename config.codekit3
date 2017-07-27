@@ -15,6 +15,15 @@
 		"oAP": "\/.eslintrc",
 		"oF": 0
 		},
+	"\/assets\/javascript\/aboutPageTween.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/aboutPageTween-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/animation.gsap.js": {
 		"ft": 64,
 		"mi": 1,
@@ -41,6 +50,15 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/assets\/javascript\/CustomBounce.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/CustomBounce-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/javascript\/CustomEase.js": {
 		"ft": 64,
@@ -113,6 +131,15 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/assets\/javascript\/interiorPageTween.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/interiorPageTween-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/javascript\/jquery.ScrollMagic.js": {
 		"ft": 64,
@@ -1131,6 +1158,15 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/build\/aboutPageTween-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/aboutPageTween-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/buttons-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1215,6 +1251,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gsapPlayer-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/interiorPageTween-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/interiorPageTween-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -2881,18 +2926,6 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"\/templates\/global\/footer.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/templates\/global\/footer.php",
-		"oF": 0
-		},
-	"\/templates\/global\/header.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/templates\/global\/header.php",
-		"oF": 0
 		},
 	"\/templates\/global\/navigation.php": {
 		"ft": 8192,

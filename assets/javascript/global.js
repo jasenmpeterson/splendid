@@ -23,10 +23,11 @@ require.config({
     ScrollMagicAnimation: 'animation.gsap',
     ScrollMagicIndicators: 'debug.addIndicators',
     pagePortalTween: 'pagePortalTween',
+    interiorPageTween: 'interiorPageTween',
+    aboutPageTween: 'aboutPageTween',
     shapeTweens: 'shapeTweens',
     dentistAJAX: 'dentistAJAX',
     servicesAJAX: 'servicesAJAX',
-    fixedHeader: 'fixedHeader',
     gmaps: 'gmaps',
     splashPage: 'splashPage',
     axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
@@ -62,6 +63,27 @@ require(['pagePortalTween'], function (pagePortalTween) {
 
 });
 
+// interior page tween
+
+require(['interiorPageTween'], function (interiorPageTweenLabel) {
+
+  // package elements :
+  const label = document.querySelectorAll('h4.interior.label')
+  interiorPageTweenLabel(label)
+
+});
+
+// about page tween
+
+require(['aboutPageTween'], function (visitSectionItems) {
+
+  // package elements :
+  const visitIcons = document.querySelectorAll('.steps .icon svg')
+  const visitNumbers = document.querySelectorAll('.stepCount')
+
+  visitSectionItems(visitIcons, visitNumbers)
+
+});
 
 // shape tweens :
 
@@ -108,17 +130,6 @@ require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
 // gmaps :
 
 require(['gmaps']);
-
-// dentist AJAX :
-
-require(['fixedHeader'], function (fixedHeader) {
-
-  const element = document.querySelector('header.FlexContainer')
-
-  fixedHeader(element)
-
-});
-
 
 // splash page :
 

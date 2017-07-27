@@ -2,7 +2,6 @@ footer {
   background: #fff;
   color: $pearlaqua;
   position: relative;
-  z-index: 2;
   padding: 3.5rem 0;
 }
 
@@ -10,23 +9,23 @@ footer p {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-
-  &:first-of-type {
-    text-align: right;
-  }
 }
 
 footer .FlexContainer .row {
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
 footer .FlexContainer .column:first-of-type {
-  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 footer .FlexContainer .column:last-of-type {
   padding-right: 5rem;
+}
+
+footer .logocontainer {
+  text-align: right;
 }
 
 footer .logocontainer a {

@@ -5,7 +5,7 @@ include(locate_template('/templates/global/vars.php'));
 /* Template Name: Appointments */
 
 get_header();
-include(locate_template('/templates/global/header.php'));
+
 
 // smarty :
 
@@ -20,4 +20,3 @@ if ($smarty->templateExists(THEME_DIR . '/smarty_templates/pages/appointments.tp
 endif;
 
 get_footer();
-include(locate_template('/templates/global/footer.php'));

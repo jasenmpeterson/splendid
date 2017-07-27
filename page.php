@@ -3,7 +3,6 @@
 include(locate_template('/templates/global/vars.php'));
 
 get_header();
-include(locate_template('/templates/global/header.php'));
 
 // smarty :
 
@@ -27,4 +26,3 @@ if ($smarty->templateExists(THEME_DIR . '/smarty_templates/pages/page.tpl')) :
 endif;
 
 get_footer();
-include(locate_template('/templates/global/footer.php'));

@@ -7,20 +7,13 @@ header {
   z-index: 50;
   height: 20.5rem;
   transition: all 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+  height: 10.5rem;
+  background-color: $azuerieshwhite;
+  opacity: 0.8;
 }
 
 .column.navigationcontainer {
   align-self: center;
   margin-right: auto;
   margin-left: 10rem;
-}
-
-header.condense {
-  @include box-shadow-all();
-  height: 10.5rem;
-  background-color: #fff;
-
-  .logocontainer a {
-    margin-top: 0;
-  }
 }

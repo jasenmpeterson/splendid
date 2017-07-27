@@ -1,11 +1,33 @@
 .interiorPage .pageTitle {
   text-align: right;
+  position: sticky;
+  top: 8rem;
+  z-index: 50;
 }
 
 .interiorPage .label.interior {
   position: relative;
   display: inline-block;
-  z-index: 10;
+  transition: $transitionOut;
+  opacity: 0;
+  transform: translateY(10rem) rotate(90deg);
+}
+
+.interiorPage .label.interior.active {
+  transition: $transitionIn;
+  opacity: 1;
+  transform: translateY(0) rotate(90deg);
+}
+
+.interiorPage .label.interior .hr {
+  width: 0;
+  transition: $transitionOut;
+}
+
+.interiorPage .label.interior.active .hr {
+  transition: $transitionIn;
+  transition-delay: 0.5s;
+  width: 8rem;
 }
 
 .interiorPageContent {
