@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-25 13:05:51
+/* Smarty version 3.1.30, created on 2017-07-31 18:19:09
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5977422f8807d0_09544384',
+  'unifunc' => 'content_597f749d32bbe8_11890311',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '55feafe8752cf4248620bc2275409f05f8a82e3d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl',
-      1 => 1500987949,
+      1 => 1501525142,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5977422f8807d0_09544384 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597f749d32bbe8_11890311 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="featuredImage" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featuredImage']->value;?>
 )"></section>
@@ -53,7 +53,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['dentist']->value) {
 ?>
-      <section class="column dentist" data-id=<?php echo $_smarty_tpl->tpl_vars['dentist']->value['ID'];?>
+      <section class="column dentist ajaxbutton" data-id=<?php echo $_smarty_tpl->tpl_vars['dentist']->value['ID'];?>
 >
 
         <section class="inner">
@@ -85,8 +85,20 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </section>
 
 <section class="dentists ajaxcontent">
-  <section class="dentists ajaxloader">
-    <?php echo $_smarty_tpl->tpl_vars['SiteLogo']->value;?>
+  <section class="dentist ajaxloader">
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+      <g>
+        <circle cx="22" cy="22" r="19.8371">
+          <animate attributeName="r" begin="0s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" begin="0s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="22" cy="22" r="15.5341">
+          <animate attributeName="r" begin="-0.9s" dur="1.8s" values="1; 20" calcMode="spline" keyTimes="0; 1" keySplines="0.165, 0.84, 0.44, 1" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" begin="-0.9s" dur="1.8s" values="1; 0" calcMode="spline" keyTimes="0; 1" keySplines="0.3, 0.61, 0.355, 1" repeatCount="indefinite"/>
+        </circle>
+      </g>
+    </svg>
 
   </section>
 </section>

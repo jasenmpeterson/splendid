@@ -12,16 +12,18 @@ footer p {
 }
 
 footer .FlexContainer .row {
-  justify-content: flex-end;
   align-items: center;
 }
 
-footer .FlexContainer .column:first-of-type {
-  padding-right: 5rem;
+footer .FlexContainer .row .column {
+  flex-basis: 50%;
+  max-width: 50%;
 }
+
 
 footer .FlexContainer .column:last-of-type {
   padding-right: 5rem;
+  text-align: right;
 }
 
 footer .logocontainer {

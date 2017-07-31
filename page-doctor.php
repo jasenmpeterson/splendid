@@ -22,6 +22,8 @@ $dentists = get_field('dentist', $pageID);
 
 $i = 0;
 
+$dentistContent = null;
+
 foreach ($dentists as $dentist):
 
   $dentistContent[$i++] = array(

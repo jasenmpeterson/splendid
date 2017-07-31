@@ -235,10 +235,19 @@
     // var
     var latlng = new google.maps.LatLng($marker.attr('data-lat'), $marker.attr('data-lng'));
 
+    var custom_marker = themeURL+'/img/gmaps/marker.svg'
+
+    var icons = {
+      info: {
+        icon: custom_marker
+      }
+    }
+
     // create marker
     var marker = new google.maps.Marker({
       position: latlng,
-      map: map
+      map: map,
+      icon: icons.info.icon
     });
 
     // add to array

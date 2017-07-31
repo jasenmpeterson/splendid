@@ -1,6 +1,6 @@
 // AJAX Services AJAX Loading
 
-define(['./axios', './TweenMax'], function (axios, TweenMax) {
+define(['./axios', './TweenMax', './ScrollToPlugin'], function (axios, TweenMax, ScrollToPlugin) {
 
   return function (elements, url) {
 
@@ -30,7 +30,12 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
           opacity: 1,
           ease: Power2.easeOut
         })
-        // Do something before request is sent
+          TweenLite.to(window, 1, {
+              scrollTo: document.querySelector('.interiorPageContent'),
+              ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+          })
+
+          // Do something before request is sent
         return config;
       }, function (error) {
         // Do something with request error
@@ -46,49 +51,59 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
 
       axios.get(url + '/wp-json/wp/v2/dental_services/' + dataID)
         .then(function (response) {
-          TweenLite.to(ajaxloader, 0.5, {
-            opacity: 0,
-            ease: Power2.easeIn
-          })
-          TweenLite.to(ajaxContent, .2, {
-            opacity: 0,
-            ease: Power2.easeOut,
-            zIndex: -1
-          })
-          console.log(response)
+              TweenLite.to(ajaxloader, 0.5, {
+                opacity: 0,
+                ease: Power2.easeIn
+              })
+              TweenLite.to(ajaxContent, .2, {
+                opacity: 0,
+                ease: Power2.easeOut,
+                zIndex: -1
+              })
 
-          const content = response.data.content.rendered
-          const service = document.querySelector('.services.FlexContainer .content .service')
+              const content = response.data.content.rendered
+              const service = document.querySelector('.services.FlexContainer .content .service')
 
-          service.innerHTML = ''
+              service.innerHTML = ''
 
-          service.innerHTML = content
+              service.innerHTML = content
 
-          const title = response.data.title.rendered
-          const service_title = document.querySelector('.services.FlexContainer .content .serviceTitle h1')
+              const title = response.data.title.rendered
+              const service_title_container = document.querySelector('.services.FlexContainer .content .serviceTitle')
+              const service_title = document.querySelector('.services.FlexContainer .content .serviceTitle h1')
 
-          service_title.innerHTML = ''
+              service_title.innerHTML = ''
 
-          service_title.innerHTML = title.replace(' ', '<br/>')
+              service_title.innerHTML = title.replace(' ', '<br/>')
 
-          TweenLite.fromTo(service_title, 0.5, {
-            opacity: 0,
-            x: '-20rem'
-          }, {
-            opacity: 1,
-            x: '0',
-            ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
-          })
+              TweenLite.fromTo(service_title_container, 0.5, {
+                opacity: 0,
+                y: '40rem'
+              }, {
+                opacity: 1,
+                y: '0',
+                ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+              })
 
-          TweenLite.fromTo(service, 0.5, {
-            opacity: 0,
-            y: '20rem'
-          }, {
-            opacity: 1,
-            delay: 0.3,
-            y: '0',
-            ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
-          })
+              TweenLite.fromTo(service_title, 0.5, {
+                opacity: 0,
+                x: '-40rem'
+              }, {
+                opacity: 1,
+                x: '0',
+                delay: 0.5,
+                ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+              })
+
+              TweenLite.fromTo(service, 0.5, {
+                opacity: 0,
+                y: '20rem'
+              }, {
+                opacity: 1,
+                delay: 0.5,
+                y: '0',
+                ease: CustomEase.create('wavyline', 'M0,0 C0.25,0.46 0.45,0.94 1,1')
+              })
 
         })
         .catch(function (error) {

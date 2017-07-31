@@ -91,6 +91,7 @@ function theme_assets()
       'siteURL' => THEME_URI,
       'root'    => get_home_url(),
       'ajaxurl'  => $ajaxurl,
+      'themeDirectory' => get_stylesheet_directory_uri(),
       'javascriptDirectory' => get_stylesheet_directory_uri() . '/assets/javascript'
     );
 
@@ -296,3 +297,35 @@ function truncate($text, $length)
     }
     return($text);
 }
+
+/*
+
+	Plugin name: WPCF7 FLoating Labels
+	Author: Richard Keller
+	URI: http://richardkeller.net
+	Description: Adds floating lables to all text inputs
+
+*/
+function append_style_and_js( ){
+
+    ?>
+    <script type="text/javascript">
+      jQuery(document).ready(function(){
+
+        jQuery(document).on('focus', 'input[type=text], input[type=email], textarea', function(e){
+          var ph = jQuery(this).attr('placeholder');
+          if( ph ){
+            jQuery(this).attr('ph', jQuery(this).attr('placeholder') );
+            jQuery(this).attr('placeholder', '');
+            jQuery(this).animate({'padding-top':'20px', 'position' : 'relative'}, 100);
+            jQuery(this).parent().append('<div class="floating-label">' + ph + '</div>');
+            jQuery(this).parent().find('.floating-label').fadeIn();
+          }
+        });
+      });
+    </script>
+    <?php
+
+}
+
+add_action('wp_footer', 'append_style_and_js');

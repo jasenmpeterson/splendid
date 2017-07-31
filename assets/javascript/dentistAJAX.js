@@ -12,7 +12,6 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
       elements[i].addEventListener('click', function () {
         const dataID = this.getAttribute('data-id')
         getDentistInfo(dataID)
-        console.log(dataID)
       })
     }
 
@@ -22,7 +21,7 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
         TweenLite.to(ajaxContent, 0.5, {
           opacity: 1,
           ease: Power2.easeOut,
-          zIndex: 30
+          zIndex: 99
         })
         TweenLite.to(ajaxloader, 0.5, {
           opacity: 1,
@@ -37,7 +36,6 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
 
       axios.interceptors.response.use(function (response) {
         // Do something with response data
-        console.log(response)
         return response;
       }, function (error) {
         // Do something with response error

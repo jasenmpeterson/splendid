@@ -15,6 +15,30 @@
 		"oAP": "\/.eslintrc",
 		"oF": 0
 		},
+	"\/.idea\/modules.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/modules.xml",
+		"oF": 0
+		},
+	"\/.idea\/splendid.iml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/splendid.iml",
+		"oF": 0
+		},
+	"\/.idea\/vcs.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/vcs.xml",
+		"oF": 0
+		},
+	"\/.idea\/workspace.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.idea\/workspace.xml",
+		"oF": 0
+		},
 	"\/assets\/javascript\/aboutPageTween.js": {
 		"ft": 64,
 		"mi": 1,
@@ -201,6 +225,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/assets\/javascript\/ScrollToPlugin.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/ScrollToPlugin-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/servicesAJAX.js": {
 		"ft": 64,
 		"mi": 1,
@@ -218,6 +251,15 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"\/assets\/javascript\/specialOffersAJAX.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/specialOffersAJAX-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/assets\/javascript\/splashPage.js": {
 		"ft": 64,
@@ -1318,6 +1360,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/build\/specialOffersAJAX-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/specialOffersAJAX-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/build\/splashPage-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1428,6 +1479,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/img\/gmaps\/marker.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/gmaps\/marker.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/index.php": {
 		"ft": 8192,
@@ -2689,6 +2750,12 @@
 		"oAP": "\/smarty_templates\/global\/pagePortal.tpl",
 		"oF": 0
 		},
+	"\/smarty_templates\/global\/specialoffers.tpl": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates\/global\/specialoffers.tpl",
+		"oF": 0
+		},
 	"\/smarty_templates\/pages\/about.tpl": {
 		"ft": 8192,
 		"oA": 2,
@@ -2831,6 +2898,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/smarty_templates_c\/825c5a6e3e1ba86632cb72e4fa6699e48179eae3_0.file.footer.tpl.php",
+		"oF": 0
+		},
+	"\/smarty_templates_c\/8ac9641d03037273f685af8af37c5af4f8debe20_0.file.specialoffers.tpl.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/smarty_templates_c\/8ac9641d03037273f685af8af37c5af4f8debe20_0.file.specialoffers.tpl.php",
 		"oF": 0
 		},
 	"\/smarty_templates_c\/931870f06934d5db2cbfd0ae5aae55b5c8ca33b8_0.file.contact.tpl.php": {

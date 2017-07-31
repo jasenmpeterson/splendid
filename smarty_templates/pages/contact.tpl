@@ -1,5 +1,3 @@
-<section class="featuredImage" style="background: url({$featuredImage})"></section>
-
 <section class="pageTitle">
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
@@ -22,14 +20,23 @@
 
 </section>
 
-<section class="interiorPageContent">
+<section class="interiorPageContent FlexContainer">
 
-  {$pageContent}
+  <section class="row">
 
-  <section class="officehours">
-    {$office_hours}
+    <section class="column">
+      {$pageContent}
+
+      <section class="officehours">
+          {$office_hours}
+      </section>
+    </section>
+
+    <section class="column">
+        {$ContactForm}
+    </section>
+
   </section>
 
-  {$ContactForm}
 
 </section>

@@ -1,3 +1,13 @@
+.gmap {
+  position: relative;
+  z-index: 2;
+}
 .gmap .mapCanvas {
   height: 55rem;
+}
+
+.gmap  h1 {
+  font-size: 2rem;
+  color: $pearlaqua;
+  margin-bottom: .2rem;
 }

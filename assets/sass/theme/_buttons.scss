@@ -7,6 +7,7 @@ a.btn {
   display: block;
   width: 100%;
   max-width: 15rem;
+  padding: .8rem;
   text-align: center;
   transition: 0.1s ease-in-out !important;
 
@@ -28,7 +29,7 @@ a.btn span {
   width: 0;
   height: 0;
   border-radius: 50%;
-  background-color: $pearlaqua;
+  background-color: $mandarin;
   transition: width 0.4s ease-in-out, height 0.4s ease-in-out !important;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -41,13 +42,13 @@ a.btn:hover span {
 }
 
 a.btn.pearlaqua {
-  color: $pearlaqua;
-
   span {
     background-color: $mandarin;
   }
 }
 
 a.btn.mandarin {
-  color: $mandarin;
+  span {
+    background-color: $royalblue;
+  }
 }

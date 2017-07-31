@@ -18,6 +18,7 @@ require.config({
     Physics2DPlugin: 'Physics2DPlugin',
     gsapPlayer: 'gsapPlayer',
     CustomEase: 'CustomEase',
+    ScrollToPlugin: 'ScrollToPlugin',
     ScrollMagic: 'ScrollMagic',
     ScrollMagicJQuery: 'jquery.ScrollMagic',
     ScrollMagicAnimation: 'animation.gsap',
@@ -28,6 +29,7 @@ require.config({
     shapeTweens: 'shapeTweens',
     dentistAJAX: 'dentistAJAX',
     servicesAJAX: 'servicesAJAX',
+    specialOffersAJAX: 'specialOffersAJAX',
     gmaps: 'gmaps',
     splashPage: 'splashPage',
     axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
@@ -91,21 +93,24 @@ require(['shapeTweens'], function (shapeTweens) {
 
   // wavyline :
   const path = document.querySelectorAll('.wavyline svg path')
-  const ellipse = document.querySelectorAll('.wavyline svg ellipse')
+
 
   const elements = [
     path[0],
     path[1],
-    ellipse[0],
-    ellipse[1]
+    path[2],
+    path[3]
   ]
   shapeTweens(elements)
 
 });
 
-// AJAX URL :
+// SITE URL :
 
 const siteURL = pageParams.root
+
+// THEME URL
+const themeURL = pageParams.themeDirectory
 
 // dentist AJAX :
 
@@ -124,6 +129,16 @@ require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
   const elements = document.querySelectorAll('.services .ajaxbutton')
 
   servicesAJAX(elements, siteURL)
+
+});
+
+// special offers AJAX :
+
+require(['specialOffersAJAX'], function (specialOffersAJAX, ajaxURL) {
+
+    const elements = document.querySelectorAll('.specialoffers')
+
+    specialOffersAJAX(elements, siteURL)
 
 });
 

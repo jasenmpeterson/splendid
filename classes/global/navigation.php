@@ -11,7 +11,9 @@ class Navigation
             'theme_location' => 'primary_menu',
             'container' => false,
             'menu_id' => 'desktop',
-            'menu_class' => 'desktop'
+            'menu_class' => 'desktop',
+            'link_before' => '<p>',
+            'link_after' => '</p><span></span>'
 
         ));
 

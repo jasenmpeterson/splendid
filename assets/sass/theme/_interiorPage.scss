@@ -9,6 +9,7 @@
   position: relative;
   display: inline-block;
   transition: $transitionOut;
+  text-transform: uppercase;
   opacity: 0;
   transform: translateY(10rem) rotate(90deg);
 }
@@ -33,6 +34,8 @@
 .interiorPageContent {
   max-width: 100rem;
   margin: 0 auto 15rem;
+  position: relative;
+  z-index: 2;
 }
 
 .interiorPageContent h1 {

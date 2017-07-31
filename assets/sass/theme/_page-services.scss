@@ -65,7 +65,8 @@
   padding: 4rem;
   margin-top: 4rem;
   margin-right: -3rem;
-  position: relative;
+  position: sticky;
+  top: 20rem;
   z-index: 2;
   @include box-shadow-all( 'rgba(44,62,80,.3)');
 }
@@ -83,6 +84,10 @@
 
 .services li {
   margin-bottom: 0.5rem;
+}
+
+.services.ajaxloader {
+  margin-top: 20rem;
 }
 
 .services li.ajaxbutton {

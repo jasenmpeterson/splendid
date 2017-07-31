@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-21 16:38:50
+/* Smarty version 3.1.30, created on 2017-07-31 19:11:10
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59722e1a16df00_54045820',
+  'unifunc' => 'content_597f80ce92b796_71261283',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9cd3a0250aa0ee9d789fe4c428649f3c7a70e0d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/global/pagePortal.tpl',
-      1 => 1500655127,
+      1 => 1501528260,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59722e1a16df00_54045820 (Smarty_Internal_Template $_smarty_tpl) {
+function content_597f80ce92b796_71261283 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_replace')) require_once '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty/libs/plugins/modifier.replace.php';
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['pageportal']->value, 'data', false, NULL, 'pageportal', array (
   'iteration' => true,
@@ -97,9 +97,12 @@ $_smarty_tpl->_assignInScope('image', $_prefixVariable6);
             <section class="column image" style="background: url(<?php echo $_smarty_tpl->tpl_vars['image']->value;?>
 )">
               <h4 class="label transform">
-                <span class="hr"></span>
-                <?php echo $_smarty_tpl->tpl_vars['label']->value;?>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['pagelink']->value;?>
+">
+                  <span class="hr"></span>
+                  <?php echo $_smarty_tpl->tpl_vars['label']->value;?>
 
+                </a>
               </h4>
             </section>
             <!--/image-->

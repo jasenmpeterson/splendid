@@ -10,60 +10,50 @@
   }
 
   li.current-menu-item a {
-    color: $mandarin;
+    color: #fff;
     border-bottom: 0.2rem solid $mandarin;
   }
 
+
   a {
-    color: $royalblue;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
-    padding: 0 1rem;
-    line-height: 3rem;
-    z-index: 2;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-tap-highlight-color: transparent;
-    white-space: nowrap;
+    color: $royalblue;
     overflow: hidden;
-    transition: color 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-
-    &:before {
-      position: absolute;
-      z-index: -1;
-      width: 0;
-      opacity: 0;
-      height: 100%;
-      right: 0;
-      transition: inherit;
-      display: block;
-      content: '';
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    text-align: center;
+    &:hover p {
+      color: #fff;
     }
+  }
 
-    &:hover {
-      color: $mandarin;
+  a p {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    transition: color ease-in-out !important;
+  }
 
-      &:before {
-        outline: 0;
-        opacity: 1;
-        width: 100%;
-        background-color: $royalblue;
-        transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-      }
+  a span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: $mandarin;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out !important;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    left: 0;
+  }
 
-      &:focus {
-        &:before {
-          outline: 0;
-          opacity: 1;
-          width: 100%;
-          background-color: $royalblue;
-          transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-        }
-      }
-    }
+  a:hover span,
+  a:focus span {
+    width: 225%;
+    height: 562.5px;
   }
 }

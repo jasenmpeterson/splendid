@@ -27,7 +27,8 @@ h5 {
   background-color: $mandarin;
   color: $white;
   font-weight: 400;
-  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  line-height: 3.5rem;
   padding: 3rem;
 
   .hr {

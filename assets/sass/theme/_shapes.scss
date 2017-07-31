@@ -2,29 +2,14 @@
   position: fixed;
   left: 0;
   top: 50rem;
-  width: 40rem;
+  width: 30rem;
   z-index: 2;
 }
 
 .wavyline svg {
-  ellipse,
   path {
-    fill: none;
+    fill: #fff;
     opacity: 0;
-  }
-
-  ellipse:first-of-type,
-  path:first-of-type {
-    stroke: #fff;
-    stroke-width: 3;
-    stroke-miterlimit: 10;
-  }
-
-  ellipse:last-of-type,
-  path:last-of-type {
-    stroke: #fff;
-    stroke-width: 4;
-    stroke-miterlimit: 10;
   }
 }
 

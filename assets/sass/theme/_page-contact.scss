@@ -16,3 +16,12 @@
   color: $mandarin;
   text-transform: uppercase;
 }
+
+.page-id-18 .interiorPageContent.FlexContainer .column {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.page-id-18 .interiorPageContent.FlexContainer .column:first-of-type {
+  padding: 0 2rem;
+}

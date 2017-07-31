@@ -36,8 +36,10 @@
 
             <section class="column image" style="background: url({$image})">
               <h4 class="label transform">
-                <span class="hr"></span>
-                {$label}
+                <a href="{$pagelink}">
+                  <span class="hr"></span>
+                  {$label}
+                </a>
               </h4>
             </section>
             <!--/image-->

@@ -4,12 +4,20 @@
 }
 
 .dentists.FlexContainer .column {
-  padding: 0 3rem;
+  padding: 0 1.5rem;
+}
+
+.dentists.FlexContainer .row {
+  align-content: center;
+  justify-content: center;
 }
 
 .dentists.FlexContainer .row:last-of-type .column {
-  width: 33.3%;
-  flex-basis: 33.3%;
+  width: 22%;
+  flex-basis: 22%;
+  position: relative;
+  z-index: 2;
+  align-self: stretch;
 }
 
 .dentists.FlexContainer .row:first-of-type .column {
@@ -34,19 +42,42 @@
   }
 }
 
+.dentist.column .inner {
+  transition: $transitionIn;
+}
+
+.dentist.column:hover {
+  z-index: 3 !important;
+}
+
+.dentist.column:hover .inner {
+  transform: scale(1.2);
+  @include box-shadow-all('rgba(44,62,80,.2)');
+}
+
+.dentist.column:hover .dentistImage span.image{
+  filter: grayscale(100%);
+}
+
 .dentistContent h5 {
-  margin: 3rem 0;
+  margin: 3rem 0 1rem 0;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+.dentistContent p {
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 .dentists .inner {
   background-color: #fff;
   padding: 4rem;
   position: relative;
-  max-width: 40rem;
   margin: 0 auto;
   cursor: pointer;
+  height: 100%;
+  transition: $transitionIn;
 }
 
 .dentists .inner:before {
@@ -58,12 +89,13 @@
   position: absolute;
   left: 0;
   top: 0;
+  transition: $transitionIn;
 }
 
 .dentists .inner .dentistImage {
   position: relative;
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   margin: 0 auto;
 }
 
@@ -92,4 +124,8 @@
 
 .page-id-102 .interiorPageContent {
   margin-bottom: 10rem;
+}
+
+.dentist.ajaxloader svg {
+  margin-top: 0;
 }
