@@ -70,24 +70,18 @@
     position: absolute;
     top: 35rem;
   }
-  .interiorPage .label.interior {
-    margin-right: -5rem;
-  }
 }
 
 @media screen and (max-width: 1024px) {
-  .interiorPage .label.interior {
-    margin-right: -5rem;
-  }
   .interiorPageContent {
     margin-left: 8rem;
+  }
+  .interiorPage .specialoffers {
+    top: 20rem;
   }
 }
 
 @media screen and (max-width: 950px) {
-  .interiorPage .label.interior {
-    margin-right: -5rem;
-  }
   .interiorPageContent {
     padding-right: 10rem;
   }
@@ -100,9 +94,13 @@
 }
 
 @media screen and (max-width: 600px) {
-.interiorPageContent {
-  padding: 0 4rem;
-  margin-left: 0;
-  margin-top: 10rem;
-}
+  .interiorPageContent {
+    padding: 0 4rem;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .interiorPage .label.interior,.interiorPage .label.interior.active {
+    transform: translateY(0);
+    padding: 2rem;
+  }
 }

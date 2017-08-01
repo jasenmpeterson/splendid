@@ -1211,7 +1211,12 @@ footer .logocontainer a:hover path {
 
 @media screen and (max-width: 600px) {
   footer .sitelogo {
-    width: 75%; } }
+    width: 75%; }
+  footer .FlexContainer .column:last-of-type {
+    padding-right: 1.5rem; }
+  footer .address p {
+    font-size: 1rem;
+    line-height: 1.2rem; } }
 
 .navigationcontainer nav {
   position: relative; }
@@ -1689,19 +1694,15 @@ a.btn.mandarin span {
 @media screen and (max-width: 1200px) {
   .interiorPage .specialoffers {
     position: absolute;
-    top: 35rem; }
-  .interiorPage .label.interior {
-    margin-right: -5rem; } }
+    top: 35rem; } }
 
 @media screen and (max-width: 1024px) {
-  .interiorPage .label.interior {
-    margin-right: -5rem; }
   .interiorPageContent {
-    margin-left: 8rem; } }
+    margin-left: 8rem; }
+  .interiorPage .specialoffers {
+    top: 20rem; } }
 
 @media screen and (max-width: 950px) {
-  .interiorPage .label.interior {
-    margin-right: -5rem; }
   .interiorPageContent {
     padding-right: 10rem; } }
 
@@ -1713,7 +1714,10 @@ a.btn.mandarin span {
   .interiorPageContent {
     padding: 0 4rem;
     margin-left: 0;
-    margin-top: 10rem; } }
+    margin-top: 2rem; }
+  .interiorPage .label.interior, .interiorPage .label.interior.active {
+    transform: translateY(0);
+    padding: 2rem; } }
 
 .ajaxcontent {
   opacity: 0;
@@ -1852,6 +1856,36 @@ a.btn.mandarin span {
 
 .dentist.ajaxloader svg {
   margin-top: 0; }
+
+@media screen and (max-width: 1200px) {
+  .dentists.FlexContainer .row:last-of-type .column {
+    max-width: 25%;
+    flex-basis: 25%; } }
+
+@media screen and (max-width: 1024px) {
+  .dentists.FlexContainer .row:last-of-type .column {
+    max-width: 33.3%;
+    flex-basis: 33.3%; } }
+
+@media screen and (max-width: 768px) {
+  .dentists.FlexContainer .row:last-of-type .column {
+    max-width: 70%;
+    flex-basis: 70%;
+    margin-bottom: 3rem; }
+  .dentists.FlexContainer .row:last-of-type .column:last-of-type {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 600px) {
+  .dentists.FlexContainer .row:last-of-type .column {
+    max-width: 80%;
+    flex-basis: 80%;
+    margin-bottom: 3rem; } }
+
+@media screen and (max-width: 400px) {
+  .dentists.FlexContainer .row:last-of-type .column {
+    max-width: 90%;
+    flex-basis: 90%;
+    margin-bottom: 3rem; } }
 
 .map.FlexContainer .contentcolumn {
   max-width: 100%;
