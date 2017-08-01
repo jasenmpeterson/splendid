@@ -17,3 +17,17 @@ header {
   margin-right: auto;
   margin-left: 10rem;
 }
+
+@media screen and (max-width:1099px) {
+ header .column {
+   flex-basis: 50% !important;
+   max-width: 50% !important;
+ }
+}
+
+@media screen and (max-width:600px) {
+  header {
+    padding:0;
+    opacity: 1;
+  }
+}

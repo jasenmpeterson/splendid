@@ -24,3 +24,15 @@
     }
   }
 }
+
+
+@media screen and (max-width:1099px) {
+  .logocontainer a {
+    display: inline-block;
+  }
+  .sitelogo {
+    width: 20rem;
+    max-width: 100%;
+    padding-left: 2rem;
+  }
+}

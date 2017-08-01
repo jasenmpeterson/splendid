@@ -27,3 +27,9 @@
 .special-offers .ajaxloader svg {
   margin-top: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .specialoffers {
+    display: none;
+  }
+}

@@ -57,3 +57,25 @@
     height: 562.5px;
   }
 }
+
+@media screen and (max-width: 1230px) {
+  .column.navigationcontainer {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1185px) {
+  .primaryNav {
+    display: none;
+  }
+  .column.navigationcontainer {
+    max-width: 65%;
+    flex-basis: 65%;
+  }
+}
+
+@media screen and (max-width:1099px) {
+  .column.navigationcontainer {
+    margin: 0;
+  }
+}

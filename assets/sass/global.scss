@@ -45,6 +45,7 @@ $transitionDelay: 0.5s;
 @import 'theme/sidebar';
 @import 'theme/forms';
 @import 'theme/splashpage';
+@import 'theme/mobileMenu';
 
 body.FlexContainer {
   background-color: $azuerieshwhite;
@@ -57,3 +58,5 @@ body.FlexContainer {
   background-attachment: fixed;
   flex-direction: column;
 }
+
+// todo: z-index issue when fixed header reaches the page title - this seems to be mostly effecting interior pages.

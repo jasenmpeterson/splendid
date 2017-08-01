@@ -32,28 +32,21 @@ require.config({
     specialOffersAJAX: 'specialOffersAJAX',
     gmaps: 'gmaps',
     splashPage: 'splashPage',
+    mobileMenu: 'mobileMenu',
     axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
     "ScrollMagic.debug": 'jquery.scrollmagic.debug'
   }
 });
 
-// Hamburger Menu :
-const mobileMenuButton = document.querySelector('.Hamburger');
+// mobile menu :
 
-if (typeof (mobileMenuButton) != 'undefined' && mobileMenuButton != null) {
+require(['mobileMenu'], function (mobileMenuButton) {
 
-  const mobileMenu = document.querySelector('.Navigation.Mobile');
-  const closeText = document.querySelector('.Navigation.Mobile .close');
+  // package elements :
+  const button = document.querySelector('.HamburgerContainer');
+  mobileMenuButton(button)
 
-  mobileMenuButton.addEventListener('click', function () {
-    mobileMenu.classList.toggle('MobileOpen')
-  }, false)
-
-  closeText.addEventListener('click', function () {
-    mobileMenu.classList.toggle('MobileOpen')
-  }, false)
-
-}
+});
 
 // page portals (homepage) :
 
@@ -148,7 +141,7 @@ require(['gmaps']);
 
 // splash page :
 
-require(['splashPage'], function (splashPage) {
-  const element = document.querySelector('.splashpage svg .background')
-  splashPage(element)
-});
+// require(['splashPage'], function (splashPage) {
+//   const element = document.querySelector('.splashpage svg .background')
+//   splashPage(element)
+// });

@@ -8,7 +8,8 @@
 
 .pageportal {
   margin: 0 auto 40rem;
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
   position: relative;
   transition: $transitionOut;
   transform: translateX(-15rem);
@@ -182,5 +183,112 @@
   transform: translateX(60rem);
   .label.transform {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .pageportal.active:nth-of-type(odd) {
+    transform: translateX(50rem);
+  }
+  .siteintro {
+    left: 5rem;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .pageportal {
+    width: 100rem;
+  }
+  .pageportal.active:nth-of-type(odd) {
+    transform: translateX(40rem);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pageportal {
+    transform: translateX(-30rem);
+  }
+  .pageportal.active {
+    transform: translateX(-10rem);
+  }
+  .pageportal.active:nth-of-type(odd) {
+    transform: translateX(20rem);
+  }
+  .pageportal:nth-of-type(odd) {
+    transform: translateX(30rem);
+  }
+  .pageportal .column:last-of-type {
+    flex-basis: 80%;
+    max-width: 80%;
+  }
+  .pageportal.alternate .textmodule {
+    width: auto;
+  }
+  .pageportal.active:nth-of-type(odd) {
+    transform: translateX(10rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pageportal.active:nth-of-type(odd),
+  .pageportal.active {
+    transform: translateX(0rem);
+  }
+  .pageportal .column:last-of-type {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .pageportal .textmodule .content .box {
+    padding: 2rem;
+  }
+  .pageportal .label.transform a {
+    padding: 2rem;
+  }
+  h4.label {
+    font-size: 2rem;
+  }
+  .pageportal .label.transparent {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .pageportal .label.transform {
+    width: 25rem;
+  }
+  .pageportal {
+    margin: 0 auto 35rem;
+  }
+  .pageportal.alternate {
+    margin-top: 0;
+  }
+  .pageportal.active:nth-of-type(odd) .label.transform {
+    left: -2rem;
+  }
+  .pageportal.active .label.transform {
+    right: -2rem;
+  }
+  .textmodule.image .column.content {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  .textmodule.image .column.image {
+    flex-basis: 40%;
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pageportal.active:nth-of-type(odd) .label.transform {
+    left: -6rem;
+  }
+  .pageportal.active .label.transform {
+    right: -6rem;
+  }
+  .textmodule.image .column.content {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+  .textmodule.image .column.image {
+    flex-basis: 40%;
+    max-width: 40%;
   }
 }

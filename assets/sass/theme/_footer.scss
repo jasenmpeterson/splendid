@@ -52,3 +52,10 @@ footer .logocontainer a:hover {
     fill: $mandarin;
   }
 }
+
+@media screen and (max-width: 600px) {
+  footer .logocontainer {
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
