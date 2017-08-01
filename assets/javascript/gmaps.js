@@ -332,9 +332,12 @@
 
           // create map
           map = new_map($(this));
-
+          window.addEventListener('resize', function() {
+            var center = map.getCenter();
+            google.maps.event.trigger(map, 'resize');
+            map.setCenter(center);
+          })
         });
-
     });
 
 })(jQuery);

@@ -11,7 +11,7 @@
   background-position: center center !important;
   position: relative;
   color: #fff;
-  padding: 15rem 0;
+  padding: 15rem 3rem;
 }
 
 .map.FlexContainer .backgroundImage .tint {
@@ -58,6 +58,10 @@
   margin: 0 auto;
 }
 
+.map.FlexContainer .steps.FlexContainer .icon .sitelogo {
+  padding: 0;
+}
+
 .map.FlexContainer .steps.FlexContainer .stepCount {
   display: flex;
   align-items: center;
@@ -72,4 +76,20 @@
 
 .page-id-10 .pagewrap {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .map.FlexContainer .steps.FlexContainer .column {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .map.FlexContainer .steps.FlexContainer .column:last-of-type {
+    margin-bottom: 0;
+  }
+  .map.FlexContainer .steps.FlexContainer .stepCount {
+    top: 3rem;
+  }
 }

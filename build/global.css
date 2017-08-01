@@ -1204,10 +1204,14 @@ footer .sitelogo {
 footer .logocontainer a:hover path {
   fill: #F37045; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   footer .logocontainer {
     text-align: left;
     padding-left: 2rem; } }
+
+@media screen and (max-width: 600px) {
+  footer .sitelogo {
+    width: 75%; } }
 
 .navigationcontainer nav {
   position: relative; }
@@ -1580,6 +1584,10 @@ a.btn.mandarin span {
     stroke-width: 10px;
     transform: scale(1); }
 
+@media screen and (max-width: 600px) {
+  .wavyline {
+    display: none; } }
+
 .specialoffers {
   position: fixed;
   left: 0;
@@ -1615,6 +1623,14 @@ a.btn.mandarin span {
   background-position: center center !important;
   height: 50.0rem; }
 
+@media screen and (max-width: 1440px) {
+  .featuredImage {
+    height: 40.0rem; } }
+
+@media screen and (max-width: 1024px) {
+  .featuredImage {
+    height: 25.0rem; } }
+
 .interiorPage .pageTitle {
   text-align: right;
   position: sticky;
@@ -1644,10 +1660,12 @@ a.btn.mandarin span {
   width: 8rem; }
 
 .interiorPageContent {
-  max-width: 100rem;
+  width: 100rem;
+  max-width: 100%;
   margin: 0 auto 15rem;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
 
 .interiorPageContent h1 {
   font-size: 3rem; }
@@ -1659,6 +1677,43 @@ a.btn.mandarin span {
 .interiorPageContent h5,
 .interiorPageContent h6 {
   color: #F37045; }
+
+@media screen and (max-width: 1440px) {
+  .interiorPageContent {
+    width: 85rem; } }
+
+@media screen and (max-width: 1280px) {
+  .interiorPageContent {
+    width: 75rem; } }
+
+@media screen and (max-width: 1200px) {
+  .interiorPage .specialoffers {
+    position: absolute;
+    top: 35rem; }
+  .interiorPage .label.interior {
+    margin-right: -5rem; } }
+
+@media screen and (max-width: 1024px) {
+  .interiorPage .label.interior {
+    margin-right: -5rem; }
+  .interiorPageContent {
+    margin-left: 8rem; } }
+
+@media screen and (max-width: 950px) {
+  .interiorPage .label.interior {
+    margin-right: -5rem; }
+  .interiorPageContent {
+    padding-right: 10rem; } }
+
+@media screen and (max-width: 850px) {
+  .interiorPageContent {
+    padding-right: 25rem; } }
+
+@media screen and (max-width: 600px) {
+  .interiorPageContent {
+    padding: 0 4rem;
+    margin-left: 0;
+    margin-top: 10rem; } }
 
 .ajaxcontent {
   opacity: 0;
@@ -1810,7 +1865,7 @@ a.btn.mandarin span {
   background-position: center center !important;
   position: relative;
   color: #fff;
-  padding: 15rem 0; }
+  padding: 15rem 3rem; }
 
 .map.FlexContainer .backgroundImage .tint {
   position: absolute;
@@ -1849,6 +1904,9 @@ a.btn.mandarin span {
   width: 10rem;
   margin: 0 auto; }
 
+.map.FlexContainer .steps.FlexContainer .icon .sitelogo {
+  padding: 0; }
+
 .map.FlexContainer .steps.FlexContainer .stepCount {
   display: flex;
   align-items: center;
@@ -1862,6 +1920,18 @@ a.btn.mandarin span {
 
 .page-id-10 .pagewrap {
   margin-bottom: 0; }
+
+@media screen and (max-width: 600px) {
+  .map.FlexContainer .steps.FlexContainer .column {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+    align-items: center; }
+  .map.FlexContainer .steps.FlexContainer .column:last-of-type {
+    margin-bottom: 0; }
+  .map.FlexContainer .steps.FlexContainer .stepCount {
+    top: 3rem; } }
 
 .homepage .pagewrap {
   margin-top: 40rem; }

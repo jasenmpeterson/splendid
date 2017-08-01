@@ -32,10 +32,12 @@
 }
 
 .interiorPageContent {
-  max-width: 100rem;
+  width: 100rem;
+  max-width: 100%;
   margin: 0 auto 15rem;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 .interiorPageContent h1 {
@@ -49,4 +51,58 @@
 .interiorPageContent h5,
 .interiorPageContent h6 {
   color: $mandarin;
+}
+
+@media screen and (max-width: 1440px) {
+  .interiorPageContent {
+    width: 85rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .interiorPageContent {
+    width: 75rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .interiorPage .specialoffers {
+    position: absolute;
+    top: 35rem;
+  }
+  .interiorPage .label.interior {
+    margin-right: -5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .interiorPage .label.interior {
+    margin-right: -5rem;
+  }
+  .interiorPageContent {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .interiorPage .label.interior {
+    margin-right: -5rem;
+  }
+  .interiorPageContent {
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .interiorPageContent {
+    padding-right: 25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.interiorPageContent {
+  padding: 0 4rem;
+  margin-left: 0;
+  margin-top: 10rem;
+}
 }

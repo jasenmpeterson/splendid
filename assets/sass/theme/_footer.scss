@@ -53,9 +53,15 @@ footer .logocontainer a:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   footer .logocontainer {
     text-align: left;
     padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .sitelogo {
+    width: 75%;
   }
 }
