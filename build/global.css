@@ -1639,8 +1639,7 @@ a.btn.mandarin span {
 .interiorPage .pageTitle {
   text-align: right;
   position: sticky;
-  top: 8rem;
-  z-index: 50; }
+  top: 8rem; }
 
 .interiorPage .label.interior {
   position: relative;
@@ -2228,11 +2227,27 @@ a.btn.mandarin span {
   text-transform: uppercase; }
 
 .page-id-18 .interiorPageContent.FlexContainer .column {
-  max-width: 50%;
-  flex-basis: 50%; }
+  max-width: 40%;
+  flex-basis: 40%; }
 
 .page-id-18 .interiorPageContent.FlexContainer .column:first-of-type {
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  max-width: 60%;
+  flex-basis: 60%; }
+
+@media screen and (max-width: 950px) {
+  .page-id-18 .interiorPageContent {
+    padding: 0; } }
+
+@media screen and (max-width: 900px) {
+  .page-id-18 .interiorPageContent.FlexContainer .column,
+  .page-id-18 .interiorPageContent.FlexContainer .column:first-of-type {
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 3rem;
+    padding: 0 2rem; }
+  .page-id-18 .interiorPageContent.FlexContainer .column:last-of-type {
+    margin-bottom: 0; } }
 
 .gmap {
   position: relative;
