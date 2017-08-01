@@ -1981,8 +1981,11 @@ a.btn.mandarin span {
   max-width: 100rem;
   margin: 0 auto; }
 
+.services.FlexContainer .row {
+  justify-content: center; }
+
 .services .content {
-  max-width: 100%;
+  max-width: 65%;
   flex-basis: 65%;
   position: relative;
   z-index: 1; }
@@ -2072,6 +2075,23 @@ a.btn.mandarin span {
 .services.FlexContainer .ajaxcontent {
   position: absolute;
   align-items: flex-start; }
+
+@media screen and (max-width: 768px) {
+  .services .sidebar li {
+    font-size: 1.4rem; }
+  .services .sidebar ul {
+    padding: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .serviceTitle h1 {
+    font-size: 3rem; }
+  .services .content {
+    max-width: 100%;
+    flex-basis: 100%; }
+  .page-id-12 .interiorPageContent {
+    margin-bottom: 5rem; }
+  .services .service {
+    padding: 4rem; } }
 
 .services .sidebar li {
   cursor: pointer; }
@@ -2080,8 +2100,11 @@ a.btn.mandarin span {
   max-width: 100rem;
   margin: 0 auto; }
 
+.services.FlexContainer .row {
+  justify-content: center; }
+
 .services .content {
-  max-width: 100%;
+  max-width: 65%;
   flex-basis: 65%;
   position: relative;
   z-index: 1; }
@@ -2171,6 +2194,23 @@ a.btn.mandarin span {
 .services.FlexContainer .ajaxcontent {
   position: absolute;
   align-items: flex-start; }
+
+@media screen and (max-width: 768px) {
+  .services .sidebar li {
+    font-size: 1.4rem; }
+  .services .sidebar ul {
+    padding: 3rem; } }
+
+@media screen and (max-width: 600px) {
+  .serviceTitle h1 {
+    font-size: 3rem; }
+  .services .content {
+    max-width: 100%;
+    flex-basis: 100%; }
+  .page-id-12 .interiorPageContent {
+    margin-bottom: 5rem; }
+  .services .service {
+    padding: 4rem; } }
 
 .page-id-18 .gmap {
   margin-bottom: 5rem; }
@@ -2209,6 +2249,16 @@ a.btn.mandarin span {
 .column.sidebar {
   max-width: 35%;
   flex-basis: 35%; }
+
+@media screen and (max-width: 1024px) {
+  .column.sidebar {
+    max-width: 30%;
+    flex-basis: 30%; } }
+
+@media screen and (max-width: 600px) {
+  .column.sidebar {
+    max-width: 100%;
+    flex-basis: 100%; } }
 
 input[type="email"],
 input[type="tel"],

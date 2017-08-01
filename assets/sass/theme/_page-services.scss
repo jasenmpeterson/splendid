@@ -7,8 +7,12 @@
   margin: 0 auto;
 }
 
+.services.FlexContainer .row {
+  justify-content: center;
+}
+
 .services .content {
-  max-width: 100%;
+  max-width: 65%;
   flex-basis: 65%;
   position: relative;
   z-index: 1;
@@ -117,4 +121,31 @@
 .services.FlexContainer .ajaxcontent {
   position: absolute;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .services .sidebar li {
+    font-size: 1.4rem;
+  }
+  .services .sidebar ul {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .serviceTitle h1 {
+    font-size: 3rem;
+  }
+  .services .content {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .page-id-12 .interiorPageContent {
+    margin-bottom: 5rem;
+  }
+
+  .services .service {
+    padding: 4rem;
+  }
 }
