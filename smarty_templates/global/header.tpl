@@ -2,11 +2,6 @@
   <section class="row">
     <section class="column logocontainer">
       <a href="{$homeURL}">{$SiteLogo}</a>
-    </section>
-    <section class="column navigationcontainer">
-       <nav class="primaryNav">
-         {nav->displayPrimaryMenu}
-       </nav>
         <section class="HamburgerContainer">
             <section class="HamburgerMenuTitle">
                 Menu
@@ -18,6 +13,11 @@
             </section>
         </section>
         <!--/Hamburger Menu-->
+    </section>
+    <section class="column navigationcontainer">
+       <nav class="primaryNav">
+         {nav->displayPrimaryMenu}
+       </nav>
     </section>
   </section>
 </header>

@@ -14,7 +14,7 @@ $smarty->assign('siteIntro', get_field('site_intro', $pageID));
 use PagePortal\PagePortal;
 
 $pagePortal = new PagePortal();
-$pagePortal->displayPagePortal(array(102,10,12,18)); // page IDs
+$pagePortal->displayPagePortal(array(102,18,10,12)); // page IDs
 
 // smarty :
 

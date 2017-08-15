@@ -44,6 +44,8 @@
 
 .dentist.column .inner {
   transition: $transitionIn;
+  align-self: stretch;
+  background-color: #fff;
 }
 
 .dentist.column:hover {

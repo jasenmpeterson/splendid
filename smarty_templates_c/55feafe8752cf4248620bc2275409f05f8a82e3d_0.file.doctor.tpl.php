@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-31 18:19:09
+/* Smarty version 3.1.30, created on 2017-08-15 18:59:34
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_597f749d32bbe8_11890311',
+  'unifunc' => 'content_59934496d1d615_84009408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '55feafe8752cf4248620bc2275409f05f8a82e3d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl',
-      1 => 1501525142,
+      1 => 1502823569,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597f749d32bbe8_11890311 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59934496d1d615_84009408 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="featuredImage" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featuredImage']->value;?>
 )"></section>
@@ -29,21 +29,21 @@ function content_597f749d32bbe8_11890311 (Smarty_Internal_Template $_smarty_tpl)
   <h4 class="label interior transform"><span class="hr"></span><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
 </h4>
 </section>
-
+<?php if (!empty($_smarty_tpl->tpl_vars['pageContent']->value)) {?>
 <section class="interiorPageContent">
 
   <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
 
 
 </section>
-
+<?php }?>
 
 
 <section class="dentists FlexContainer">
 
   <section class="row">
     <section class="column">
-      <h2>Meet our Dentist</h2>
+      <h2>Meet our Dentists</h2>
     </section>
   </section>
 
@@ -99,6 +99,9 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
         </circle>
       </g>
     </svg>
+
+  </section>
+  <section class="inner-content">
 
   </section>
 </section>

@@ -1,21 +1,34 @@
 header {
   padding: 0 5rem;
   position: fixed;
+  height: 10.5rem;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 50;
-  height: 20.5rem;
   transition: all 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
-  height: 10.5rem;
   background-color: $azuerieshwhite;
   opacity: 0.8;
 }
 
 .column.navigationcontainer {
-  align-self: center;
+  margin-top: 3.5rem;
   margin-right: auto;
-  margin-left: 10rem;
+  margin-left: 5rem;
+}
+
+header .logocontainer a {
+  margin-top: -5rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1600px) {
+  .column.navigationcontainer {
+    margin-left: 1rem;
+  }
+  header {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width:1099px) {

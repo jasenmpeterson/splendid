@@ -1,8 +1,12 @@
 // site logo :
 
 .sitelogo {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+
+  display: block;
+  margin: 0 auto;
 
   path.circle {
     fill: #81cdbf;
@@ -17,6 +21,7 @@
 
 .logocontainer a {
   position: relative;
+  display: inline-block;
 
   &:hover {
     svg {
@@ -25,14 +30,11 @@
   }
 }
 
-
 @media screen and (max-width:1099px) {
   .logocontainer a {
     display: inline-block;
   }
   .sitelogo {
-    width: 20rem;
-    max-width: 100%;
     padding-left: 2rem;
   }
 }

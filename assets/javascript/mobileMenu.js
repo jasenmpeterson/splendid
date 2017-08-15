@@ -11,12 +11,13 @@ define(function () {
 
       element.addEventListener('click', function () {
         mobileMenu.classList.toggle('MobileOpen')
-        console.log(element)
+        mobileMenuButton.classList.toggle('MobileActive')
         body[0].classList.toggle('MobileMenuActive')
       }, false)
 
       closeText.addEventListener('click', function () {
         mobileMenu.classList.toggle('MobileOpen')
+        mobileMenuButton.classList.toggle('MobileActive')
         body[0].classList.toggle('MobileMenuActive')
       }, false)
 

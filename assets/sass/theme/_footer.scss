@@ -2,7 +2,6 @@ footer {
   background: #fff;
   color: $pearlaqua;
   position: relative;
-  padding: 3.5rem 0;
 }
 
 footer p {
@@ -13,12 +12,13 @@ footer p {
 
 footer .FlexContainer .row {
   align-items: center;
+  justify-content: center;
 }
 
-footer .FlexContainer .row .column {
-  flex-basis: 50%;
-  max-width: 50%;
-}
+//footer .FlexContainer .row .column {
+//  flex-basis: 50%;
+//  max-width: 50%;
+//}
 
 
 footer .FlexContainer .column:last-of-type {
@@ -36,7 +36,8 @@ footer .logocontainer a {
 }
 
 footer .sitelogo {
-  width: 50%;
+  width: 150px;
+  height: 150px;
 
   circle {
     display: none;
@@ -61,9 +62,6 @@ footer .logocontainer a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  footer .sitelogo {
-    width: 75%;
-  }
   footer .FlexContainer .column:last-of-type {
     padding-right: 1.5rem;
   }

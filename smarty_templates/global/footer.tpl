@@ -9,9 +9,9 @@
           <a href="{$homeURL}">{$SiteLogo}</a>
         {/if}
       </section>
-      <section class="column address">
-        {$address}
-      </section>
+      {*<section class="column address">*}
+        {*{$address}*}
+      {*</section>*}
     </section>
   </section>
 </footer>

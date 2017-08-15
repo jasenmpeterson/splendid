@@ -10,7 +10,10 @@
 
       <section class="gmap">
         <section class="mapCanvas acf-map">
-          <div class="marker" data-lat="{$map['lat']}" data-lng="{$map['lng']}"></div>
+          <div class="marker" data-lat="{$map['lat']}" data-lng="{$map['lng']}">
+              <h1>Splendid Dental</h1>
+              {$map['address']}
+          </div>
         </section>
       </section>
 

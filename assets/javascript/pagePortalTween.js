@@ -17,7 +17,7 @@ define(['./ScrollMagic', './ScrollMagicJQuery', './ScrollMagicAnimation', './Twe
 
       // scrollmagic vars :
       const sceneController = new ScrollMagic.Controller({
-        addIndicators: true,
+        //addIndicators: true,
         globalSceneOptions: {
           duration: 355
         }

@@ -12,6 +12,12 @@
   transition: all 300ms;
 }
 
+.HamburgerContainer .HamburgerMenuTitle {
+  font-weight: 700;
+  font-size: 1.4rem;
+  font-style:normal;
+}
+
 .Navigation.Mobile.MobileOpen {
   transform: translateX(0);
   opacity: 1;
@@ -25,11 +31,22 @@
 .MobileMenuActive {
   overflow: hidden;
 }
+.HamburgerContainer {
+  transition: all 300ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+.HamburgerContainer.MobileActive {
+  opacity: 0;
+}
+
+.Hamburger .line {
+  background-color: $mandarin;
+}
 
 @media screen and (max-width: 1185px) {
   .HamburgerContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    background-color: rgba(223, 242, 239, .8);
+    padding: 1rem 0 1rem 4rem;
   }
 }

@@ -3,20 +3,20 @@
 <section class="pageTitle">
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
-
+{if !empty($pageContent)}
 <section class="interiorPageContent">
 
   {$pageContent}
 
 </section>
-
+{/if}
 
 
 <section class="dentists FlexContainer">
 
   <section class="row">
     <section class="column">
-      <h2>Meet our Dentist</h2>
+      <h2>Meet our Dentists</h2>
     </section>
   </section>
 
@@ -59,6 +59,9 @@
         </circle>
       </g>
     </svg>
+
+  </section>
+  <section class="inner-content">
 
   </section>
 </section>

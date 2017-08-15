@@ -21,6 +21,7 @@
 .services .content .inner {
   @include box-shadow-all( 'rgba(44,62,80,.3)');
   background-color: #fff;
+  overflow: hidden;
 }
 
 .serviceTitle {

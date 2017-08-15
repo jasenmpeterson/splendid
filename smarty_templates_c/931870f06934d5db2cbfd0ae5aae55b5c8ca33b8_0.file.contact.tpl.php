@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-31 20:25:34
+/* Smarty version 3.1.30, created on 2017-08-15 16:41:37
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/contact.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_597f923eed72d1_82880127',
+  'unifunc' => 'content_59932441dd7330_06874711',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '931870f06934d5db2cbfd0ae5aae55b5c8ca33b8' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/contact.tpl',
-      1 => 1501532730,
+      1 => 1502815292,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_597f923eed72d1_82880127 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59932441dd7330_06874711 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="pageTitle">
   <h4 class="label interior transform"><span class="hr"></span><?php echo $_smarty_tpl->tpl_vars['pageTitle']->value;?>
@@ -37,7 +37,11 @@ function content_597f923eed72d1_82880127 (Smarty_Internal_Template $_smarty_tpl)
         <section class="mapCanvas acf-map">
           <div class="marker" data-lat="<?php echo $_smarty_tpl->tpl_vars['map']->value['lat'];?>
 " data-lng="<?php echo $_smarty_tpl->tpl_vars['map']->value['lng'];?>
-"></div>
+">
+              <h1>Splendid Dental</h1>
+              <?php echo $_smarty_tpl->tpl_vars['map']->value['address'];?>
+
+          </div>
         </section>
       </section>
 
