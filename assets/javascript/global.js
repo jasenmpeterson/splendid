@@ -30,6 +30,7 @@ require.config({
     dentistAJAX: 'dentistAJAX',
     servicesAJAX: 'servicesAJAX',
     specialOffersAJAX: 'specialOffersAJAX',
+    aboutPage: 'aboutPage',
     gmaps: 'gmaps',
     splashPage: 'splashPage',
     mobileMenu: 'mobileMenu',
@@ -123,6 +124,12 @@ require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
 
   servicesAJAX(elements, siteURL)
 
+});
+
+// about AJAX :
+
+require(['aboutPage'], function (aboutPage) {
+  aboutPage()
 });
 
 // special offers AJAX :

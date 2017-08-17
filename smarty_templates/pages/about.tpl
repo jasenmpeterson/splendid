@@ -16,19 +16,36 @@
 
     <section class="column contentcolumn">
 
-      <section class="backgroundImage" style="background: url({$mapBackground})">
+      <section class="backgroundImage" style="background: url({$mapBackground});">
         <span class="tint"></span>
         <section class="content">
-
           {$content}
+          <section class="about-pop-up faq-pop-up">
 
+            <section class="faq FlexContainer">
+              <section class="row">
+                  {foreach $faq as $question name=question}
+                    <section class="column">
+                      <section class="faq-title" data-faq-name="{$question['title']|replace:' ':'-'}">
+                          {$question['title']}
+                      </section>
+                      <section class="faq-content {if $smarty.foreach.question.iteration == 1}active{/if}" data-faq-name="{$question['title']|replace:' ':'-'}">
+                        <section class="inner">
+                            {$question['content']}
+                        </section>
+                      </section>
+                    </section>
+                  {/foreach}
+              </section>
+            </section>
+
+          </section>
           <section class="steps FlexContainer">
-
             <section class="row">
               {foreach $steps as $step name=state}
                 <section class="column">
                   <section class="stepCount">{$smarty.foreach.state.iteration}</section>
-                  <section class="icon">
+                  <section class="icon" data-id="{$smarty.foreach.state.iteration}">
                     {$step['icon']}
                   </section>
                   <section class="stepcontent">

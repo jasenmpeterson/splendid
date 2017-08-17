@@ -33,25 +33,18 @@ footer .logocontainer {
 footer .logocontainer a {
   margin: 0;
   display: inline-block;
+  padding: 2rem;
 }
 
 footer .sitelogo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 
   circle {
-    display: none;
-  }
-
-  path {
+    // display: none;
     fill: $pearlaqua;
   }
-}
 
-footer .logocontainer a:hover {
-  path {
-    fill: $mandarin;
-  }
 }
 
 @media screen and (max-width: 1200px) {

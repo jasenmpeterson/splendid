@@ -25,7 +25,7 @@
 }
 
 .map.FlexContainer .content {
-  max-width: 80rem;
+  max-width: 95rem;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -53,9 +53,15 @@
   position: relative;
 }
 
+.map.FlexContainer .backgroundImage {
+  flex-direction: column;
+  position: relative;
+}
+
 .map.FlexContainer .steps.FlexContainer .icon {
   width: 10rem;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .map.FlexContainer .steps.FlexContainer .icon .sitelogo {
@@ -76,6 +82,55 @@
 
 .page-id-10 .pagewrap {
   margin-bottom: 0;
+}
+
+.about-pop-up {
+  width: 90rem;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 20;
+  background-color: #fff;
+  padding: 4rem;
+  text-align: left;
+}
+
+.faq .column {
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+.faq-title {
+  font-weight: 700;
+  background-color: $royalblue;
+  line-height: normal;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.faq-content {
+  border: 1px solid $royalblue;
+  color: $royalblue;
+}
+
+.faq-content.active {
+  height: auto;
+  background-color: #fff;
+  opacity: 1;
+  height: auto;
+  display: block;
+}
+
+.faq-content {
+  height: 0;
+  opacity: 0;
+  display: none;
+}
+
+.faq-content .inner {
+  padding: 3.5rem;
 }
 
 @media screen and (max-width: 600px) {

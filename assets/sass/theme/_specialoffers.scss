@@ -17,10 +17,23 @@
 }
 
 .specialoffers h4.label {
-  padding: 1rem;
+  padding: 1.5rem;
+  line-height: normal;
   font-size: 1.4rem;
   margin-top: 1rem;
   text-transform: uppercase;
+}
+
+.specialoffers * {
+  transition: all 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.specialoffers:hover h4.label {
+  background-color: $pearlaqua;
+}
+
+.specialoffers:hover p {
+  color: $pearlaqua;
 }
 
 .special-offers .ajaxloader svg {

@@ -16,10 +16,17 @@ $smarty->assign('featuredImage', wp_get_attachment_url(get_post_thumbnail_id($pa
 // the content :
 
 $smarty->assign('pageContent', wpautop(get_post_field('post_content', $pageID)));
+$smarty->assign('content', get_field('content', $pageID));
 
 // google map :
 
 $googlemap = get_field('google_map', $pageID);
+
+// faq :
+
+$faq = get_field('faq', $pageID);
+
+$smarty->assign('faq', $faq);
 
 foreach ($googlemap as $map):
 

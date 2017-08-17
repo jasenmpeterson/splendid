@@ -130,6 +130,22 @@
 
 .dentist.ajaxloader svg {
   margin-top: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.dentists.ajaxcontent .inner-content {
+  width: 90rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.dentists.ajaxcontent .dentist-name {
+  color: $mandarin;
 }
 
 @media screen and (max-width: 1200px) {

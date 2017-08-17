@@ -39,6 +39,15 @@
 		"oAP": "\/.idea\/workspace.xml",
 		"oF": 0
 		},
+	"\/assets\/javascript\/aboutPage.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/aboutPage-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/assets\/javascript\/aboutPageTween.js": {
 		"ft": 64,
 		"mi": 1,
@@ -65,15 +74,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/assets\/javascript\/buttons.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/build\/buttons-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
 		},
 	"\/assets\/javascript\/CustomBounce.js": {
 		"ft": 64,
@@ -1221,6 +1221,24 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/build\/aboutAJAX-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/aboutAJAX-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/build\/aboutPage-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/aboutPage-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/build\/aboutPageTween-min.js": {
 		"ft": 64,
