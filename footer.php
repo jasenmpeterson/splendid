@@ -48,7 +48,6 @@ endif;
 
 wp_footer();
 ?>
-
 </body>
 
 </html>

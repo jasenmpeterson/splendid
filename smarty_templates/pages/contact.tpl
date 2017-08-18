@@ -11,8 +11,10 @@
       <section class="gmap">
         <section class="mapCanvas acf-map">
           <div class="marker" data-lat="{$map['lat']}" data-lng="{$map['lng']}">
+            <section class="text">
               <h1>Splendid Dental</h1>
-              {$map['address']}
+                {$map['address']}
+            </section>
           </div>
         </section>
       </section>

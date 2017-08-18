@@ -27,7 +27,6 @@
 
 ?>
 >
-
 <?php
   include(locate_template('/templates/global/vars.php'));
  ?>

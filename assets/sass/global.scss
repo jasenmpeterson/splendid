@@ -46,7 +46,6 @@ $transitionDelay: 0.5s;
 @import 'theme/forms';
 @import 'theme/splashpage';
 @import 'theme/mobileMenu';
-
 body.FlexContainer {
   background-color: $azuerieshwhite;
   background-image: url("../img/bg/bkgrnd_photos.png");
@@ -54,9 +53,23 @@ body.FlexContainer {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   background-attachment: fixed;
   flex-direction: column;
 }
 
-// todo: z-index issue when fixed header reaches the page title - this seems to be mostly effecting interior pages.
+html, body {
+  overflow-x:hidden
+}
+
+html {
+  height: 100%;
+}
+
+.page-id-116 .featuredImage {
+  background-position: top center !important;
+}
+
+.page-id-18 .pageTitle {
+  display: none;
+}

@@ -12,15 +12,19 @@
   cursor: pointer;
 }
 
+.specialoffers p,
+.specialoffers h4 {
+  margin: 0;
+}
+
 .specialoffers p {
-  font-size: 2rem;
+  font-size: 1.5rem;;
 }
 
 .specialoffers h4.label {
-  padding: 1.5rem;
+  padding: .8rem;
   line-height: normal;
   font-size: 1.4rem;
-  margin-top: 1rem;
   text-transform: uppercase;
 }
 
@@ -44,14 +48,8 @@
   .specialoffers {
     width: 16rem;
   }
-  .specialoffers * {
-    margin: 0 !important;
-  }
   .specialoffers p {
     font-size: 1.5rem;
-  }
-  .specialoffers h4.label {
-    padding: 1rem;
   }
 }
 

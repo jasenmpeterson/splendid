@@ -15,30 +15,14 @@ footer .FlexContainer .row {
   justify-content: center;
 }
 
-//footer .FlexContainer .row .column {
-//  flex-basis: 50%;
-//  max-width: 50%;
-//}
-
-
-footer .FlexContainer .column:last-of-type {
-  padding-right: 5rem;
-  text-align: right;
-}
-
-footer .logocontainer {
-  text-align: right;
-}
-
 footer .logocontainer a {
   margin: 0;
   display: inline-block;
-  padding: 2rem;
 }
 
 footer .sitelogo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 
   circle {
      display: none;
@@ -48,21 +32,4 @@ footer .sitelogo {
     fill: $pearlaqua;
   }
 
-}
-
-@media screen and (max-width: 1200px) {
-  footer .logocontainer {
-    text-align: left;
-    padding-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  footer .FlexContainer .column:last-of-type {
-    padding-right: 1.5rem;
-  }
-  footer .address p {
-    font-size: 1rem;
-    line-height: 1.2rem;
-  }
 }

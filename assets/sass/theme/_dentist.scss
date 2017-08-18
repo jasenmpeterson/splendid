@@ -50,8 +50,12 @@
   @include box-shadow-all('rgba(44,62,80,.2)');
 }
 
-.dentist.column:hover .dentistImage span.image{
+.dentist.column .dentistImage span.image {
   filter: grayscale(100%);
+}
+
+.dentist.column:hover .dentistImage span.image {
+  filter: grayscale(0);
 }
 
 .dentistContent h5 {
