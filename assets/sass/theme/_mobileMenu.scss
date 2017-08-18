@@ -6,7 +6,7 @@
   width: 30rem;
   padding: 2rem;
   z-index: 1000;
-  background-color: rgba(129, 205, 192, .8);
+  background-color: rgba(129, 205, 192, .95);
   opacity: 0;
   transform: translateX(-1000px);
   transition: all 300ms;
@@ -42,11 +42,11 @@
   background-color: $mandarin;
 }
 
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 900px) {
   .HamburgerContainer {
     display: flex;
     align-items: center;
-    background-color: rgba(223, 242, 239, .8);
+    background-color: rgba(223, 242, 239, .99);
     padding: 1rem 0 1rem 4rem;
   }
 }

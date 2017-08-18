@@ -33,7 +33,7 @@
 .interiorPageContent {
   width: 100rem;
   max-width: 100%;
-  margin: 0 auto 15rem;
+  margin: -8rem auto 15rem;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -64,19 +64,16 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .interiorPage .specialoffers {
-    position: absolute;
-    top: 35rem;
-  }
-}
+//@media screen and (max-width: 1200px) {
+//  .interiorPage .specialoffers {
+//    position: absolute;
+//    top: 35rem;
+//  }
+//}
 
 @media screen and (max-width: 1024px) {
   .interiorPageContent {
     margin-left: 8rem;
-  }
-  .interiorPage .specialoffers {
-    top: 20rem;
   }
 }
 

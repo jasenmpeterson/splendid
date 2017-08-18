@@ -41,7 +41,10 @@ footer .sitelogo {
   height: 120px;
 
   circle {
-    // display: none;
+     display: none;
+  }
+
+  path {
     fill: $pearlaqua;
   }
 

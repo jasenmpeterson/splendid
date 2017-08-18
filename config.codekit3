@@ -7,7 +7,7 @@
 		"uuidString": "AA261388-E955-4D2B-ACBE-97552CF1C685"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25900",
 "files": {
 	"\/.eslintrc": {
 		"ft": 8192,
@@ -41,6 +41,7 @@
 		},
 	"\/assets\/javascript\/aboutPage.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/aboutPage-min.js",
@@ -50,6 +51,7 @@
 		},
 	"\/assets\/javascript\/aboutPageTween.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/aboutPageTween-min.js",
@@ -59,6 +61,7 @@
 		},
 	"\/assets\/javascript\/animation.gsap.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/animation.gsap-min.js",
@@ -68,6 +71,7 @@
 		},
 	"\/assets\/javascript\/animation.velocity.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/animation.velocity-min.js",
@@ -77,6 +81,7 @@
 		},
 	"\/assets\/javascript\/CustomBounce.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/CustomBounce-min.js",
@@ -86,6 +91,7 @@
 		},
 	"\/assets\/javascript\/CustomEase.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/CustomEase-min.js",
@@ -95,6 +101,7 @@
 		},
 	"\/assets\/javascript\/debug.addIndicators.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/debug.addIndicators-min.js",
@@ -104,6 +111,7 @@
 		},
 	"\/assets\/javascript\/dentistAJAX.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/dentistAJAX-min.js",
@@ -113,6 +121,7 @@
 		},
 	"\/assets\/javascript\/DrawSVGPlugin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/DrawSVGPlugin-min.js",
@@ -122,6 +131,7 @@
 		},
 	"\/assets\/javascript\/fixedHeader.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/fixedHeader-min.js",
@@ -131,6 +141,7 @@
 		},
 	"\/assets\/javascript\/global.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/global-min.js",
@@ -140,6 +151,7 @@
 		},
 	"\/assets\/javascript\/gmaps.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gmaps-min.js",
@@ -149,6 +161,7 @@
 		},
 	"\/assets\/javascript\/gsapPlayer.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gsapPlayer-min.js",
@@ -158,6 +171,7 @@
 		},
 	"\/assets\/javascript\/interiorPageTween.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/interiorPageTween-min.js",
@@ -167,6 +181,7 @@
 		},
 	"\/assets\/javascript\/jquery.ScrollMagic.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/jquery.ScrollMagic-min.js",
@@ -176,6 +191,7 @@
 		},
 	"\/assets\/javascript\/mobileMenu.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/mobileMenu-min.js",
@@ -185,6 +201,7 @@
 		},
 	"\/assets\/javascript\/MorphSVGPlugin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/MorphSVGPlugin-min.js",
@@ -198,8 +215,9 @@
 		"oAP": "\/build\/assets\/javascript\/node_modules",
 		"oF": 0
 		},
-	"\/assets\/javascript\/PagePortalTween.js": {
+	"\/assets\/javascript\/pagePortalTween.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/pagePortalTween-min.js",
@@ -209,6 +227,7 @@
 		},
 	"\/assets\/javascript\/Physics2DPlugin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/Physics2DPlugin-min.js",
@@ -218,6 +237,7 @@
 		},
 	"\/assets\/javascript\/require.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/require-min.js",
@@ -227,6 +247,7 @@
 		},
 	"\/assets\/javascript\/ScrollMagic.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/ScrollMagic-min.js",
@@ -236,6 +257,7 @@
 		},
 	"\/assets\/javascript\/ScrollToPlugin.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/ScrollToPlugin-min.js",
@@ -245,6 +267,7 @@
 		},
 	"\/assets\/javascript\/servicesAJAX.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/servicesAJAX-min.js",
@@ -254,6 +277,7 @@
 		},
 	"\/assets\/javascript\/shapeTweens.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/shapeTweens-min.js",
@@ -263,6 +287,7 @@
 		},
 	"\/assets\/javascript\/specialOffersAJAX.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/specialOffersAJAX-min.js",
@@ -272,6 +297,7 @@
 		},
 	"\/assets\/javascript\/splashPage.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/splashPage-min.js",
@@ -281,6 +307,7 @@
 		},
 	"\/assets\/javascript\/TweenMax.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/TweenMax-min.js",
@@ -401,342 +428,6 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/build\/global.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/_grid-settings-flex.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/build\/_grid-settings-flex.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/_grid-settings.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/build\/_grid-settings.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/_variables.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/build\/_variables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/grid-flex.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/gridle\/grid-flex-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/sass\/gridle\/grid-flex.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/grid-flex.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/grid-mixins.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/gridle\/grid-mixins-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/sass\/gridle\/grid-mixins.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/grid-mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/grid.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/gridle\/grid-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/sass\/gridle\/grid.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/grid.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_api.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_api.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_default-states.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_default-states.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_driver-default.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_driver-default.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_driver-flex.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_driver-flex.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_flexbox.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_flexbox.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_functions.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_functions.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_generate-mixins.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_generate-mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_gridle-flex.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_gridle-flex.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_gridle.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_gridle.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_init.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_init.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_mixins.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_settings-mixins.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_settings-mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/gridle\/_settings.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_settings.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/gridle\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/sass\/gridle\/style.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/tests.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/assets\/sass\/gridle\/tests-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/sass\/gridle\/tests.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/assets\/build\/tests.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/sass\/gridle\/tools\/_reset.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/assets\/sass\/build\/_reset.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1224,6 +915,7 @@
 		},
 	"\/build\/aboutAJAX-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/aboutAJAX-min-min.js",
@@ -1233,6 +925,7 @@
 		},
 	"\/build\/aboutPage-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/aboutPage-min-min.js",
@@ -1242,6 +935,7 @@
 		},
 	"\/build\/aboutPageTween-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/aboutPageTween-min-min.js",
@@ -1251,6 +945,7 @@
 		},
 	"\/build\/buttons-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/buttons-min-min.js",
@@ -1260,6 +955,7 @@
 		},
 	"\/build\/dentistAJAX-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/dentistAJAX-min-min.js",
@@ -1269,6 +965,7 @@
 		},
 	"\/build\/fixedHeader-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/fixedHeader-min-min.js",
@@ -1278,6 +975,7 @@
 		},
 	"\/build\/functions-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/functions-min-min.js",
@@ -1287,6 +985,7 @@
 		},
 	"\/build\/global-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/global-min-min.js",
@@ -1312,6 +1011,7 @@
 		},
 	"\/build\/gmaps-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gmaps-min-min.js",
@@ -1321,6 +1021,7 @@
 		},
 	"\/build\/gsap-player-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gsap-player-min-min.js",
@@ -1330,6 +1031,7 @@
 		},
 	"\/build\/gsapPlayer-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/gsapPlayer-min-min.js",
@@ -1339,6 +1041,7 @@
 		},
 	"\/build\/interiorPageTween-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/interiorPageTween-min-min.js",
@@ -1348,6 +1051,7 @@
 		},
 	"\/build\/mobileMenu-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/mobileMenu-min-min.js",
@@ -1357,6 +1061,7 @@
 		},
 	"\/build\/PagePortalTween-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/PagePortalTween-min-min.js",
@@ -1366,6 +1071,7 @@
 		},
 	"\/build\/require-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/require-min-min.js",
@@ -1375,6 +1081,7 @@
 		},
 	"\/build\/requirejs.config-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/requirejs.config-min-min.js",
@@ -1384,6 +1091,7 @@
 		},
 	"\/build\/ScrollMagic-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/ScrollMagic-min-min.js",
@@ -1393,6 +1101,7 @@
 		},
 	"\/build\/servicesAJAX-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/servicesAJAX-min-min.js",
@@ -1402,6 +1111,7 @@
 		},
 	"\/build\/shapeTweens-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/shapeTweens-min-min.js",
@@ -1411,6 +1121,7 @@
 		},
 	"\/build\/specialOffersAJAX-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/specialOffersAJAX-min-min.js",
@@ -1420,6 +1131,7 @@
 		},
 	"\/build\/splashPage-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/splashPage-min-min.js",
@@ -1429,6 +1141,7 @@
 		},
 	"\/build\/TweenMax-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/build\/TweenMax-min-min.js",
@@ -3516,6 +3229,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -3523,6 +3240,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 1,
@@ -3620,6 +3341,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -3639,6 +3364,10 @@
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -3767,6 +3496,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -4312,6 +4045,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -4380,6 +4117,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 1,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -4419,6 +4160,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -5052,6 +4797,7 @@
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {

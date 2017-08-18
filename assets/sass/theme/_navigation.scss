@@ -58,24 +58,29 @@
   }
 }
 
-@media screen and (max-width: 1230px) {
-  .column.navigationcontainer {
-    margin-left: 5rem;
+.column.navigationcontainer {
+  margin-top: 3rem;
+  margin-left: 0;
+}
+
+@media screen and (max-width:1200px) {
+  .navigationcontainer nav a p {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 1185px) {
+@media screen and (max-width: 1024px) {
+  .navigationcontainer nav li {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .primaryNav {
     display: none;
   }
   .column.navigationcontainer {
     max-width: 65%;
     flex-basis: 65%;
-  }
-}
-
-@media screen and (max-width:1099px) {
-  .column.navigationcontainer {
-    margin: 0;
   }
 }

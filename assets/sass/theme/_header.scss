@@ -7,11 +7,11 @@ header {
   top: 0;
   z-index: 50;
   transition: all 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
-  background-color: rgba(223, 242, 239, 0.8);
+  background-color: rgba(223, 242, 239, 1);
 }
 
 .column.navigationcontainer {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   margin-right: auto;
   margin-left: 5rem;
 }
@@ -22,19 +22,9 @@ header .logocontainer a {
 }
 
 @media screen and (max-width: 1600px) {
-  .column.navigationcontainer {
-    margin-left: 1rem;
-  }
   header {
     padding: 0;
   }
-}
-
-@media screen and (max-width:1099px) {
- header .column {
-   flex-basis: 50% !important;
-   max-width: 50% !important;
- }
 }
 
 @media screen and (max-width:600px) {
