@@ -26,7 +26,7 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
         TweenLite.to(ajaxContent, 0.5, {
           opacity: 1,
           ease: Power2.easeOut,
-          zIndex: 99
+          zIndex: 3000
         })
         TweenLite.to(ajaxloader, 0.5, {
           opacity: 1,
@@ -42,7 +42,6 @@ define(['./axios', './TweenMax'], function (axios, TweenMax) {
 
       axios.interceptors.response.use(function (response) {
         // Do something with response data
-        console.log(response)
         return response;
       }, function (error) {
         // Do something with response error

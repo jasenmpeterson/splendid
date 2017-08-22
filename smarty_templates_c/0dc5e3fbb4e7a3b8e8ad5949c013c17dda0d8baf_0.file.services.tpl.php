@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-18 22:19:05
+/* Smarty version 3.1.30, created on 2017-08-22 17:30:28
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/services.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_599767d9272de3_02773737',
+  'unifunc' => 'content_599c6a3483ebc3_15601351',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0dc5e3fbb4e7a3b8e8ad5949c013c17dda0d8baf' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/services.tpl',
-      1 => 1503094727,
+      1 => 1503423019,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_599767d9272de3_02773737 (Smarty_Internal_Template $_smarty_tpl) {
+function content_599c6a3483ebc3_15601351 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="featuredImage servicesFeaturedImage" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featuredImage']->value;?>
 )"></section>
@@ -30,9 +30,9 @@ function content_599767d9272de3_02773737 (Smarty_Internal_Template $_smarty_tpl)
 </h4>
 </section>
 
-<section class="interiorPageContent">
+<section class="interiorPageContent" style="display: none;">
 
-  <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
+    <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
 
 
 </section>

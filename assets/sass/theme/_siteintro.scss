@@ -3,6 +3,8 @@
   left: 10rem;
   z-index: 2;
   padding-right: 2rem;
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.5s;
 }
 
 .siteintro p {
@@ -10,19 +12,20 @@
   line-height: 2rem;
   width: 40rem;
   max-width: 100%;
-  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: 0.5s;
-}
-
-@media screen and (max-width: 1500px) {
-  .siteintro {
-    left: 5rem;
-  }
 }
 
 @media screen and (max-width: 1100px) {
   .siteintro {
-    position: static;
-    margin: 3rem 0 10rem 5rem;
+    position: relative;
+    margin-bottom: 30rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .siteintro {
+    left: 0;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
   }
 }

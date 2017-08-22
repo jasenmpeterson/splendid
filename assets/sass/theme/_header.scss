@@ -27,9 +27,26 @@ header .logocontainer a {
   }
 }
 
+@media screen and (max-width:900px) {
+  header .column {
+    width: 100%;
+  }
+  header .logocontainer a {
+    margin-left: 0;
+    max-width: 40%;
+  }
+}
+
 @media screen and (max-width:600px) {
   header {
     padding:0;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width:600px) {
+  header .logocontainer a {
+    margin-left: 0;
+    margin-top: -7rem;
   }
 }

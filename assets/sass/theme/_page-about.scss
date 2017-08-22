@@ -105,10 +105,9 @@
 }
 
 .ajax-close-button {
-  opacity: 1;
   right: 0rem;
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .ajax-close-button svg path {
@@ -172,6 +171,12 @@
   cursor: default;
 }
 
+.faq-pop-up .ajax-close-button {
+  opacity: 1;
+  width: 6rem;
+  height: 6rem;
+}
+
 .faq-title.active,
 .faq-title:hover {
   background-color: $mandarin;
@@ -200,5 +205,9 @@
   }
   .map.FlexContainer .steps.FlexContainer .stepCount {
     top: 3rem;
+  }
+  .interiorPageAbout {
+    margin-bottom: 5.5rem;
+    padding: 0 2rem;
   }
 }

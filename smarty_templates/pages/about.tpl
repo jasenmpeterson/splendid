@@ -4,11 +4,13 @@
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
 
-<section class="interiorPageContent interiorPageAbout">
+{if !empty($pageContent)}
+    <section class="interiorPageContent interiorPageAbout">
 
-  {$pageContent}
+        {$pageContent}
 
-</section>
+    </section>
+{/if}
 
 <section class="map FlexContainer">
 

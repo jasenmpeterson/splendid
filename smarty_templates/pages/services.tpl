@@ -4,9 +4,9 @@
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
 
-<section class="interiorPageContent">
+<section class="interiorPageContent" style="display: none;">
 
-  {$pageContent}
+    {$pageContent}
 
 </section>
 

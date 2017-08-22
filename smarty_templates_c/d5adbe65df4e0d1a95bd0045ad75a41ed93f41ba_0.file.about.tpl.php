@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-18 21:42:29
+/* Smarty version 3.1.30, created on 2017-08-22 15:25:52
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/about.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59975f45ceba27_04839067',
+  'unifunc' => 'content_599c4d00e2ed57_97328199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5adbe65df4e0d1a95bd0045ad75a41ed93f41ba' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/about.tpl',
-      1 => 1503092543,
+      1 => 1503415542,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59975f45ceba27_04839067 (Smarty_Internal_Template $_smarty_tpl) {
+function content_599c4d00e2ed57_97328199 (Smarty_Internal_Template $_smarty_tpl) {
 if (!is_callable('smarty_modifier_replace')) require_once '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty/libs/plugins/modifier.replace.php';
 ?>
 <section class="featuredImage" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featuredImage']->value;?>
@@ -31,12 +31,14 @@ if (!is_callable('smarty_modifier_replace')) require_once '/Users/jasenpeterson/
 </h4>
 </section>
 
-<section class="interiorPageContent interiorPageAbout">
+<?php if (!empty($_smarty_tpl->tpl_vars['pageContent']->value)) {?>
+    <section class="interiorPageContent interiorPageAbout">
 
-  <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
+        <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
 
 
-</section>
+    </section>
+<?php }?>
 
 <section class="map FlexContainer">
 

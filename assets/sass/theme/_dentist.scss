@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.dentists.FlexContainer .row:last-of-type .column {
+.dentists.FlexContainer .row .column {
   width: 22%;
   flex-basis: 22%;
   position: relative;
@@ -16,17 +16,11 @@
   align-self: stretch;
 }
 
-.dentists.FlexContainer .row:first-of-type .column {
-  width: 100%;
-  flex-basis: 100%;
-}
-
 .dentists h2 {
   color: $pearlaqua;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 10rem;
 
   &:after {
     content: '';
@@ -40,7 +34,7 @@
 
 .dentist.column {
   background: #fff;
-  margin: 0 1rem;
+  margin: 2rem 1rem;
   transition: $transitionIn;
 }
 
@@ -134,11 +128,28 @@
   right: 0;
 }
 
-.dentists.ajaxcontent .inner-content {
+.dentists.ajaxcontent {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   width: 90rem;
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
+  max-height: 50rem;
+  height: auto;
+  padding: 5rem;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  @include box-shadow-all();
+  overflow: hidden;
+}
+
+.dentists.ajaxcontent .inner-content {
+  max-height: 40rem;
+  overflow: scroll;
 }
 
 .dentists.ajaxcontent .dentist-name {
@@ -146,37 +157,22 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .dentists.FlexContainer .row:last-of-type .column {
-    max-width: 45%;
-    flex-basis:45%;
-    margin-bottom: 2rem;
-  }
-  .dentists.FlexContainer .row:last-of-type .column:nth-of-type(3),
-  .dentists.FlexContainer .row:last-of-type .column:nth-of-type(4) {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .dentists.FlexContainer .row:last-of-type .column {
+  .dentists.FlexContainer .row .column {
     max-width: 70%;
     flex-basis: 70%;
-  }
-  .dentists.FlexContainer .row:last-of-type .column:nth-of-type(3),
-  .dentists.FlexContainer .row:last-of-type .column:nth-of-type(4) {
     margin-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .dentists.FlexContainer .row:last-of-type .column {
+  .dentists.FlexContainer .row .column {
     max-width: 80%;
     flex-basis: 80%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .dentists.FlexContainer .row:last-of-type .column {
+  .dentists.FlexContainer .row .column {
     max-width: 90%;
     flex-basis: 90%;
   }

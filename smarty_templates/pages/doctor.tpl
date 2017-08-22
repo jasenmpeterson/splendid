@@ -4,13 +4,10 @@
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
 {if !empty($pageContent)}
-<section class="interiorPageContent">
-
-  {$pageContent}
-
-</section>
+    <section class="interiorPageContent">
+        {$pageContent}
+    </section>
 {/if}
-
 
 <section class="dentists FlexContainer">
 
@@ -21,7 +18,11 @@
   </section>
 
   <section class="row">
+    {$cols=4}
     {foreach $dentists as $dentist}
+        {if $dentist@iteration is div by $cols}
+            </section><section class="row">
+        {/if}
       <section class="column dentist ajaxbutton" data-id={$dentist['ID']}>
 
         <section class="inner">
@@ -37,7 +38,6 @@
           </section>
 
         </section>
-
       </section>
     {/foreach}
   </section>

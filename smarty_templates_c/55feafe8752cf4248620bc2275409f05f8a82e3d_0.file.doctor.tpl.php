@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-08-17 13:46:54
+/* Smarty version 3.1.30, created on 2017-08-22 17:11:36
   from "/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59959e4e3276a8_91607953',
+  'unifunc' => 'content_599c65c8563f53_04418741',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '55feafe8752cf4248620bc2275409f05f8a82e3d' => 
     array (
       0 => '/Users/jasenpeterson/Sites/splendid/wp-content/themes/splendid/smarty_templates/pages/doctor.tpl',
-      1 => 1502977612,
+      1 => 1503421884,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59959e4e3276a8_91607953 (Smarty_Internal_Template $_smarty_tpl) {
+function content_599c65c8563f53_04418741 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section class="featuredImage" style="background: url(<?php echo $_smarty_tpl->tpl_vars['featuredImage']->value;?>
 )"></section>
@@ -30,14 +30,11 @@ function content_59959e4e3276a8_91607953 (Smarty_Internal_Template $_smarty_tpl)
 </h4>
 </section>
 <?php if (!empty($_smarty_tpl->tpl_vars['pageContent']->value)) {?>
-<section class="interiorPageContent">
+    <section class="interiorPageContent">
+        <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
 
-  <?php echo $_smarty_tpl->tpl_vars['pageContent']->value;?>
-
-
-</section>
+    </section>
 <?php }?>
-
 
 <section class="dentists FlexContainer">
 
@@ -48,11 +45,19 @@ function content_59959e4e3276a8_91607953 (Smarty_Internal_Template $_smarty_tpl)
   </section>
 
   <section class="row">
+    <?php $_smarty_tpl->_assignInScope('cols', 4);
+?>
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['dentists']->value, 'dentist');
+$_smarty_tpl->tpl_vars['dentist']->iteration = 0;
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['dentist']->value) {
+$_smarty_tpl->tpl_vars['dentist']->iteration++;
+$__foreach_dentist_0_saved = $_smarty_tpl->tpl_vars['dentist'];
 ?>
+        <?php if (!($_smarty_tpl->tpl_vars['dentist']->iteration % $_smarty_tpl->tpl_vars['cols']->value)) {?>
+            </section><section class="row">
+        <?php }?>
       <section class="column dentist ajaxbutton" data-id=<?php echo $_smarty_tpl->tpl_vars['dentist']->value['ID'];?>
 >
 
@@ -72,9 +77,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['dentist']->value) {
           </section>
 
         </section>
-
       </section>
     <?php
+$_smarty_tpl->tpl_vars['dentist'] = $__foreach_dentist_0_saved;
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);

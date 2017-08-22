@@ -8,8 +8,10 @@ define(['./TweenMax'], function () {
     var currFaq = null;
     var currQuestion = null;
     var openFAQButton = null;
+    var closeButton = null;
     const faqpopup = document.querySelector('.faq-pop-up')
-    openFAQButton = document.querySelector('[data-id="1"')
+    openFAQButton = document.querySelector('[data-id="1"]')
+    closeButton = document.querySelector('.about-pop-up .ajax-close-button')
 
     const faqButton = document.querySelectorAll('.faq-title')
 
@@ -61,28 +63,24 @@ define(['./TweenMax'], function () {
 
     if (typeof(openFAQButton) !== 'undefined' && openFAQButton !== null) {
       openFAQ()
+      closeFAQ()
     }
 
-    if (typeof(openFAQButton) !== 'undefined' && openFAQButton !== null) {
-      openFAQ()
-    }
+    // faq close
 
     function closeFAQ() {
-      const button = document.querySelector('.ajax-close-button')
-      if (typeof(button) !== 'undefined' && button !== null) {
-        button.addEventListener('click', function() {
-          TweenLite.to(faqpopup, 0.5,  {
-            y: '100px',
-            opacity: 0,
-            ease: Power4.easeIn,
-            display: 'none'
-          })
-        })
-      }
 
+      closeButton.addEventListener('click', function() {
+        TweenLite.to(faqpopup, 0.5,  {
+          y: '100px',
+          opacity: 0,
+          ease: Power4.easeIn,
+          display: 'none'
+        })
+      })
     }
 
-    closeFAQ()
+
 
   }
 

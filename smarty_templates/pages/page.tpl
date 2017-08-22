@@ -4,8 +4,10 @@
   <h4 class="label interior transform"><span class="hr"></span>{$pageTitle}</h4>
 </section>
 
-<section class="interiorPageContent">
+{if !empty($pageContent)}
+  <section class="interiorPageContent">
 
-  {$pageContent}
+      {$pageContent}
 
-</section>
+  </section>
+{/if}

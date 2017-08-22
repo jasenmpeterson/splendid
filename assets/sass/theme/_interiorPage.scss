@@ -1,7 +1,8 @@
 .interiorPage .pageTitle {
   text-align: right;
   position: sticky;
-  top: 8rem;
+  top: 20rem;
+  z-index: 2;
 }
 
 .interiorPage .label.interior {
@@ -91,12 +92,15 @@
 
 @media screen and (max-width: 600px) {
   .interiorPageContent {
-    padding: 0 4rem;
+    padding: 0 2rem;
     margin-left: 0;
     margin-top: 2rem;
   }
   .interiorPage .label.interior,.interiorPage .label.interior.active {
     transform: translateY(0);
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .interiorPage .pageTitle {
+    position: static;
   }
 }

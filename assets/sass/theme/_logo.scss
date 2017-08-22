@@ -35,10 +35,7 @@
 }
 
 @media screen and (max-width:1099px) {
-  .logocontainer a {
-    display: inline-block;
-  }
-  .sitelogo {
+  header .logocontainer {
     padding-left: 2rem;
   }
 }

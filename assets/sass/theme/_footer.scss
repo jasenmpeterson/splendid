@@ -2,6 +2,7 @@ footer {
   background: #fff;
   color: $pearlaqua;
   position: relative;
+  padding: 3rem 0;
 }
 
 footer p {
@@ -21,8 +22,8 @@ footer .logocontainer a {
 }
 
 footer .sitelogo {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: auto;
 
   circle {
      display: none;
@@ -32,4 +33,16 @@ footer .sitelogo {
     fill: $pearlaqua;
   }
 
+}
+
+@media screen and (max-width: 900px) {
+  footer .logocontainer {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer  {
+    padding: 1rem 0;
+  }
 }

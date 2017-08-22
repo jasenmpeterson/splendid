@@ -32,6 +32,7 @@ require.config({
     specialOffersAJAX: 'specialOffersAJAX',
     aboutPage: 'aboutPage',
     gmaps: 'gmaps',
+    Modernizr: 'Modernizr',
     splashPage: 'splashPage',
     mobileMenu: 'mobileMenu',
     axios: pageParams.javascriptDirectory + '/node_modules/axios/dist/axios',
@@ -126,7 +127,7 @@ require(['servicesAJAX'], function (servicesAJAX, ajaxURL) {
 
 });
 
-// about AJAX :
+// about AJAX ::
 
 require(['aboutPage'], function (aboutPage) {
   aboutPage()
@@ -145,6 +146,10 @@ require(['specialOffersAJAX'], function (specialOffersAJAX, ajaxURL) {
 // gmaps :
 
 require(['gmaps']);
+
+// match media :
+
+require(['Modernizr']);
 
 // splash page :
 
